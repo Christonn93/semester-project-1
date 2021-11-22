@@ -38,7 +38,7 @@
         19. https://uxwing.com/learning-machine-ai-icon/
         20. https://uxwing.com/artificial-intelligence-icon/
         21. https://uxwing.com/globe-network-icon/
-        22.https://uxwing.com/abacus-icon/
+        22. https://uxwing.com/abacus-icon/
         23. https://uxwing.com/total-icon/
         24. https://uxwing.com/math-plus-icon/
         25. https://uxwing.com/math-multiplication-icon/
