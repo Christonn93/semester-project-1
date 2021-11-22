@@ -72,3 +72,5 @@
     7. https://new.smm.org/
     8. https://tekniskmuseum.no/information-in-english
     9. https://www.ntnu.edu/museum
+    10. https://www.sciencemuseum.org.uk/see-and-do
+    11. 
