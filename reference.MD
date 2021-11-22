@@ -59,3 +59,16 @@
         40. https://uxwing.com/facebook-round-line-color-icon/
         41. https://uxwing.com/twitter-round-line-color-icon/
         42. https://uxwing.com/share-icon/
+
+
+> Website inspo
+
+    1. https://smv.org/
+    2. https://ingeniumcanada.org/scitech
+    3. https://www.exploratorium.edu/
+    4. https://www.lifeandscience.org/
+    5. https://carnegiesciencecenter.org/
+    6. https://www.msichicago.org/
+    7. https://new.smm.org/
+    8. https://tekniskmuseum.no/information-in-english
+    9. https://www.ntnu.edu/museum
