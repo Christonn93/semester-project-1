@@ -24,23 +24,21 @@ Style list:
 :root {
 
     /* ==== Font family ==== */
-    --ff-h: ;
-    --ff-b: ;
-    --fw-h: ;
-    --fw-b: ;
-    --lh: ;
+    --ff-header: 'Martel Sans', sans-serif;
+    --ff-body: 'Cabin', sans-serif;
+    --ff-link: 'Poppins', sans-serif;
+
     /* ==== Font size ==== */
-    --h1: ;
-    --h2: ;
-    --h3: ;
-    --h4: ;
-    --h5: ;
-    --h6: ;
-    --body-lg: ;
-    --body-md: ;
-    --body-sm: ;
-    --nav-fs: ;
-    --link-fs: ;
+    --h1: 60px;
+    --h2: 48px;
+    --h3: 40px;
+    --h4: 30px;
+    --h5: 24px;
+    --h6: 18px;
+    --body-lg: 24px;
+    --body-md: 19px;
+    --body-sm: 17px;
+    --link: 20px;
 
     /* ==== colour variables ==== */
 
