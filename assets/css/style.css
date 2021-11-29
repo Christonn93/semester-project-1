@@ -23,16 +23,68 @@ Style list:
     1. GLOBAL STYLE
    ====================== */
 
-   * {
+:root {
+
+    /* ==== Font family ==== */
+    --ff-h: ;
+    --ff-b: ;
+    --fw-h: ;
+    --fw-b: ;
+    --lh: ;
+    /* ==== Font size ==== */
+    --h1: ;
+    --h2: ;
+    --h3: ;
+    --h4: ;
+    --h5: ;
+    --h6: ;
+    --body-lg: ;
+    --body-md: ;
+    --body-sm: ;
+    --nav-fs: ;
+    --link-fs: ;
+
+    /* ==== colour variables ==== */
+
+    /* -- Smoky Black -- */
+    --ghub-black: #0D0D0D;
+    /* -- Anti-Flash White -- */
+    --ghub-white: #F2F2F2;
+    /* -- Electric Green1 -- */
+    --ghub-green: #00FF00;
+    /* -- Rhythm -- */
+    --ghub-rhythm: #7A778C;
+    /* -- Red(pigment) -- */
+    --ghub-red: #F21B1B;
+    /* -- Anti Flash White */
+    --ghub-af: #F2F2F2;
+    /* -- Dark Silver -- */
+    --ghub-silver: #726c6c;
+    /* -- Light periwinkle */
+    --ghub-periwinkle: #c5d1d9;
+    /* -- Light absolute Zero */
+    --ghub-AZ: #074dd9;
+
+
+    --shadow: 2px 5px 20px var(--ghub-black);
+    --shadow2: 0px 2px 16px 0px var(--ghub-black);
+    --shadow3: 0px 0px 10px #dedcdc,
+        0px 0px 10px #e6e3e3,
+        0px 0px 10px #9c9a9a;
+    --shadow4: 0.5rem 0.5rem var(--ghub-green),
+        -0.5rem -0.5rem var(--ghub-red);
+}
+
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-div{
+div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
