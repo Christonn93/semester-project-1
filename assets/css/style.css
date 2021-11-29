@@ -82,6 +82,22 @@ body {
     padding: 0;
 }
 
+header {
+    display: block;
+}
+
+nav {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+footer {
+    display: block;
+}
+
 div {
     display: flex;
     flex-direction: column;
@@ -91,6 +107,6 @@ div {
     align-items: flex-start;
 }
 
-.content-container{
+.content-container {
     height: fit-content;
 }
