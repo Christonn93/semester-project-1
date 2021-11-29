@@ -1,0 +1,42 @@
+/* ======================
+
+STYLE SHEET FOR GAMEHUB INC. 
+
+Style list:
+
+1. Global style
+
+2. Typography
+
+3. Components
+
+4. Images & Icons
+
+5. 
+
+6. Media Queries 
+
+
+   ====================== */
+
+/* ======================
+    1. GLOBAL STYLE
+   ====================== */
+
+   * {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
