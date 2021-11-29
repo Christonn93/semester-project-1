@@ -69,6 +69,20 @@ Style list:
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-header);
+}
+
+p {
+    font-family: var(--ff-body);
+    font-size: var(--body-md);
+}
+
+a {
+    font-family: var(--ff-link);
+    font-size: var(--link);
+}
+
 * {
     box-sizing: border-box;
 }
