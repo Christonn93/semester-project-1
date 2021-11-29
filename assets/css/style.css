@@ -66,11 +66,35 @@ Style list:
     --sheen-green: #89CD4A;
     /* -- Sky Blue Crayola -- */
     --sky-blue: #4BC6DB;
+    /* -- Black -- */
+    --black: #000000;
+
+
+    --border: .015em solid var(--charcoal);
+    --border-radius: 0.25em;
+    --text-padding: 0 25px 0 25px;
+    --btn-padding: 0.35em 1.2em;
+    --sunray-shadow: 0px 5px 16px 0px var(--sunray);
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--ff-header);
+}
+
+.main-header{
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-header{
+    padding: 0;
+    margin: 0;
 }
 
 p {
@@ -85,7 +109,6 @@ a {
 
 * {
     box-sizing: border-box;
-    margin: 25px;
 }
 
 body {
@@ -95,32 +118,25 @@ body {
 
 header {
     display: block;
-    border: 1px solid black;
-    background-color: orange;
 }
 
 nav {
-    display: block;
-    background-color: var(--alice-blue);
-    min-height: 50px;
+    background-color: var(--beau-blue);
 
-    border: 1px solid black;
+    display: block;
+    min-height: 50px;
 }
 
 main {
     display: block;
-
-
-    border: 1px solid black;
-    background-color: blue;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 footer {
-    display: block;
-    
+    background-color: var(--beau-blue);
 
-    background-color: red;
-    border: 1px solid black;
+    display: block;
 }
 
 div {
@@ -131,17 +147,79 @@ div {
     justify-content: flex-start;
     align-items: flex-start;
 
-    background-color: var(--alice-blue);
-    border: 1px solid black;
+    padding: 0;
+    margin: 0;
 }
 
-.content-container {
-    height: fit-content;
-}
+
 
 /* ======================
     2. Components
    ====================== */
+
+.nav-top{
+    background-color: var(--alice-blue);
+}
+
+.nav-bottom{
+    background-color: var(--sunray);
+}
+
+.content-container {
+    box-shadow: var(--sunray-shadow);
+
+    height: fit-content;
+    width: 618px;
+}
+
+.box-img {
+    max-width: 618px;
+}
+
+.img-box {
+    padding: 0;
+    margin: 0;
+}
+
+.content-title {
+    background-color: var(--sunray);
+    width: 618px;
+    align-items: center;
+}
+
+.content-title-2 {
+    background-color: var(--sunray);
+    padding: var(--text-padding);
+    border: var(--border);
+
+    align-items: center;
+}
+
+.text-box {
+    background-color: var(--alice-blue);
+
+    padding: 30px;
+}
+
+
+.cta-btn{
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius); 
+    font-family: var(--ff-link);
+    font-size: var(--link);
+    color: var(--black);
+    background-color: var(--sunray);
+    border: var(--border);
+    box-shadow: var(--sunray-shadow);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* ======================
     3. Images & Icons
