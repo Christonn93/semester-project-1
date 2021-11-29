@@ -185,10 +185,7 @@ div {
     margin: 0;
 }
 
-img {
-    max-width: var(--desk-width);
-    flex: 1 1 100%;
-}
+
 
 /* ======================
     2. Components
@@ -260,6 +257,16 @@ img {
 /* ======================
     3. Images & Icons
    ====================== */
+.navbar-img{
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.box-img {
+    max-width: var(--desk-width);
+    flex: 1 1 100%;
+}
+
 
 /* ======================
     4. Media queries
