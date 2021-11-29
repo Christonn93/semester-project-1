@@ -46,33 +46,31 @@ Style list:
 
     /* ==== colour variables ==== */
 
-    /* -- Smoky Black -- */
-    --ghub-black: #0D0D0D;
-    /* -- Anti-Flash White -- */
-    --ghub-white: #F2F2F2;
-    /* -- Electric Green1 -- */
-    --ghub-green: #00FF00;
-    /* -- Rhythm -- */
-    --ghub-rhythm: #7A778C;
-    /* -- Red(pigment) -- */
-    --ghub-red: #F21B1B;
-    /* -- Anti Flash White */
-    --ghub-af: #F2F2F2;
-    /* -- Dark Silver -- */
-    --ghub-silver: #726c6c;
-    /* -- Light periwinkle */
-    --ghub-periwinkle: #c5d1d9;
-    /* -- Light absolute Zero */
-    --ghub-AZ: #074dd9;
+    /* -- Steel Teal -- */
+    --steel-teal: #5B828E;
+    /* -- Beau Blue -- */
+    --beau-blue: #BBCFD7;
+    /* -- Alice Blue -- */
+    --alice-blue: #E3E8EE;
+    /* -- Silver Sand -- */
+    --silver-sand: #A5B4B9;
+    /* -- Sunray -- */
+    --sunray: #EAB354;
+    /* -- Dim Gray -- */
+    --ding-gray: #625F5E;
+    /* -- Charleston Green -- */
+    --charleston-green: #262B2B;
+    /* -- Orange engineering -- */
+    --orange-engineering: #B70000;
+    /* -- Red pigment -- */
+    --red-pigment: #FC141E;
+    /* -- Charcoal -- */
+    --charcoal: #3B5160;
+    /* -- Sheen Green -- */
+    --sheen-green: #89CD4A;
+    /* -- Sky Blue Crayola -- */
+    --sky-blue: #4BC6DB;
 
-
-    --shadow: 2px 5px 20px var(--ghub-black);
-    --shadow2: 0px 2px 16px 0px var(--ghub-black);
-    --shadow3: 0px 0px 10px #dedcdc,
-        0px 0px 10px #e6e3e3,
-        0px 0px 10px #9c9a9a;
-    --shadow4: 0.5rem 0.5rem var(--ghub-green),
-        -0.5rem -0.5rem var(--ghub-red);
 }
 
 * {
@@ -91,4 +89,8 @@ div {
     flex: 1 1 100%;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.content-container{
+    height: fit-content;
 }
