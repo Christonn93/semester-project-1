@@ -110,21 +110,6 @@ h6 {
     font-family: var(--ff-header);
 }
 
-.main-header {
-    padding: 0;
-    margin: 0;
-}
-
-.secondary-header {
-    position: absolute;
-    top: 300px;
-    left: 10px;
-
-    background-color: var(--sunray);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 p {
     font-family: var(--ff-body);
     font-size: var(--body-md);
@@ -142,6 +127,9 @@ a {
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
     color: var(--black);
 }
 
@@ -155,9 +143,7 @@ header {
 }
 
 nav {
-    display: flex;
-
-    background-color: var(--alice-blue);
+    background-color: var(--beau-blue);
 }
 
 main {
@@ -173,60 +159,47 @@ footer {
     background-color: var(--beau-blue);
 }
 
-div {
+/* -- Flex -- */
+.flex-row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1 1 100%;
-    justify-content: flex-start;
-    column-gap: 35px;
 
-    padding: 0;
-    margin: 0;
+    align-items: center;
 }
 
-
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    
+    align-items: stretch;
+}
 
 /* ======================
     2. Components
    ====================== */
-.nav-bar {
-    background-color: var(--beau-blue);
-}
 
-
+/* -- Navigation -- */
 .nav-top {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: baseline;
-    align-self: unset;
     background-color: var(--beau-blue);
 }
-
-.nav-header,
-.logo-box{
-    width: fit-content;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: baseline;
-    align-self: unset;
-}
-
-.nav {}
 
 .nav-link {
     display: inline;
-    margin: 35px;
+    margin: 15px;
 }
 
-.first-link{
-    margin-left: 520px;
+.last-link{
+    margin-left: 450px;
 }
 
 .page-link {
     font-weight: bold;
     padding: 0.1em 0.4em;
+    margin: 15px;
 
     border-bottom: 2px solid var(--black);
     font-family: var(--ff-link);
@@ -238,6 +211,7 @@ div {
     border-bottom: 2px solid var(--orange-engineering);
 }
 
+/* -- Dropdown menu -- */
 #dropdown, .dropdown-desktop {
     display: none;
   }
@@ -255,8 +229,12 @@ div {
   }
 
 .nav-bottom {
+    justify-content: flex-end;
+
     background: linear-gradient(-15deg, var(--sunray) 75%, var(--beau-blue) 25%);
-    z-index: 99;
+    height: fit-content;
+    padding: 15px;
+
 }
 
 /* .nav-bottom-triangle {
@@ -270,6 +248,7 @@ div {
     border-right: 977px solid var(--sunray);
 } */
 
+/* -- Content Container -- */
 .content-container {
     min-height: fit-content;
     margin: 20px;
@@ -297,6 +276,21 @@ div {
     border: var(--border);
 }
 
+.main-header {
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-header {
+    position: absolute;
+    top: 300px;
+    left: 10px;
+
+    background-color: var(--sunray);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .text-box {
     padding: 30px;
 
@@ -311,6 +305,7 @@ div {
     background-color: var(--alice-blue);
 }
 
+/* -- Button's -- */
 .cta-btn {
     display: flex;
     flex-direction: row;
