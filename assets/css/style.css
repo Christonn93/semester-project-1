@@ -184,6 +184,9 @@ footer {
 
 /* -- Navigation -- */
 .nav-top {
+    margin-top: 10px;
+    margin-left: 50px;
+
     background-color: var(--beau-blue);
 }
 
@@ -192,9 +195,9 @@ footer {
     margin: 15px;
 }
 
-.last-link{
-    margin-left: 450px;
-}
+.nav-link:not(:last-child) { 
+    margin-left: 50px;  
+ }
 
 .page-link {
     font-weight: bold;
@@ -211,6 +214,8 @@ footer {
     border-bottom: 2px solid var(--orange-engineering);
 }
 
+
+
 /* -- Dropdown menu -- */
 #dropdown, .dropdown-desktop {
     display: none;
@@ -218,21 +223,21 @@ footer {
   
   .dropdown-desktop {
     position: fixed;
-    top: 120px;
-    right: 5px;
-    padding: 5px;
+    top: 249px;
+    right: 0px;
+    padding: 15px;
   }
   
   #dropdown:checked ~ .dropdown-desktop {
     display: block;
-    background-color: var(--sunray);
+    background: linear-gradient(-45deg, var(--sunray) 50%, var(--beau-blue) 50%);
   }
 
 .nav-bottom {
     justify-content: flex-end;
 
+
     background: linear-gradient(-15deg, var(--sunray) 75%, var(--beau-blue) 25%);
-    height: fit-content;
     padding: 15px;
 
 }
@@ -331,7 +336,7 @@ footer {
 }
 
 .nav-logo {
-    max-width: 300px;
+    max-width: 250px;
 }
 /* ======================
     4. Media queries
