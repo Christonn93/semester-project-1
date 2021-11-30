@@ -155,6 +155,8 @@ header {
 }
 
 nav {
+    display: flex;
+
     background-color: var(--alice-blue);
 }
 
@@ -177,7 +179,6 @@ div {
     flex-wrap: wrap;
     flex: 1 1 100%;
     justify-content: flex-start;
-    align-items: flex-start;
     column-gap: 35px;
 
     padding: 0;
@@ -190,14 +191,26 @@ div {
     2. Components
    ====================== */
 .nav-bar {
-    background-color: var(--alice-blue);
-    height: 150px;
+    background-color: var(--beau-blue);
 }
 
 
 .nav-top {
-    background-color: var(--alice-blue);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: baseline;
+    align-self: unset;
+    background-color: var(--beau-blue);
+}
 
+.nav-header,
+.logo-box{
+    width: fit-content;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: baseline;
+    align-self: unset;
 }
 
 .nav {}
@@ -208,7 +221,7 @@ div {
 }
 
 .first-link{
-    margin-left: 220px;
+    margin-left: 520px;
 }
 
 .page-link {
@@ -242,7 +255,7 @@ div {
   }
 
 .nav-bottom {
-    background: linear-gradient(-30deg, var(--sunray) 85%, var(--alice-blue) 15%);
+    background: linear-gradient(-15deg, var(--sunray) 75%, var(--beau-blue) 25%);
     z-index: 99;
 }
 
@@ -322,6 +335,9 @@ div {
     max-width: var(--desk-width);
 }
 
+.nav-logo {
+    max-width: 300px;
+}
 /* ======================
     4. Media queries
    ====================== */
