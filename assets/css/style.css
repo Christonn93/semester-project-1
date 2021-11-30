@@ -51,50 +51,52 @@ Style list:
 
     /* ==== colour variables ==== */
 
-    --steel-teal: #5B828E;
     /* -- Steel Teal -- */
-    --beau-blue: #BBCFD7;
+    --steel-teal: #5B828E;
     /* -- Beau Blue -- */
-    --alice-blue: #E3E8EE;
+    --beau-blue: #BBCFD7;
     /* -- Alice Blue -- */
-    --silver-sand: #A5B4B9;
+    --alice-blue: #E3E8EE;
     /* -- Silver Sand -- */
-    --sunray: #EAB354;
+    --silver-sand: #A5B4B9;
     /* -- Sunray -- */
-    --ding-gray: #625F5E;
+    --sunray: #EAB354;
     /* -- Dim Gray -- */
-    --charleston-green: #262B2B;
+    --ding-gray: #625F5E;
     /* -- Charleston Green -- */
-    --orange-engineering: #B70000;
+    --charleston-green: #262B2B;
     /* -- Orange engineering -- */
-    --red-pigment: #FC141E;
+    --orange-engineering: #B70000;
     /* -- Red pigment -- */
-    --charcoal: #3B5160;
+    --red-pigment: #FC141E;
     /* -- Charcoal -- */
-    --sheen-green: #89CD4A;
+    --charcoal: #3B5160;
     /* -- Sheen Green -- */
-    --sky-blue: #4BC6DB;
+    --sheen-green: #89CD4A;
     /* -- Sky Blue Crayola -- */
-    --black: #000000;
+    --sky-blue: #4BC6DB;
     /* -- Black -- */
+    --black: #000000;
 
 
-    --border: .015em solid var(--charcoal);
     /* -- Global Border -- */
-    --border-radius: 0.25em;
+    --border: .015em solid var(--charcoal);
     /* -- Global border-radius -- */
-
-    --text-padding: 0 25px 0 25px;
+    --border-radius: 0.25em;
     /* -- Global padding text -- */
-    --btn-padding: 0.35em 1.2em;
+    --text-padding: 0 25px 0 25px;
     /* -- Global padding buttons -- */
-
-    --sunray-shadow: 0px 5px 16px 0px var(--sunray);
+    --btn-padding: 0.35em 1.2em;
     /* -- Global sunray-shadow -- */
-    --black-shadow: 0px 5px 16px 0px var(--black);
+    --sunray-shadow: 0px 5px 16px 0px var(--sunray);
     /* -- Global black-shadow -- */
+    --black-shadow: 0px 5px 16px 0px var(--black);
+    /* -- Global text-shadow -- */
+    --text-shadow: 0px 0px 2px var(--charcoal);
 
+    /* -- Global Image width Desktop -- */
     --desk-width: 620px;
+    /* -- Global Image width Mobile -- */
     --mobile-width: 320px;
 
 }
@@ -153,10 +155,7 @@ header {
 }
 
 nav {
-    display: block;
-    min-height: 50px;
-
-    background-color: var(--beau-blue);
+    background-color: var(--alice-blue);
 }
 
 main {
@@ -190,20 +189,79 @@ div {
 /* ======================
     2. Components
    ====================== */
+.nav-bar {
+    background-color: var(--alice-blue);
+    height: 150px;
+}
+
 
 .nav-top {
     background-color: var(--alice-blue);
+
 }
+
+.nav {}
+
+.nav-link {
+    display: inline;
+    margin: 35px;
+}
+
+.first-link{
+    margin-left: 220px;
+}
+
+.page-link {
+    font-weight: bold;
+    padding: 0.1em 0.4em;
+
+    border-bottom: 2px solid var(--black);
+    font-family: var(--ff-link);
+    font-size: var(--link);
+    color: var(--black);  
+}
+
+.page-link:hover {
+    border-bottom: 2px solid var(--orange-engineering);
+}
+
+#dropdown, .dropdown-desktop {
+    display: none;
+  }
+  
+  .dropdown-desktop {
+    position: fixed;
+    top: 120px;
+    right: 5px;
+    padding: 5px;
+  }
+  
+  #dropdown:checked ~ .dropdown-desktop {
+    display: block;
+    background-color: var(--sunray);
+  }
 
 .nav-bottom {
-    background-color: var(--sunray);
+    background: linear-gradient(-30deg, var(--sunray) 85%, var(--alice-blue) 15%);
+    z-index: 99;
 }
 
+/* .nav-bottom-triangle {
+    position: relative;
+    top: -45px;
+    left: 215px;
+    min-width: 100px;
+    border-left: 100px solid transparent;
+
+    border-bottom: 50px solid var(--sunray);
+    border-right: 977px solid var(--sunray);
+} */
+
 .content-container {
-    max-width: var(--desk-width);
     min-height: fit-content;
     margin: 20px;
 
+    max-width: var(--desk-width);
     box-shadow: var(--sunray-shadow);
 }
 
@@ -212,9 +270,9 @@ div {
 }
 
 .content-title {
-    max-width: var(--desk-width);
     align-items: center;
 
+    max-width: var(--desk-width);
     background-color: var(--sunray);
 }
 
@@ -257,22 +315,12 @@ div {
 /* ======================
     3. Images & Icons
    ====================== */
-.navbar-img{
-    display: flex;
-    flex: 1 1 100%;
-}
 
 .box-img {
-    max-width: var(--desk-width);
     flex: 1 1 100%;
+
+    max-width: var(--desk-width);
 }
-
-
-#triangle-bottomright { 
-    width: 0; 
-    height: 0; 
-    border-bottom: 100px solid red; 
-    border-left: 100px solid transparent; }
 
 /* ======================
     4. Media queries
@@ -280,11 +328,11 @@ div {
 
 @media only screen and (max-width: 412px) {
 
-    h1{
+    h1 {
         font-size: var(--mobile-h1);
     }
 
-    h2{
+    h2 {
         font-size: var(--mobile-h2);
     }
 
@@ -303,7 +351,7 @@ div {
         cursor: pointer;
     }
 
-    img {
+    .box-img {
         max-width: var(--mobile-width);
         flex: 1 1 100%;
     }
@@ -316,7 +364,7 @@ div {
     .nav-top {
         background-color: var(--alice-blue);
     }
-    
+
     .nav-bottom {
         display: none;
         background-color: var(--sunray);
@@ -335,7 +383,7 @@ div {
         padding: 0;
         margin: 0;
     }
-    
+
     .secondary-header {
         position: absolute;
         top: 145px;
