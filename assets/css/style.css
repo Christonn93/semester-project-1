@@ -389,6 +389,10 @@ footer {
         background-color: var(--beau-blue);
     }
 
+    .flex-span{
+        justify-content: space-between;
+    }
+
     .nav-top {
         margin-top: 10px;
 
@@ -423,6 +427,7 @@ footer {
     }
 
     .nav-2 {
+        margin-left: 0;
         width: fit-content;
     }
 
@@ -439,12 +444,6 @@ footer {
 
     .page-link:hover {
         border-bottom: 2px solid var(--orange-engineering);
-    }
-
-    .dropdown-2{
-        display: block;
-        width: fit-content;
-        margin-top: 20px;
     }
 
     /* -- Dropdown menu -- */
@@ -473,13 +472,16 @@ footer {
         display: none;
     }
 
+    .dropdown-2{
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    }
+
     .dropdown-2-mobile {
         position: relative;
         top: 8px;
-        right: -230px;
-        width: fit-content;
-
-        border: 1px solid red;
+        right: -285px;
     }
 
     #dropdown-2-mobile:checked~.dropdown-2-mobile {
