@@ -60,10 +60,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header>
     <nav id="nav-bar">
-      <div class="nav-bar flex-row">
+
+      <!-- Navigation desktop
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="nav-bar flex-row nav-desktop">
         <div class="nav-top flex-row">
-            <img src="/assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
-            <h1>Community Science Museum</h1>
+          <img src="/assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
+          <h1>Community Science Museum</h1>
         </div>
 
         <div class="nav-bottom flex-row">
@@ -87,14 +90,57 @@
         </div>
         <!-- <div class="nav-bottom-triangle"></div> -->
       </div>
+
+      <!-- Navigation Mobile
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="nav-mobile">
+        <div class="nav-top-mobile flex-col">
+          <div class="flex-row">
+          <img src="/assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
+          <h1>C.S.M</h1>
+        </div>
+        </div>
+        
+        <div class="nav-bottom-mobile flex-col">
+          <div class="nav-top-mobile flex-row">
+            <label for="dropdown-mobile" class="burgermenu">
+              <img src="/assets/icons/hamburger-menu.svg" alt="Menu icon for dropdown" class="menu-icon">
+            </label>
+          </div>
+          <input type="checkbox" id="dropdown-mobile">
+        <section class="dropdown-mobile">
+          <ul class="nav">
+            <li class="nav-link"><a href="#" class="page-link">Home</a></li>
+            <li class="nav-link"><a href="#" class="page-link">Kids</a></li>
+            <li class="nav-link"><a href="#" class="page-link">Explore</a></li>
+            <li class="nav-link last-link">
+              <label for="dropdown-2-mobile" class="page-link">About us</label>
+              <input type="checkbox" id="dropdown-2-mobile">
+              <section class="dropdown-2-mobile">
+                <ul class="nav">
+                  <li class="nav-link"><a href="#" class="page-link dropdown-2">Museum</a></li>
+                  <li class="nav-link"><a href="#" class="page-link dropdown-2">Event</a></li>
+                  <li class="nav-link"><a href="#" class="page-link dropdown-2">Shop</a></li>
+                  <li class="nav-link"><a href="#" class="page-link dropdown-2">Get involved</a></li>
+                  <li class="nav-link"><a href="#" class="page-link dropdown-2">Contact us</a></li>
+                </ul>
+              </section>
+            </li>
+            </ul>
+        </section>
+        </div>
+        
+      </div>
+      <div class="cut-out flex-row"></div>
     </nav>
+
   </header>
 
   <!-- Main section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <main>
 
-<div>
+    <!-- <div>
       <div class="content-container">
         <div class="content-title">
           <div class="img-box">
@@ -129,7 +175,7 @@
         </div>
       </div>
 
-    </div> 
+    </div> -->
   </main>
 
   <!-- Footer section
