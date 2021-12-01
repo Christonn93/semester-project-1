@@ -193,6 +193,11 @@ footer {
     display: none;
 }
 
+#dropdown-mobile,
+.dropdown-mobile{
+    display: none;
+}
+
 .nav-top {
     margin-top: 10px;
     margin-left: 50px;
