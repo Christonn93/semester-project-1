@@ -388,6 +388,8 @@ footer {
 
     .nav-mobile{
         display: block;
+        position: sticky;
+        top: 0;
         background-color: var(--beau-blue);
     }
 
@@ -399,6 +401,8 @@ footer {
 
     .cut-out{
         height: 40px;
+        position: relative;
+        top: 0;
         background: linear-gradient(-45deg, white 85%, var(--beau-blue) 15%);
     }
 
@@ -491,11 +495,13 @@ footer {
     }
 
     .content-container {
-        max-width: var(--mobile-width);
         min-height: fit-content;
-        margin: 2px;
-
+        margin: 5px;
         box-shadow: var(--sunray-shadow);
+    }
+
+    .box-img {
+        max-width: 100%;
     }
 
     .main-header {
@@ -510,10 +516,6 @@ footer {
         background-color: var(--sunray);
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    .img-box {
-        position: relative;
     }
 
 }
