@@ -180,6 +180,10 @@ footer {
     align-items: stretch;
 }
 
+.flex-span{
+    justify-content: space-between;
+}
+
 /* ======================
     2. Components
    ====================== */
@@ -389,14 +393,9 @@ footer {
         background-color: var(--beau-blue);
     }
 
-    .flex-span{
-        justify-content: space-between;
-    }
-
-    .nav-top {
-        margin-top: 10px;
-
+    .nav-top-mobile {
         background-color: var(--beau-blue);
+        box-shadow: var(--black-shadow);
     }
 
     .cut-out{
@@ -409,6 +408,7 @@ footer {
     }
 
     .menu-icon{
+        margin-right: 20px;
         width: 25px;
     }
 
@@ -454,17 +454,17 @@ footer {
 
     .dropdown-mobile {
         position: relative;
-        top: 40px;
+        top: 0px;
         padding: 1px;
         z-index: 99;
+        
     }
 
     #dropdown-mobile:checked~.dropdown-mobile {
         display: block;
         margin-left: 13px;
         height: 40px;
-        background: linear-gradient(-45deg, var(--sunray) 90%, transparent 10%);
-        
+        background: linear-gradient(-45deg, var(--sunray) 87%, var(--beau-blue) 13%);      
     }
 
     #dropdown-2-mobile,
@@ -481,7 +481,8 @@ footer {
     .dropdown-2-mobile {
         position: relative;
         top: 8px;
-        right: -285px;
+        right: -286px;
+        width: fit-content;
     }
 
     #dropdown-2-mobile:checked~.dropdown-2-mobile {
@@ -489,10 +490,6 @@ footer {
         padding-bottom: 5px;
         background: var(--sunray);
         
-    }
-
-    .nav-bottom-mobile {
-       
     }
 
     .content-container {
