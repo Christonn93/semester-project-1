@@ -184,6 +184,10 @@ footer {
     justify-content: space-between;
 }
 
+.flex-hidden{
+    display: none;
+}
+
 /* ======================
     2. Components
    ====================== */
