@@ -2,5 +2,6 @@
     "restructuredtext.languageServer.disabled": true,
     "cSpell.words": [
         "NEMO"
-    ]
+    ],
+    "restructuredtext.pythonRecommendation.disabled": true
 }
