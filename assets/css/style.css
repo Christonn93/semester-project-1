@@ -179,7 +179,7 @@ li {
 
 /* -- Flex -- */
 .flex{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex: 1 1 100%;
 
@@ -188,13 +188,14 @@ li {
 .flex-row {
     flex-direction: row;
     gap: 10px;
-    align-items: center;
+    
 }
 
 .flex-col {
     flex-direction: column;
     gap: 10px;
-    align-items: stretch;
+
+
 }
 
 .flex-span{
@@ -241,9 +242,12 @@ li {
 
 /* -- Content -- */
 .content-container {
-    flex: 1 1 0;
-    margin: 25px;
+    margin: 0 auto;
+    flex: 1 1 25%;
+    height: fit-content;
+    align-content: flex-start;
 
+    background-color: var(--beau-blue);
     box-shadow: var(--sunray-shadow);
 }
 
@@ -291,6 +295,10 @@ li {
     padding: 20px;
 
     background-color: var(--alice-blue);
+}
+
+.textarea {
+    margin-top: 15px;
 }
 
 .text-center{
