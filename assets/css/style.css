@@ -165,7 +165,10 @@ footer {
 
 li {
    list-style: none;
-   font-family: var(--body-md);
+
+   font-family: var(--ff-body);
+   font-size: var(--body-md);
+   color: var(--black);
 }
 
 .span-block{
@@ -187,7 +190,8 @@ li {
 
 .flex-row {
     flex-direction: row;
-    gap: 10px;
+    row-gap: 20px;
+    column-gap: 10px;
     
 }
 
