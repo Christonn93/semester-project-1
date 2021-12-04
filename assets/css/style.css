@@ -185,21 +185,17 @@ li {
     display: inline-flex;
     flex-wrap: wrap;
     flex: 1 1 100%;
-
 }
 
 .flex-row {
+    flex: 1 1 100%;
     flex-direction: row;
-    row-gap: 20px;
-    column-gap: 10px;
-    
+    gap: 20px;
 }
 
 .flex-col {
     flex-direction: column;
     gap: 10px;
-
-
 }
 
 .flex-span{
@@ -247,8 +243,8 @@ li {
 /* -- Content -- */
 .content-container {
     margin: 0 auto;
-    flex: 1 1 25%;
-    height: fit-content;
+    flex: 1 1 40%;
+    height: fit-content auto;
     align-content: flex-start;
 
     background-color: var(--beau-blue);
@@ -298,7 +294,7 @@ li {
     width: 100%;
     padding: 20px;
 
-    background-color: var(--alice-blue);
+    background-color: var(--beau-blue);
 }
 
 .textarea {
