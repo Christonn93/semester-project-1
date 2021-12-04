@@ -108,6 +108,7 @@ h4,
 h5,
 h6 {
     font-family: var(--ff-header);
+    font-weight: bold;
 }
 
 p {
@@ -160,6 +161,11 @@ main {
 footer {
     height: 100px;
     background-color: var(--beau-blue);
+}
+
+li {
+   list-style: none;
+   font-family: var(--body-md);
 }
 
 .span-block{
@@ -231,16 +237,20 @@ footer {
 
 /* -- Content -- */
 .content-container {
-    position: relative;
-    max-width: 45%;
-    margin: 0 auto;
+    flex: 1 1 0;
+    margin: 25px;
+
     box-shadow: var(--sunray-shadow);
 }
 
 .content-container-1{
-    position: relative;
     max-width: 50%;
     margin: 0 auto;
+}
+
+.content-head{
+    position: relative;
+    width: 100%;
 }
 
 .content-title {
@@ -251,32 +261,36 @@ footer {
 
 .main-header {
     position: absolute;
-    bottom: 190px;
+    bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 0;
+    padding: 5px;
     margin: 0;
+    font-weight: bold;
 }
 
 .secondary-header {
     position: absolute;
-    bottom: 130px;
-    left: 0px;
+    bottom: -15px;
 
     background-color: var(--sunray);
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.content-img{
-    justify-content: stretch;
-    max-width: 100%;
+.img{
+    width: 100%;
 }
 
 .content-text{
-    padding: 50px;
+    width: 100%;
+    padding: 20px;
 
     background-color: var(--alice-blue);
+}
+
+.text-center{
+    text-align: center;
 }
 
 .content-footer {
