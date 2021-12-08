@@ -139,6 +139,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 header {
@@ -156,16 +157,18 @@ nav {
 main {
     display: flex;
     width: 100%;
-    height: 100vh;
     padding-top: 150px;
     padding-bottom: 20px;
 }
 
 footer {
-    margin-bottom: 0;
+    position: sticky;
+    bottom: 0;
     width: 100%;
     background-color: var(--beau-blue);
 }
+
+
 
 li {
     list-style: none;
@@ -199,6 +202,18 @@ li {
     color: var(--black);
 }
 
+.header-top{
+    overflow: hidden;
+}
+
+.header-bottom{
+    margin-top: -13px;
+}
+
+.space {
+    padding: 15px;
+}
+
 /* -- Flex -- */
 .flex {
     display: flex;
@@ -216,6 +231,11 @@ li {
     gap: 10px;
 }
 
+.flex-center{
+    align-content: center;
+    justify-content: center;
+}
+
 .flex-span {
     justify-content: space-between;
 }
@@ -225,7 +245,7 @@ li {
 }
 
 .flex-wrapper {
-    margin: 5px 25px;
+    margin: 20px 25px;
 }
 
 .flex-gallery {
@@ -271,6 +291,7 @@ li {
     align-content: flex-start;
     margin: 25px;
     border-radius: 10px 10px 0px 0px;
+    max-width: 300px;
 
     background-color: var(--alice-blue);
     box-shadow: var(--black-shadow);
@@ -317,7 +338,7 @@ li {
 }
 
 .content-image {
-    max-width: 250px;
+    max-width: 100%;
 }
 
 .content-text {
@@ -335,6 +356,10 @@ li {
 
 .content-footer {
     background-color: var(--alice-blue);
+}
+
+.content-footer > p {
+    padding-bottom: 10px;
 }
 
 .youtube-video {
