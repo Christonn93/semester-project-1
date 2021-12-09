@@ -7,7 +7,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSM | Home</title>
+  <title>CSM | Explore</title>
   <meta name="description" content="">
 
 
@@ -17,7 +17,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/testpage-style.css" rel="stylesheet" type="text/css">
 
   <!-- Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -60,159 +60,143 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header class="flex flex-row">
     <div class="flex">
-      <img src="/assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
-      <a href="index.html"><span class="span-block">Community</span> Science Museum</a>
-      <a href="index.html" class="flex-hidden">C.M.S</a>
-      <nav class="flex flex-row nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="/pages/kids.html" class="nav-link">Kids</a>
-        <a href="/pages/testpage.html" class="nav-link">testpage</a>
-        <a href="/pages/explore.html" class="nav-link">Explore</a>
-        <a href="/pages/involment.html" class="nav-link">Get involved</a>
-        <a href="/pages/event.html" class="nav-link">Event</a>
-        <a href="/pages/about.html" class="nav-link">Museum</a>
-        <a href="/pages/contact.html" class="nav-link">Contact us</a>
+      <div class="flex header-top">
+      <img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
+      <a href="../index.html"><label class="company-name"><span class="span-block">Community</span> Science Museum</label></a>
+      <a href="../index.html" class="flex-hidden"><label class="company-name">C.M.S</label></a>
+    </div>
+      <nav class="flex header-bottom flex-row">
+        <a href="../index.html" class="nav-link"><object class="icon"
+            data="../assets/icons/homepage.svg"></object>Home</a>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link"><object class="icon"
+              data="../assets/icons/telescope.svg"></object>Explore<object class="icon icon-dropdown"
+              data="../assets/icons/triangle-bottom-arrow.svg"></object></a>
+          <ul class="dropdown-menu hidden">
+            <li><a href="../pages/kids.html" class="nav-link"><object class="icon"
+                  data="../assets/icons/children-kids.svg"></object>Kids</a></li>
+            <li><a href="../pages/event.html" class="nav-link"><object class="icon" data="../assets/icons/date.svg"></object>Events</a>
+            </li>
+            <li><a href="../pages/explore.html" class="nav-link"><object class="icon" data="../assets/icons/leaflet.svg"></object>Our
+                Display</a></li>
+          </ul>
+        </div>
+        <a href="../pages/aboutus.html" class="nav-link"><object class="icon" data="../assets/icons/group.svg"></object>About us</a>
       </nav>
     </div>
   </header>
 
   <!-- Main section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <main class="flex-row flex-col">
-    <div class="flex flex-col flex-wrapper">
-      <section class="flex content-container content-container-1">
-          <h2 class="hidden">Content text</h2>
-        <div class="content-head">
-          <img src="/assets/images/star-and-hands.jpg" class="img" alt="content image">
-          <h1 class="main-header content-title">Let's explore together</h1>
+  <main class="flex flex-col">
+    <div class="flex flex-wrapper">
+      <section class="flex flex-row">
+        <div class="flex page-header">
+          <div class="textarea">
+            <h1>Welcome to you Community Science Museum</h1>
+            <p>a welcome text goes here</p>
+          </div>
+      </div>
+      </section>
+      <section class="flex flex-gallery">
+        <div class="content-container">
+          <div class="content-head">
+            <div class="content-title">
+              <h2>Kids</h2>
+            </div>
+            <div class="content-image">
+              <img src="/assets/images/kids.jpg" class="content-image" alt="content image">
+            </div>
+          </div>
+          <div class="content-text textarea">
+            <p>
+              At our museum we have a large rage of activates for kids, ranging from 7 to 15.
+            </p>
+          </div>
+          <div class="content-footer">
+            <a href="#" class="btn"><object class="icon" data="../assets/icons/binoculars.svg"></object>Read more</a>
+          </div>
         </div>
-        <article class="content-text text-center">
-          <h2 class="hidden">Content text</h2>
-          <p>
-            Come join us at the Community science museum where we're committed to making science accessible
-            to all.
-          </p>
-        </article>
-        <div class="flex content-footer">
-          <a href="#" class="cta-btn">Go explore</a>
+
+        <div class="content-container">
+          <div class="content-head">
+            <div class="content-title">
+              <h2>Events & shows</h2>
+            </div>
+            <div class="content-image">
+              <img src="/assets/images/show_2.jpg" class="content-image" alt="content image">
+            </div>
+          </div>
+          <div class="content-text textarea">
+            <p>We try to create a atmosphere that you and you family will remember for years to come. </p>
+          </div>
+          <div class="content-footer">
+            <a href="#" class="btn"><object class="icon" data="../assets/icons/binoculars.svg"></object>Read more</a>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="content-head">
+            <div class="content-title">
+              <h2>Explore</h2>
+            </div>
+            <div class="content-image">
+              <img src="/assets/images/evelution.jpg" class="content-image" alt="content image">
+            </div>
+          </div>
+          <div class="content-text textarea">
+            <p>Let us take you back in time, or bring you into the future. Come explore what you can experience in our
+              museum</p>
+          </div>
+          <div class="content-footer">
+            <a href="#" class="btn"><object class="icon" data="../assets/icons/binoculars.svg"></object>Read more</a>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="content-head">
+            <div class="content-title">
+              <h2>Museum History</h2>
+            </div>
+            <div class="content-image">
+              <img src="/assets/images/museum-outside.jpg" class="content-image" alt="content image">
+            </div>
+          </div>
+          <div class="content-text textarea">
+            <p>
+              We opened the doors the first time when Oslo still was called Christiania. After that we just expanded.
+            </p>
+          </div>
+          <div class="content-footer">
+            <a href="#" class="btn"><object class="icon" data="../assets/icons/binoculars.svg"></object>Read more</a>
+          </div>
         </div>
       </section>
-      <div class="flex content-container content-container-1">
-        <iframe class="youtube-video" src="https://www.youtube.com/embed/vzopTRZzh-Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-
-      <div class="flex flex-row">
-        <section class="flex content-container">
-            <h2 class="hidden">Content text</h2>
-          <div class="content-head">
-            <img src="/assets/images/ai-head.jpg" class="img" alt="content image">
-          </div>
-          <article class="content-text">
-            <h2 class="hidden">Content text</h2>
-            <p>
-              Over the course of human history, science has developed from our early understanding of fire, wind, water,
-              and earth to exploring everything from galaxies far away to the very building blocks of life itself.
-            </p>
-          </article>
-        </section>
-
-        <section class="flex content-container">
-            <h2 class="hidden">Content text</h2>
-          <div class="content-head">
-            <img src="/assets/images/museum-inside.jpg" class="img" alt="content image">
-            <h2 class="secondary-header">Opening Hours</h2>
-          </div>
-          <article class="content-text">
-            <h2 class="hidden">Content text</h2>
-            <p><strong>The entrance is free for all.</strong></p>
-            <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include
-              a
-              handy printed guide of the museum.</p>
-            <p>If you would like to organize a guided tour for your group of 6 or more people, please contact us to
-              arrange
-              the tour</p>
-            <div>
-              <h4>Hours</h4>
-              <ul>
-                <li>Monday: Closed</li>
-                <li>Tuesday to Thursday: 10:00 – 16:00</li>
-                <li>Friday: 10:00 – 19:00</li>
-                <li>Saturday: 9:00 – 16:00</li>
-                <li>Sunday: 9:00 – 13:00</li>
-              </ul>
-            </div>
-          </article>
-        </section>
-  
-        <section class="flex content-container">
-            <h2 class="hidden">Content text</h2>
-          <div class="content-head">
-            <img src="/assets/images/the-science-circus_1.jpg" class="img" alt="content image">
-            <h2 class="secondary-header">The Science Circus</h2>
-          </div>
-          <article class="content-text">
-            <h2 class="hidden">Content text</h2>
-            <p>We want to create a awesome atmosphere for all those wo visit us.</p>
-            <p>Every friday evening from 19.00 you can enjoy the show from</p>
-            <p><strong>"The Science Circus"</strong></p>
-          </article>
-        </section>
-
-        <section class="flex content-container">
-            <h2 class="hidden">Content text</h2>
-          <div class="content-img">
-            <img src="/assets/images/univers.jpg" class="img" alt="content image">
-          </div>
-          <article class="content-text">
-            <h2 class="hidden">Content text</h2>
-            <p>
-              The aim of our museum is to create a space where everyone can experience the wonders of our discoveries
-              and
-              perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-            </p>
-          </article>
-        </section>
-
-        <section class="flex content-container">
-            <h2 class="hidden">Content text</h2>
-          <div class="content-head">
-            <img
-              src="/assets/images/museum-outside_drone.jpg"
-              class="img" alt="content image">
-          </div>
-          <article class="content-text">
-            <h2 class="hidden">Content text</h2>
-            <p>
-              We believe science should not be confined to the textbook, but brought to live through exhibits. This is
-              why
-              we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these
-              exhibits are designed for you to interact with and play around to see science come to life (apart from the
-              dinosaur exhibits – they only come to life at night when everyone’s gone home).
-            </p>
-          </article>
-        </section>
-
-      </div>
-
-
-
-
     </div>
   </main>
 
   <!-- Footer section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <footer>
-    <div class="flex flex-col flex-row">
-      <p>Footer</p>
+    <div class="flex flex-row">
+        <div class="social-links">
+          <a href="#" class="btn-social"><object class="social-icon"
+              data="../assets/icons/find-us-on-facebook.svg"></object></a>
+          <a href="#" class="btn-social"><object class="social-icon"
+              data="../assets/icons/follow-us-on-instagram.svg"></object></a>
+          <a href="#" class="btn-social"><object class="social-icon"
+              data="../assets/icons/follow-us-on-youtube.svg"></object></a>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyrights Community Science Museum 2021.</p>
+        </div>
     </div>
   </footer>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+  <script src="../assets/js/dropdown.js"></script>
 
 </body>
 
