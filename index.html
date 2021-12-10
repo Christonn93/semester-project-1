@@ -1,259 +1,325 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-  <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSM | Home </title>
-  <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSM | Home</title>
+    <meta name="description" content="" />
 
-
-  <!-- Mobile Specific Meta
+    <!-- Mobile Specific Meta
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
 
-  <!-- Typography
+    <!-- Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <!-- Header -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <!-- Header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Copy -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+    <!-- Copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Button and links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Button and links -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Favicon/icons
+    <!-- Favicon/icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
-  <!-- JavaScript
+    <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
-  <!-- Primary Page Layout
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</head>
+  </head>
 
-<body>
-  <!-- Header section
+  <body>
+    <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="flex flex-row">
-    <div class="flex">
-      <div class="flex header-top">
-        <img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
-        <a href="../index.html"><label class="company-name"><span class="span-block">Community</span> Science
-            Museum</label></a>
-        <a href="../index.html" class="flex-hidden"><label class="company-name">C.M.S</label></a>
+    <header class="flex flex-row">
+      <div class="flex">
+        <div class="flex flex-row header-top">
+          <a href="../index.html"><img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo" /></a>
+          <label class="company-name"
+            ><a href="../index.html" class="company-name"><span class="span-block">Community</span> Science Museum</a></label
+          >
+          <label class="company-name"><a href="../index.html" class="flex-hidden">C.M.S</a></label>
+        </div>
+
+        <nav class="flex header-bottom flex-row">
+          <a href="../index.html" class="nav-link"> <img src="../assets/icons/homepage.svg" class="icon" alt="House" />Home</a>
+          <div class="dropdown">
+            <div>
+              <a href="#" data-toggle="dropdown" class="nav-link">
+                <img src="../assets/icons/telescope.svg" class="icon" alt="telescope" />Explore
+                <img src="../assets/icons/triangle-bottom-arrow.svg" class="icon icon-dropdown" alt="Arrow Down" />
+              </a>
+            </div>
+
+            <ul class="dropdown-menu hidden">
+              <li>
+                <a href="../pages/kids.html" class="nav-link"> <img src="../assets/icons/children-kids.svg" class="icon" alt="Kids" />Kids</a>
+              </li>
+              <li>
+                <a href="../pages/explore.html" class="nav-link"> <img src="../assets/icons/leaflet.svg" class="icon" alt="Leaflet" />Our Display</a>
+              </li>
+              <li>
+                <a href="../pages/event.html" class="nav-link"> <img src="../assets/icons/date.svg" class="icon" alt="Calender" />Events</a>
+              </li>
+              <li>
+                <a href="../pages/involment.html" class="nav-link">
+                  <img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars" />Get Involved</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <div>
+              <a href="#" data-toggle="dropdown" class="nav-link">
+                <img src="../assets/icons/graduation-cap.svg" class="icon" alt="graduation-cap" />Education
+                <img src="../assets/icons/triangle-bottom-arrow.svg" class="icon icon-dropdown" alt="Arrow Down" />
+              </a>
+            </div>
+
+            <ul class="dropdown-menu hidden">
+              <li>
+                <a href="../pages/event.html" class="nav-link">
+                  <img src="../assets/icons/conference-education.svg" class="icon" alt="Education conference" />Teachers</a
+                >
+              </li>
+              <li>
+                <a href="../pages/kids.html" class="nav-link">
+                  <img src="../assets/icons/internship.svg" class="icon" alt="internship" />Internship</a
+                >
+              </li>
+              <li>
+                <a href="../pages/explore.html" class="nav-link">
+                  <img src="../assets/icons/school-building.svg" class="icon" alt="school-building" />School events</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a href="../pages/about.html" class="nav-link about"> <img src="../assets/icons/group.svg" class="icon" alt="group" />About us</a>
+        </nav>
       </div>
-      <nav class="flex header-bottom flex-row">
-        <a href="../index.html" class="nav-link"><object class="icon"
-            data="../assets/icons/homepage.svg"></object>Home</a>
-        <div class="dropdown">
-          <a href="#" data-toggle="dropdown" class="nav-link"><object class="icon"
-              data="../assets/icons/telescope.svg"></object>Explore<object class="icon icon-dropdown"
-              data="../assets/icons/triangle-bottom-arrow.svg"></object></a>
-          <ul class="dropdown-menu hidden">
-            <li><a href="../pages/kids.html" class="nav-link"><object class="icon"
-                  data="../assets/icons/children-kids.svg"></object>Kids</a></li>
-            <li><a href="../pages/explore.html" class="nav-link"><object class="icon"
-                  data="../assets/icons/leaflet.svg"></object>Our
-                Display</a></li>
-            <li><a href="../pages/event.html" class="nav-link"><object class="icon"
-                  data="../assets/icons/date.svg"></object>Events</a>
-            <li><a href="../pages/involment.html" class="nav-link"><object class="icon"
-                  data="../assets/icons/binoculars.svg"></object>Get Involved</a>
-            </li>
-          </ul>
-        </div>
-        <a href="../pages/about.html" class="nav-link"><object class="icon"
-            data="../assets/icons/group.svg"></object>About us</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main section
+    <!-- Main section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <main class="flex flex-col">
-    <div class="flex flex-wrapper">
-      <section class="flex flex-row">
-        <div class="flex page-header">
-          <div class="textarea">
-            <h1>Welcome to you Community Science Museum</h1>
-            <p>a welcome text goes here</p>
-          </div>
-        </div>
-      </section>
-      <section class="flex flex-gallery">
-        <div class="content-container">
-          <div class="content-head">
-            <div class="content-title">
-              <h2>Kids</h2>
-            </div>
-            <div class="content-image">
-              <img src="/assets/images/kids.jpg" class="content-image" alt="content image">
-            </div>
-          </div>
-          <div class="content-text textarea">
-            <p>
-              At our museum we have a large rage of activates for kids, ranging from 7 to 15.
-            </p>
-          </div>
-          <div class="content-footer">
-            <a href="/pages/kids.html" class="btn">
-              <img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars">
-              Read more
-            </a>
-          </div>
-        </div>
-
-        <div class="content-container">
-          <div class="content-head">
-            <div class="content-title">
-              <h2>Events & shows</h2>
-            </div>
-            <div class="content-image">
-              <img src="/assets/images/show_2.jpg" class="content-image" alt="content image">
-            </div>
-          </div>
-          <div class="content-text textarea">
-            <p>We try to create a atmosphere that you and you family will remember for years to come. </p>
-          </div>
-          <div class="content-footer">
-            <a href="/pages/event.html" class="btn">
-              <img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars">
-              Read more
-            </a>
-          </div>
-        </div>
-
-        <div class="content-container">
-          <div class="content-head">
-            <div class="content-title">
-              <h2>Explore</h2>
-            </div>
-            <div class="content-image">
-              <img src="/assets/images/evelution.jpg" class="content-image" alt="content image">
-            </div>
-          </div>
-          <div class="content-text">
+    <main class="flex flex-col">
+      <div class="flex flex-wrapper">
+        <section class="flex flex-row">
+          <div class="flex page-header">
             <div class="textarea">
-              <p>Let us take you back in time, or bring you into the future. Come explore what you can experience in our
-                museum</p>
+              <h1>Welcome to you Community Science Museum</h1>
+              <p>a welcome text goes here</p>
             </div>
-            
           </div>
-          <div class="content-footer">
-            <a href="/pages/explore.html" class="btn">
-              <img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars">
-              Read more
-            </a>
+        </section>
+        <section class="flex flex-gallery">
+          <div class="content-container">
+            <div class="content-head">
+              <div class="content-title">
+                <h2>Kids</h2>
+              </div>
+              <div class="content-image">
+                <img src="/assets/images/kids.jpg" class="content-image" alt="content image" />
+              </div>
+            </div>
+            <div class="content-text-wide">
+              <div class="textarea">
+                <p>At our museum we have a large rage of activates for kids, ranging from 7 to 15.</p>
+              </div>
+            </div>
+            <div class="content-footer">
+              <a href="/pages/kids.html" class="btn"><img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars" />Read more</a>
+            </div>
           </div>
-        </div>
 
-        <div class="content-container">
-          <div class="content-head">
-            <div class="content-title">
-              <h2>About us</h2>
+          <div class="content-container">
+            <div class="content-head">
+              <div class="content-title">
+                <h2>Events & shows</h2>
+              </div>
+              <div class="content-image">
+                <img src="/assets/images/show_2.jpg" class="content-image" alt="content image" />
+              </div>
             </div>
-            <div class="content-image">
-              <img src="/assets/images/museum-outside.jpg" class="content-image" alt="content image">
+            <div class="content-text-wide">
+              <div class="textarea">
+                <p>We try to create a atmosphere that you and you family will remember for years to come.</p>
+              </div>
+            </div>
+            <div class="content-footer">
+              <a href="/pages/event.html" class="btn"><img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars" />Read more</a>
             </div>
           </div>
-          <div class="content-text">
-            <div class="textarea">
-            <p>
-              We opened the doors the first time when Oslo still was called Christiania. After that we just expanded.
-            </p>
-            </div>
-          </div>
-          <div class="content-footer">
-            <a href="/pages/about.html" class="btn">
-              <img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars">
-              Read more
-            </a>
-          </div>
-        </div>
 
-        <div class="content-container flex flex-row">
-          <div class="content-head">
-            <div class="content-title">
-              <h2>Teacher?</h2>
+          <div class="content-container">
+            <div class="content-head">
+              <div class="content-title">
+                <h2>Explore</h2>
+              </div>
+              <div class="content-image">
+                <img src="/assets/images/evelution.jpg" class="content-image" alt="content image" />
+              </div>
             </div>
-            <div class="content-image">
-              <img src="/assets/images/teacher.jpg" class="content-image" alt="Teacher with glasses and a book">
+            <div class="content-text-wide">
+              <div class="textarea">
+                <p>Let us take you back in time, or bring you into the future. Come explore what you can experience in our museum</p>
+              </div>
             </div>
-          </div>
-          <div class="content-text-wide">
-            <div class="textarea">
-              <p>
-                As a community-driven museum, we want to work with schools to create places of learning and exploring.
-              </p>
-            </div>
-            <div class="textarea">
-              <p>
-                Our team are on hand to give your students guided tours of the museum, teach them in our learning
-                laboratory, and provide great video presentations that will excite and inspire them.
-                
-              </p>
-            </div>
-            <div class="textarea">
-              <p>
-                Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.
-              </p>
+            <div class="content-footer">
+              <a href="/pages/explore.html" class="btn"><img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars" />Read more</a>
             </div>
           </div>
-          <div class="flex content-footer">
-            <a href="#" class="btn">Contact us</a>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
 
-  <!-- Footer section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer>
-    <div class="flex flex-row">
-      <div class="social-links">
-        <a href="https://nb-no.facebook.com/" target="_blank" class="btn-social"><img
-            src="../assets/icons/find-us-on-facebook.svg" class="social-icon" alt="SVG Facebook"></a>
-        <a href="https://www.instagram.com/" target="_blank" class="btn-social"><img
-            src="../assets/icons/follow-us-on-instagram.svg" class="social-icon" alt="SVG Instagram"></a>
-        <a href="https://www.youtube.com/" target="_blank" class="btn-social"><img
-            src="../assets/icons/follow-us-on-youtube.svg" class="social-icon" alt="SVG Youtube"></a>
+          <div class="content-container">
+            <div class="content-head">
+              <div class="content-title">
+                <h2>About us</h2>
+              </div>
+              <div class="content-image">
+                <img src="/assets/images/museum-outside.jpg" class="content-image" alt="content image" />
+              </div>
+            </div>
+            <div class="content-text-wide">
+              <div class="textarea">
+                <p>We opened the doors the first time when Oslo still was called Christiania. After that we just expanded.</p>
+              </div>
+            </div>
+            <div class="content-footer">
+              <a href="/pages/about.html" class="btn"><img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars" />Read more</a>
+            </div>
+          </div>
+
+          <div class="content-container flex flex-row">
+            <div class="content-head">
+              <div class="content-title">
+                <h2>Teacher?</h2>
+              </div>
+              <div class="content-image">
+                <img src="/assets/images/teacher.jpg" class="content-image" alt="Teacher with glasses and a book" />
+              </div>
+            </div>
+            <div class="content-text-wide">
+              <div class="textarea">
+                <p>As a community-driven museum, we want to work with schools to create places of learning and exploring.</p>
+              </div>
+              <div class="textarea">
+                <p>
+                  Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great
+                  video presentations that will excite and inspire them.
+                </p>
+              </div>
+              <div class="textarea">
+                <p>
+                  Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a
+                  visit.
+                </p>
+              </div>
+            </div>
+            <div class="flex content-footer">
+              <button id="btn" class="btn"><img src="../assets/icons/email.svg" class="icon" alt="Email" />Contact us</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="contactModal" class="modal">
+          <div class="modal-display flex">
+            <div class="modal-header flex flex-span">
+              <h2>Contact Us</h2>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-content flex">
+              <form action="contact.php" class="contact-form flex">
+                <div class="form-input form-span">
+                  <span class="icon-container">
+                    <img src="../assets/icons/scientist.svg" class="form-icon" alt="Scientist" />
+                  </span>
+                  <input type="text" id="name" class="input-field" name="name" placeholder="Your full name" required />
+                </div>
+                <div class="form-input form-span">
+                  <span class="icon-container"><img src="../assets/icons/email.svg" class="form-icon" alt="Email" /></span>
+                  <input type="email" id="email" class="input-field" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-input form-span">
+                  <span class="icon-container"><img src="/assets/icons/question-mark.svg" class="form-icon" alt="Question" /></span>
+                  <textarea id="question" name="question" class="input-field" placeholder="Send your question"></textarea>
+                </div>
+                <div class="form-input flex form-span">
+                  <button class="cta-btn form-button" type="submit">
+                    Send&ensp;<img src="/assets/icons/send-message.svg" alt="Send Email" class="form-icon" />
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <h4>...Other ways to get in contact</h4>
+              <span class="space"></span>
+              <div class="flex flex-row">
+                <ul>
+                  <li class="contact-li"><img src="/assets/icons/on-time.svg" class="icon" alt="Clock" /></li>
+                  <li class="contact-li"><img src="/assets/icons/phone-call.svg" class="icon" alt="Phone" /></li>
+                  <li class="contact-li"><img src="/assets/icons/email.svg" class="icon" alt="Email" /></li>
+                </ul>
+                <ul>
+                  <li class="contact-li">Monday to Friday 8-16</li>
+                  <li class="contact-li"><a href="tel:558-666-895" class="contact-link">558-666-895</a></li>
+                  <li class="contact-li"><a href="mailto: post@cms.com" class="contact-link">post@cms.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="copyright">
-        <p>&copy; Copyrights Community Science Museum 2021.</p>
+    </main>
+
+    <!-- Footer section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer>
+      <div class="flex flex-row">
+        <div class="social-links">
+          <a href="https://nb-no.facebook.com/" target="_blank" class="btn-social"
+            ><img src="../assets/icons/find-us-on-facebook.svg" class="social-icon" alt="SVG Facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank" class="btn-social"
+            ><img src="../assets/icons/follow-us-on-instagram.svg" class="social-icon" alt="SVG Instagram"
+          /></a>
+          <a href="https://www.youtube.com/" target="_blank" class="btn-social"
+            ><img src="../assets/icons/follow-us-on-youtube.svg" class="social-icon" alt="SVG Youtube"
+          /></a>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyrights Community Science Museum 2021.</p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- End Document
+    </footer>
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- JavaScript
+    <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="../assets/js/dropdown.js"></script>
-
-</body>
-
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/modal.js"></script>
+  </body>
 </html>

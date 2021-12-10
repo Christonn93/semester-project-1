@@ -21,7 +21,7 @@ Style list:
     1. GLOBAL STYLE
    ====================== */
 
-   :root {
+:root {
 
     /* ==== Font family ==== */
     --ff-header: 'Martel Sans', sans-serif;
@@ -119,6 +119,7 @@ p {
     color: var(--black);
 }
 
+button,
 a {
     font-family: var(--ff-link);
     font-size: var(--link);
@@ -168,13 +169,16 @@ li {
     list-style: none;
 
     font-family: var(--ff-body);
-    font-size: var(--body-md);
     color: var(--black);
 }
 
+img {
+    max-width: 100%;
+}
+
 .span-block {
-    display: block;
-    margin-top: 20px;
+    display: flex;
+    margin-bottom: -20px;
 }
 
 .hidden {
@@ -192,7 +196,8 @@ li {
 
 .company-name{
     font-family: var(--ff-header);
-    font-size: var(--h4);
+    font-size: var(--h3);
+    font-weight: bold;
     color: var(--black);
 }
 
@@ -201,7 +206,7 @@ li {
 }
 
 .header-bottom{
-    margin-top: -13px;
+    margin-top: -15px;
 }
 
 .space {
@@ -257,7 +262,6 @@ li {
     font-weight: bold;
     padding: 0.1em 0.4em;
     margin-bottom: 5px;
-    margin-left: 20px;
 
     border-bottom: 2px solid var(--black);
     font-family: var(--ff-link);
@@ -275,11 +279,15 @@ li {
 
 .nav-link:last-child {
     margin-left: auto;
-    margin-right: 15px;
+}
+
+.about {
+    margin-right: 20px;
 }
 
 .nav-logo {
-    max-width: 150px;
+    width: 200px;
+    height: 150px;
 }
 
 /* -- Content -- */
@@ -404,6 +412,10 @@ li {
 }
 
 /* Dropdown */
+.dropdown {
+    width: auto;
+}
+
 .dropdown [data-toggle="dropdown"] {
     position: relative;
 }
@@ -457,6 +469,133 @@ li {
     margin-left: auto;
 
 }
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.close {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: var(--orange-engineering);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-display {
+    position: fixed;
+    bottom: 0;
+    width: fit-content;
+    margin-bottom: 5px;
+    background-color: var(--alice-blue);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--black-shadow);
+    animation-name: animate-modal;
+    animation-duration: 0.4s
+}
+
+.modal-header,
+.modal-footer {
+    padding: 5px 20px;
+    width: 100%;
+   
+    font-family: var(--ff-header);
+    background-color: var(--sunray);
+}
+
+.modal-content {
+    padding: 5px 20px;
+    background-color: var(--alice-blue);
+}
+
+@keyframes animate-modal {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+/* Contact form */
+.contact-form {
+    width: 100%;
+}
+
+.form-input {
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.form-textarea,
+.input-field {
+    font-family: var(--ff-body);
+    font-weight: bold;
+
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.form-span {
+    display: inline-flex;
+}
+
+.form-button {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-button:hover {
+    color: var(--orange-engineering);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    background-color: var(--sunray);
+    color: var(--black);
+}
+
+.form-icon{
+    width: 33px;
+    aspect-ratio: 1;
+}
+
+.contact-li {
+    margin: 10px 0;
+    font-size: var(--body-md);
+}
+
+.contact-link {
+    border-bottom: 1px solid blue;
+    color: blue;
+}
+
+.contact-link:hover {
+    border-bottom: 1px solid var(--orange-engineering);
+    color: var(--orange-engineering);
+}
+
 
 /* ======================
     2. Components
