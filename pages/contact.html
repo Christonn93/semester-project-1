@@ -58,22 +58,94 @@
 <body>
   <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="flex flex-row">
-    <div class="flex">
-      <img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo">
-      <a href="../index.html"><span class="span-block">Community</span> Science Museum</a>
-      <a href="../index.html" class="flex-hidden">C.M.S</a>
-      <nav class="flex flex-row nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../pages/kids.html" class="nav-link">Kids</a>
-        <a href="../pages/explore.html" class="nav-link">Explore</a>
-        <a href="../pages/involment.html" class="nav-link">Get involved</a>
-        <a href="../pages/event.html" class="nav-link">Event</a>
-        <a href="../pages/about.html" class="nav-link">Museum</a>
-        <a href="../pages/contact.html" class="nav-link">Contact us</a>
-      </nav>
-    </div>
-  </header>
+  header class="flex flex-row">
+      <div class="flex">
+        <div class="flex flex-row header-top">
+          <a href="../index.html"><img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="nav-logo" /></a>
+          <div id="desktop-logo">
+            <label class="company-name"
+              ><a href="../index.html" class="company-name"><span class="span-block">Community</span> Science Museum</a></label
+            >
+          </div>
+          <div id="mobile-logo">
+            <label class="company-name"><a href="../index.html" class="company-name">C.M.S</a></label>
+          </div>
+        </div>
+
+        <nav class="flex header-bottom">
+          <ul class="navbar">
+            <div class="dropdown">
+              <a href="#" data-toggle="dropdown"><img src="/assets/icons/hamburger-menu.svg" class="hamburger-icon" alt="Dropdown hamburger" /></a>
+              <div class="dropdown-menu hidden">
+                <li>
+                  <a href="../index.html" class="nav-link link-1"> <img src="../assets/icons/homepage.svg" class="icon" alt="House" />Home</a>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <div>
+                      <a href="#" data-toggle="dropdown" class="nav-link">
+                        <img src="../assets/icons/telescope.svg" class="icon" alt="telescope" />Explore
+                        <img src="../assets/icons/triangle-bottom-arrow.svg" class="icon icon-dropdown" alt="Arrow Down" />
+                      </a>
+                    </div>
+
+                    <ul class="dropdown-menu hidden">
+                      <li>
+                        <a href="../pages/kids.html" class="nav-link"> <img src="../assets/icons/children-kids.svg" class="icon" alt="Kids" />Kids</a>
+                      </li>
+                      <li>
+                        <a href="../pages/explore.html" class="nav-link">
+                          <img src="../assets/icons/leaflet.svg" class="icon" alt="Leaflet" />Our Display</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../pages/event.html" class="nav-link"> <img src="../assets/icons/date.svg" class="icon" alt="Calender" />Events</a>
+                      </li>
+                      <li>
+                        <a href="../pages/involment.html" class="nav-link">
+                          <img src="../assets/icons/binoculars.svg" class="icon" alt="Binoculars" />Get Involved</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <div>
+                      <a href="#" data-toggle="dropdown" class="nav-link">
+                        <img src="../assets/icons/graduation-cap.svg" class="icon" alt="graduation-cap" />Education
+                        <img src="../assets/icons/triangle-bottom-arrow.svg" class="icon icon-dropdown" alt="Arrow Down" />
+                      </a>
+                    </div>
+
+                    <ul class="dropdown-menu hidden">
+                      <li>
+                        <a href="../pages/event.html" class="nav-link">
+                          <img src="../assets/icons/conference-education.svg" class="icon" alt="Education conference" />Teachers</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../pages/kids.html" class="nav-link">
+                          <img src="../assets/icons/internship.svg" class="icon" alt="internship" />Internship</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../pages/explore.html" class="nav-link">
+                          <img src="../assets/icons/school-building.svg" class="icon" alt="school-building" />School events</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="../pages/about.html" class="nav-link about"> <img src="../assets/icons/group.svg" class="icon" alt="group" />About us</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <!-- Main section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
