@@ -240,20 +240,22 @@ nav {
 /* -- Navigation -- */
 .navbar {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
+    width: 100%;
 }
 
 .menu {
    display: flex;
+   justify-content: space-between;
    gap: 1em;
    font-size: 18px;
+   width: 100%;
+   background: linear-gradient(-15deg, var(--sunray) 75%, var(--beau-blue) 25%);
 }
 
-.education:hover .dropdown,
-.explore:hover .dropdown {
-   display: block;
+.menu:first-child {
+    margin-left: 60px;
 }
 
 .hamburger-icon {
@@ -268,8 +270,6 @@ nav {
     margin-bottom: 5px;
 
     border-bottom: 2px solid var(--black);
-    font-family: var(--ff-link);
-    color: var(--black);
 }
 
 .nav-link:hover {
@@ -280,24 +280,16 @@ nav {
     margin-left: 26%;
 }
 
-.nav-link:last-child {
-    margin-right: 0 auto;
-}
-
-.about {
-    margin-right: 20px;
-}
-
 .nav-logo {
     max-width: 200px;
     max-height: 150px;
 }
 
 /* Dropdown */
-.dropdown {
-    width: auto;
-}
 
+.dropdown{
+    display: flex;
+}
 .dropdown [data-toggle="dropdown"] {
     position: relative;
 }
@@ -311,10 +303,8 @@ nav {
 }
 
 .dropdown-menu > li {
-    margin-top: 5px;
     padding: 5px 14px;
 }
-
 
 .active {
     position: absolute;
@@ -322,7 +312,6 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    flex-direction: column;
 }
 
 .icon{
@@ -343,9 +332,6 @@ main {
 
 li {
     list-style: none;
-
-    font-family: var(--ff-body);
-    color: var(--black);
 }
 
 img {
@@ -633,7 +619,7 @@ footer {
     4. Media Queries
    ====================== */
 
-   @media (max-width: 768px) {
+   @media (max-width: 950px) {
     #desktop-logo {
         display: none;
     }
@@ -666,6 +652,7 @@ footer {
         text-align: start;
         padding: 16px 0;
         margin-top: 20px;
+        margin-left: 0;
         width: 100%;
         background-color: var(--sunray);
     }
@@ -674,9 +661,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 82px;
-        right: 0px;
-        left: 0;
+        top: 62px;
         padding: 10px;
         min-height: 150px;
         text-align: start;
@@ -688,10 +673,9 @@ footer {
     }
   
     .hamburger-icon {
-        display: block;
-        width: 65px;
+        display: flex;
+        width: 40px;
         margin-top: -60px;
-        padding-right: 30px;
     }
       
     .dropdown {
@@ -715,6 +699,8 @@ footer {
     }
 
     .content-container {
+        display: flex;
+        flex-direction: column;
         position: relative;
         height: fit-content;
         align-content: flex-start;
@@ -754,3 +740,26 @@ footer {
     }
 
    }
+
+
+
+
+
+/* TESTING */
+
+.box {
+    border: 1px solid red;
+    flex-direction: column;
+}
+
+.box-2 {
+    border: 1px solid green;
+}
+
+.box-3 {
+    border: 1px solid yellow;
+}
+
+.box-4 {
+    border: 1px solid blue;
+}
