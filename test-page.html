@@ -50,43 +50,48 @@
   </head>
 
   <body>
-    <header>
-      <div  class="primary-header flex col" id="box">
-      <div class="row" id="box-2">
-        <label class="company-name">
+    <header class="primary-header flex col">
+      <div class="flex">
+        <div class="flex">
+          <img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="logo" />
+        <label class="page-title" id="desktop">
           <a href="../index.html" class="company-name">Community Science Museum</a>
         </label>
       </div>
-      <div class="row" id="box-3">
-        <nav class="primary-navigation flex end">
-          <ul>
-            <li><a href="#"><span class="menu-icon"><img src="/assets/icons/homepage.svg" alt="House" /></span>Home</a></li>
+      </div>
+      <div class="flex">
+        <nav class="primary-navigation">
+          <div class="navigation-container">
+          <ul class="navigation-list">
+            <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Home</a></li>
             <li>
-              <div class="dropdown">
-              <a href="#" data-toggle="dropdown">Explore</a>
+              <div class="dropdown flex menu-link">
+              <a href="#" data-toggle="dropdown"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Explore
+                <img src="../assets/icons/triangle-bottom-arrow.svg" class="menu-icon" alt="Arrow Down"></a>
             <ul class="dropdown-menu hidden">
-              <li><a href="../pages/event.html">Kids</a></li>
-              <li><a href="../pages/kids.html">Exhibition</a></li>
-              <li><a href="../pages/explore.html">Events</a></li>
-              <li><a href="../pages/explore.html">Get Involved</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Kids</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Exhibition</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Events</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Get Involved</a></li>
             </ul>
           </div>
         </li>
             <li>
-              <div class="dropdown">
-              <a href="#" data-toggle="dropdown">Education</a>
+              <div class="dropdown flex menu-link">
+              <a href="#" data-toggle="dropdown"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Education
+                <img src="../assets/icons/triangle-bottom-arrow.svg" class="menu-icon" alt="Arrow Down"></a>
             <ul class="dropdown-menu hidden">
-              <li><a href="../pages/event.html">Teachers</a></li>
-              <li><a href="../pages/kids.html">Internship</a></li>
-              <li><a href="../pages/explore.html">School events</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Teachers</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />Internship</a></li>
+              <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />School events</a></li>
             </ul>
           </div>
         </li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" class="flex menu-link"><img src="/assets/icons/homepage.svg" alt="House" class="menu-icon" />About</a></li>
           </ul>
+        </div>
         </nav>
       </div>
-    </div>
     </header>
     <script src="../assets/js/dropdown.js"></script>
   </body>

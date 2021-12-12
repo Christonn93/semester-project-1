@@ -1,14 +1,79 @@
+:root {
+
+    /* ==== Font family ==== */
+    --ff-header: 'Martel Sans', sans-serif;
+    /* -- Font-family headings -- */
+    --ff-body: 'Cabin', sans-serif;
+    /* -- Font-family copy -- */
+    --ff-link: 'Poppins', sans-serif;
+    /* -- Font-family links -- */
+
+    /* ==== colour variables ==== */
+
+    /* -- Steel Teal -- */
+    --steel-teal: #5B828E;
+    /* -- Beau Blue -- */
+    --beau-blue: #BBCFD7;
+    /* -- Alice Blue -- */
+    --alice-blue: #E3E8EE;
+    /* -- Silver Sand -- */
+    --silver-sand: #A5B4B9;
+    /* -- Sunray -- */
+    --sunray: #EAB354;
+    /* -- Dim Gray -- */
+    --ding-gray: #625F5E;
+    /* -- Charleston Green -- */
+    --charleston-green: #262B2B;
+    /* -- Orange engineering -- */
+    --orange-engineering: #B70000;
+    /* -- Red pigment -- */
+    --red-pigment: #FC141E;
+    /* -- Charcoal -- */
+    --charcoal: #3B5160;
+    /* -- Sheen Green -- */
+    --sheen-green: #89CD4A;
+    /* -- Sky Blue Crayola -- */
+    --sky-blue: #4BC6DB;
+    /* -- Black -- */
+    --black: #000000;
+
+
+    /* -- Global Border -- */
+    --border: .015em solid var(--charcoal);
+    /* -- Global border-radius -- */
+    --border-radius: 0.25em;
+    /* -- Global border-radius -- */
+    --border-radius-nav: 0.25em 0.25em 0 0;
+    /* -- Global padding text -- */
+    --text-padding: 0 25px 0 25px;
+    /* -- Global padding buttons -- */
+    --btn-padding: 0.35em 1.2em;
+    /* -- Global sunray-shadow -- */
+    --sunray-shadow: 0px 5px 16px 0px var(--sunray);
+    /* -- Global black-shadow -- */
+    --black-shadow: 0px 5px 16px 0px var(--black);
+    /* -- Global text-shadow -- */
+    --text-shadow: 0px 0px 2px var(--charcoal);
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+button,
 a {
+    font-family: var(--ff-link);
+    color: var(--black);
+
     text-decoration: none;
+    cursor: pointer;
 }
 
 li {
+    display: flex;
     list-style: none;
 }
 
@@ -32,6 +97,10 @@ li {
 
 .end{
     justify-content: flex-end;
+}
+
+.baseline {
+    justify-content: baseline;
 }
 
 .center{
@@ -68,19 +137,41 @@ li {
 
 .primary-header {
     background-color: #BBCFD7;
+    height: fit-content;
 }
 
-.primary-navigation > ul {
+.primary-navigation {
+    background: linear-gradient(-15deg, var(--sunray) 75%, var(--beau-blue) 25%);
+    width: 100%;
+    height: fit-content;
+}
+
+.navigation-container:first-child {
+    margin-left: 25%;
+}
+
+.navigation-container > ul {
     display: inline-flex;
+    justify-content: right;
+    width: 100%;
 }
 
-.primary-navigation > ul > li {
+.navigation-container > ul > li:last-child {
+    margin-left: auto;
+}
+
+
+.dropdown-menu > li, 
+.navigation-container > ul > li {
     margin-inline-end: 0.85em;
-    padding: 5px;
+    
+    border-bottom: 0.1em solid black;
+    margin: 15px;
 }
 
-.primary-navigation > ul > li a:last-child {
-    margin-left: 0 auto;
+.navigation-container > ul > li > a{
+    display: inline;
+    
 }
 
 .dropdown {
@@ -89,10 +180,31 @@ li {
 
 .dropdown-menu {
     position: absolute;
+    top: 35px;
     left: -5px;
-    margin-top: 5px;
     padding: 5px;
-    min-width: 100px;
+    min-width: 220px;
     border: 1px solid black;
+    box-shadow: var(--black-shadow);
+    background-color: var(--sunray);
 }
 
+.menu-link {
+    display: inline-flex;
+    font-size: 20px;
+}
+
+.menu-icon{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.company-name {
+    font-family: var(--ff-header);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 150px;
+}
