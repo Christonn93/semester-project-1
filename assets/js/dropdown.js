@@ -6,13 +6,13 @@ dropdownArray.forEach(function(el){
 			menu = el.querySelector('.dropdown-menu')
 
 	button.onclick = function(event) {
-		if(!menu.hasClass('active')) {
-			menu.classList.add('active');
+		if(!menu.hasClass('dropdown-menu')) {
+			menu.classList.add('dropdown-menu');
 			menu.classList.remove('hidden');
 			event.preventDefault();
 		}
 		else {
-			menu.classList.remove('active');
+			menu.classList.remove('dropdown-menu');
 			menu.classList.add('hidden');
 			event.preventDefault();
 		}

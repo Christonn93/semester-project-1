@@ -77,6 +77,37 @@ li {
     list-style: none;
 }
 
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+main {
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+/* ===================== 
+    GRID DISPLAY SECTION
+   ====================== */
+.grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+/* ===================== 
+    FLEX DISPLAY SECTION
+   ====================== */
+
 .flex {
     display: flex;
     flex: 1 1 auto;
@@ -135,6 +166,10 @@ li {
     border: 1px solid blue;
 }
 
+/* =================== 
+    HEADER SECTION
+=================== */
+
 .primary-header {
     background-color: #BBCFD7;
     height: fit-content;
@@ -155,12 +190,10 @@ li {
     height: fit-content;
 }
 
-/* CHECKBOX HACK */
 input[type=checkbox] {
     display: none;
 }
 
-/*HAMBURGER MENU*/
 .hamburger {
     display: none;
 
@@ -202,6 +235,10 @@ input[type=checkbox] {
     position: relative;
 }
 
+.dropdown [data-toggle="dropdown"] {
+    position: relative;
+}
+
 .dropdown-menu {
     position: absolute;
     top: 35px;
@@ -233,6 +270,79 @@ input[type=checkbox] {
 .logo {
     width: 150px;
 }
+
+/* =================== 
+    MAIN SECTION
+=================== */
+.page-wrapper {
+    margin: 0 25px;
+    height: 100vh;
+}
+
+/* cards */
+.card{
+    background-color: var(--alice-blue);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--black-shadow);
+}
+.card-header{
+    text-align: center;
+    background-color: var(--alice-blue);
+
+}
+
+.card-header > h3 {
+    font-size: 26px;
+    font-family: var(--ff-header);
+    background-color: var(--sunray);
+}
+
+.card-main{
+    padding: 10px;
+    font-family: var(--ff-body);
+    font-size: 17px;
+    height: auto;
+}
+.card-footer{
+    justify-content: center;
+    font-family: var(--ff-link);
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: transparent;
+    border-top: 0.5px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: underline var(--sunray);
+}
+
+.cta-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--sunray);
+    border: var(--border);
+    box-shadow: var(--black-shadow);
+}
+
+
+/* ========================== 
+    MEDIA QUERIES SECTION
+========================== */
 
 @media (max-width: 744px) {
 
@@ -270,6 +380,20 @@ input[type=checkbox] {
         position: absolute;
         top: 0px;
         
+    }
+    
+    .active {
+        position: absolute;
+        top: 0;
+    }
+
+    .dropdown-menu {
+        padding: 5px;
+        min-width: 220px;
+        border: 1px solid black;
+        z-index: 10;
+        box-shadow: var(--black-shadow);
+        background-color: var(--sunray);
     }
 
     .navigation-container:first-child {
