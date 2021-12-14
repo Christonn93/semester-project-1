@@ -74,10 +74,10 @@
               </li>
               <li>
                 <div class="dropdown">
-                  <a href="#" data-toggle="dropdown" class="flex menu-link"
-                    ><img src="../assets/icons/telescope.svg" alt="Telescope" class="menu-icon" />Explore
-                    <img src="../assets/icons/triangle-bottom-arrow.svg" alt="Arrow Down" class="menu-icon dropdown-arrow"
-                  /></a>
+                  <a href="#" data-toggle="dropdown" class="flex menu-link">
+                    <img src="../assets/icons/telescope.svg" alt="Telescope" class="menu-icon" />Explore
+                    <img src="../assets/icons/triangle-bottom-arrow.svg" alt="Arrow Down" class="menu-icon dropdown-arrow"/>
+                  </a>
                   <ul class="dropdown-menu hidden">
                     <li>
                       <a href="../pages/kids.html" class="flex menu-link"><img src="../assets/icons/children-kids.svg" alt="Kids" class="menu-icon" />Kids</a>
@@ -96,12 +96,10 @@
               </li>
               <li>
                 <div class="dropdown">
-                  <a href="#" data-toggle="dropdown" class="flex menu-link"
-                    ><img src="../assets/icons/graduation-cap.svg" alt="Student hat" class="menu-icon" />Education<img
-                      src="../assets/icons/triangle-bottom-arrow.svg"
-                      alt="Arrow Down"
-                      class="menu-icon dropdown-arrow"
-                  /></a>
+                  <a href="#" data-toggle="dropdown" class="flex menu-link">
+                    <img src="../assets/icons/graduation-cap.svg" alt="Student hat" class="menu-icon" />Education
+                    <img src="../assets/icons/triangle-bottom-arrow.svg" alt="Arrow Down" class="menu-icon dropdown-arrow"/>
+                  </a>
                   <ul class="dropdown-menu hidden">
                     <li>
                       <a href="../pages/diabeled.html" class="flex menu-link"><img src="../assets/icons/conference-education.svg" alt="Education conference" class="menu-icon" />Teachers</a>
@@ -131,12 +129,13 @@
             <div class="container-large">
               <div class="card-image-large">
                 <img src="/assets/images/star-and-hands-min.jpg" alt="Two hands reaching for a atom" class="large-img" />
+              </div>
+              <!-- Card-image End -->
                 <div class="card-header">
                   <h1>Come on down, let's explore together</h1>
                 </div>
                 <!-- Card-header End -->
-              </div>
-              <!-- Card-image End -->
+              
               <div class="card-main text-center">
                 <p>Here at your Community Science museum, you can explore <strong>life.</strong></p>
                 <p>You can explore the past, the present and even parts of the future.</p>
@@ -147,12 +146,13 @@
                 </p>
                 <span class="page-break" aria-hidden="true"></span>
                 <div class="container-image">
-                  <img src="/assets/images/tree-garden-inside.jpg" alt="The tree of life" class="small-image" />
+                  <img src="/assets/images/tree-garden-inside.jpg" alt="The tree of life" id="tree-of-life" />
                 </div>
                 <!-- Container-image End -->
                 <span class="page-break" aria-hidden="true"></span>
-                <p>And <strong>"The tree of life"</strong> is growing strong. Drop by and see if the tree have enough water, oxygen and light</p>
-
+                <p>And <strong>"The tree of life"</strong> is growing strong. Drop by and see if the tree have enough water, oxygen and light. Have a look at the display by the tree and you can see when the first root came, and how many it is grown.</p>
+                <span class="page-break" aria-hidden="true"></span>
+                </div>
                 <div class="grid-row">
                 <div class="container grid-inside">
                   <div class="container-image">
@@ -178,6 +178,7 @@
 
                 <div class="container grid-inside">
                   <div class="grid-row">
+                    <div class="content-container">
                   <div class="text-container-header">
                     <h3>Children with lots of energy?</h3>
                   </div>
@@ -190,6 +191,7 @@
                   </div>
                   <!-- Text-container End -->
                 </div>
+              </div>
                    <!-- Grid-row End -->
                   <div class="container-image">
                     <img src="/assets/images/kids_9-min.jpeg" alt="Playground for children image" />
@@ -295,63 +297,66 @@
     </main>
 
     <footer>
-      <div class="flex flex-row">
+      <div class="footer">
         <div class="social-links">
           <a href="https://nb-no.facebook.com/" target="_blank" class="btn-social"><img src="../assets/icons/find-us-on-facebook.svg" class="social-icon" alt="SVG Facebook" /></a>
           <a href="https://www.instagram.com/" target="_blank" class="btn-social"><img src="../assets/icons/follow-us-on-instagram.svg" class="social-icon" alt="SVG Instagram" /></a>
           <a href="https://www.youtube.com/" target="_blank" class="btn-social"><img src="../assets/icons/follow-us-on-youtube.svg" class="social-icon" alt="SVG Youtube" /></a>
         </div>
-        <div class="copyright">
-          <p>&copy; Copyrights Community Science Museum 2021.</p>
+        <div>
           <button id="btn" class="btn footer-btn"><img src="../assets/icons/email.svg" class="menu-icon" alt="Email" />Contact us</button>
-          <section id="contactModal" class="modal">
-            <div class="modal-display flex">
-              <div class="modal-header flex flex-span">
-                <h2>Contact Us</h2>
-                <span class="close">&times;</span>
-              </div>
-              <div class="modal-content flex">
-                <form action="contact.php" class="contact-form flex">
-                  <div class="form-input form-span">
-                    <span class="icon-container">
-                      <img src="../assets/icons/scientist.svg" class="form-icon" alt="Scientist" />
-                    </span>
-                    <input type="text" id="name" class="input-field" name="name" placeholder="Your full name" required />
-                  </div>
-                  <div class="form-input form-span">
-                    <span class="icon-container"><img src="../assets/icons/email.svg" class="form-icon" alt="Email" /></span>
-                    <input type="email" id="email" class="input-field" name="email" placeholder="Your Email" required />
-                  </div>
-                  <div class="form-input form-span">
-                    <span class="icon-container"><img src="/assets/icons/question-mark.svg" class="form-icon" alt="Question" /></span>
-                    <textarea id="question" name="question" class="input-field" placeholder="Send your question"></textarea>
-                  </div>
-                  <div class="form-input flex form-span">
-                    <button class="cta-btn form-button" type="submit">Send&ensp;<img src="/assets/icons/send-message.svg" alt="Send Email" class="form-icon" /></button>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <h4>...Other ways to get in contact</h4>
-                <span class="space"></span>
-                <div class="flex flex-row">
-                  <ul>
-                    <li class="contact-li"><img src="/assets/icons/on-time.svg" class="icon" alt="Clock" /></li>
-                    <li class="contact-li"><img src="/assets/icons/phone-call.svg" class="icon" alt="Phone" /></li>
-                    <li class="contact-li"><img src="/assets/icons/email.svg" class="icon" alt="Email" /></li>
-                  </ul>
-                  <ul>
-                    <li class="contact-li">Monday to Friday 8-16</li>
-                    <li class="contact-li"><a href="tel:558-666-895" class="contact-link">558-666-895</a></li>
-                    <li class="contact-li"><a href="mailto: post@cms.com" class="contact-link">post@cms.com</a></li>
-                  </ul>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyrights Community Science Museum 2021</p>
+          <p>&copy; Copyrights Christopher Tønnesland 2021</p>
+        </div>
+        <section id="contactModal" class="modal">
+          <div class="modal-display flex">
+            <div class="modal-header flex flex-span">
+              <h2>Contact Us</h2>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-content flex">
+              <form action="contact.php" class="contact-form flex">
+                <div class="form-input form-span">
+                  <span class="icon-container">
+                    <img src="../assets/icons/scientist.svg" class="form-icon" alt="Scientist" />
+                  </span>
+                  <input type="text" id="name" class="input-field" name="name" placeholder="Your full name" required />
                 </div>
+                <div class="form-input form-span">
+                  <span class="icon-container"><img src="../assets/icons/email.svg" class="form-icon" alt="Email" /></span>
+                  <input type="email" id="email" class="input-field" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-input form-span">
+                  <span class="icon-container"><img src="/assets/icons/question-mark.svg" class="form-icon" alt="Question" /></span>
+                  <textarea id="question" name="question" class="input-field" placeholder="Send your question"></textarea>
+                </div>
+                <div class="form-input flex form-span">
+                  <button class="cta-btn form-button" type="submit">Send&ensp;<img src="/assets/icons/send-message.svg" alt="Send Email" class="form-icon" /></button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <h4>...Other ways to get in contact</h4>
+              <span class="space"></span>
+              <div class="flex flex-row">
+                <ul>
+                  <li class="contact-li"><img src="/assets/icons/on-time.svg" class="icon" alt="Clock" /></li>
+                  <li class="contact-li"><img src="/assets/icons/phone-call.svg" class="icon" alt="Phone" /></li>
+                  <li class="contact-li"><img src="/assets/icons/email.svg" class="icon" alt="Email" /></li>
+                </ul>
+                <ul>
+                  <li class="contact-li">Monday to Friday 8-16</li>
+                  <li class="contact-li"><a href="tel:558-666-895" class="contact-link">558-666-895</a></li>
+                  <li class="contact-li"><a href="mailto: post@cms.com" class="contact-link">post@cms.com</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Modal End -->
-          </section>
-          <!-- modal End -->
-        </div>
+          </div>
+          <!-- Modal End -->
+        </section>
+        <!-- modal End -->
       </div>
     </footer>
     <script src="../assets/js/dropdown.js"></script>
