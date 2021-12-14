@@ -1,4 +1,4 @@
-var dropdown = document.querySelectorAll('.dropdown');
+/* var dropdown = document.querySelectorAll('.dropdown');
 var dropdownArray = Array.from(dropdown);
 
 dropdownArray.forEach(function(el){
@@ -17,12 +17,12 @@ dropdownArray.forEach(function(el){
             event.preventDefault();
         }
     };
-})
+}) */
 
 
 
 
-// Dropdown Menu
+/* // Dropdown Menu
 var dropdown = document.querySelectorAll('.dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
@@ -45,4 +45,25 @@ dropdownArray.forEach(function(el){
 
 Element.prototype.hasClass = function(className) {
     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
-};
+}; */
+
+
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+/* function dropdown() { 
+  document.addEventListener("DOMContentLoaded", () => { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      this.siblings('.nav-dropdown').toggle();
+      document.getElementByClassName("dropdown").not(this.siblings()).style.display = "none";
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      document.getElementByClassName("nav-dropdown").style.display = "none";
+    });
+    document.getElementById("nav-toggle").click(function() {
+      $('nav ul').slideToggle();
+    });
+    document.getElementById("nav-toggle").addEventListener('click', (e) => {
+      this.classList.toggle('active');
+    });
+  }); 
+}; */

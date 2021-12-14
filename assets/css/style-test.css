@@ -99,6 +99,12 @@ Style list:
 
 }
 
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -162,6 +168,11 @@ img {
     box-shadow: var(--black-shadow);
 }
 
+.footer-btn:hover {
+    color: var(--orange-engineering);
+    text-decoration: underline var(--orange-engineering);
+}
+
 /* 1.3 - ID's */
 #box {
     padding: 2px;
@@ -195,6 +206,16 @@ img {
     top: 0;
 }
 
+.page-break{
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* ======================== 
    2. GRID DISPLAY SECTION
    ======================== */
@@ -205,8 +226,16 @@ img {
     padding: 10px;
 }
 
+.grid-top{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+    padding: 10px;
+}
+
 .grid-col {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
@@ -214,7 +243,15 @@ img {
     grid-template-rows: auto;
 }
 
-.grid-span-2 {}
+.grid-inside{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
 
 /* ======================== 
    3. FLEX DISPLAY SECTION
@@ -304,12 +341,23 @@ input[type=checkbox] {
 .dropdown-menu>li,
 .navigation-container>ul>li {
     margin-inline-end: 0.85em;
-    border-bottom: 0.1em solid black;
+    border-bottom: 0.15em solid black;
     margin: 15px;
+}
+
+.dropdown-menu>li:hover,
+.navigation-container>ul>li:hover {
+    border-bottom: 0.15em solid var(--orange-engineering);
 }
 
 .navigation-container>ul>li>a {
     display: inline;
+}
+
+.dropdown>a:hover,
+.dropdown-menu>li>a:hover,
+.navigation-container>ul>li>a:hover{
+    color: var(--orange-engineering);
 }
 
 .dropdown {
@@ -320,12 +368,12 @@ input[type=checkbox] {
     position: relative;
 }
 
-.dropdown-menu {
+.dropdown-menu{
     position: absolute;
     top: 35px;
     left: -5px;
     padding: 5px;
-    min-width: 220px;
+    min-width: 240px;
     border: 1px solid black;
     z-index: 100;
     box-shadow: var(--black-shadow);
@@ -335,11 +383,29 @@ input[type=checkbox] {
 .menu-link {
     display: inline-flex;
     font-size: 20px;
+    padding-bottom: 5px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
 .menu-icon {
     width: 20px;
     margin-right: 5px;
+}
+
+.dropdown-arrow {
+    margin-left: 10px;
+}
+
+.dropdown .dropdown-arrow{
+    transition: transform 200ms ease;
+    transform: rotate(0deg);
+}
+
+.dropdown-menu:focus .dropdown-arrow,
+.dropdown-menu:focus-within .dropdown-arrow,
+.dropdown-menu .dropdown-arrow{
+    transform: rotate(180deg);
 }
 
 .company-name {
@@ -361,10 +427,58 @@ input[type=checkbox] {
     height: 100% auto;
 }
 
+/* 5.1 - Container */
+.container {
+    background-color: var(--alice-blue);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--black-shadow);
+}
+
+.text-container{
+    font-family: var(--ff-body);
+    background-color: var(--alice-blue);
+    height: fit-content;
+    padding: 10px;
+    text-align: start;
+}
+
+.text-container-header{
+    background-color: var(--sunray);
+    width: 100%;
+}
+
+.text-container-header>h3 {
+    text-align: center;
+    font-family: var(--ff-header);
+    font-weight: bold;
+    border-bottom: var(--border);
+}
+
+.container-large {
+    display: flex;
+    flex-direction: column;
+    height: 100% auto;
+    max-width: 1050px;
+}
+
 /* 5. - cards */
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100% auto;
     max-width: 350px;
-    height: fit-content;
+    background-color: var(--alice-blue);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--black-shadow);
+}
+
+.card-large {
+    display: flex;
+    flex-direction: column;
+    height: 100% auto;
+    max-width: 1050px;
     background-color: var(--alice-blue);
     border: var(--border);
     border-radius: var(--border-radius);
@@ -373,30 +487,70 @@ input[type=checkbox] {
 
 .card-header {
     text-align: center;
-    background-color: var(--alice-blue);
-
+    width: 100%;
+    padding: 10px 5px;
+    background-color: var(--sunray);
+    /* border: var(--border); */
 }
 
-.card-header>h3 {
+.card-header>h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    font-family: var(--ff-header);
+}
+
+.card-header>h2 {
     font-size: 26px;
     font-family: var(--ff-header);
-    background-color: var(--sunray);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    /* border: var(--border); */
+}
+
+.card-image > img {
+    justify-content: flex-start;
+}
+
+.large-img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.small-image{
+    width: 350px;
 }
 
 .card-main {
-    padding: 10px;
+    flex: 1 1 0%;
+    padding: 20px 15px;
+    margin-top: auto;
     font-family: var(--ff-body);
     font-size: 17px;
-    height: auto;
+}
+
+.card-main>p{
+    font-family: var(--ff-body);
+    font-size: 20px;
 }
 
 .card-footer {
-    justify-content: center;
+    margin-top: auto;
+    align-content: center;
+    justify-content: flex-end;
     font-family: var(--ff-link);
 }
 
-.card-footer:hover{
+.card-footer >.btn:hover {
+    color: var(--orange-engineering);
+    text-decoration: underline var(--orange-engineering);
     box-shadow: inset var(--black-shadow);
+    background-color: var(--sunray);
 }
 
 /* 5. - Modal */
@@ -546,10 +700,13 @@ footer {
     margin-left: 10px;
 }
 
+.social-icon:hover{
+    box-shadow: var(--black-shadow);
+}
+
 .copyright {
     padding: 15px;
     margin-left: auto;
-
 }
 
 
@@ -557,7 +714,7 @@ footer {
  7. MEDIA QUERIES SECTION
    ======================= */
 
-@media (max-width: 744px) {
+@media (max-width: 745px) {
 
     /* ======================== 
    2. GRID DISPLAY SECTION
@@ -566,19 +723,28 @@ footer {
     .grid-gallery {
         display: grid;
         justify-items: center;
-        padding: 10px;
+        padding: 1rem;
     }
 
     .grid-col {
         grid-template-columns: 1fr;
         gap: 1rem;
+        width: 100%;
     }
 
     .grid-row {
         grid-template-rows: auto;
     }
 
-    .grid-span-2 {}
+    .grid-inside{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+        justify-items: center;
+        padding: 1rem;
+        margin-top: 20px;
+    }
 
     /* ======================== 
    3. FLEX DISPLAY SECTION
@@ -591,6 +757,8 @@ footer {
     }
 
     .flex-row {
+        justify-content: center;
+        align-content: center;
         flex-direction: row;
     }
 
@@ -703,6 +871,32 @@ footer {
         height: 100% auto;
     }
 
+    .card-header>h1 {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px;
+        font-family: var(--ff-header);
+    }
+    
+    .card-header>h2 {
+        font-size: 20px;
+        font-family: var(--ff-header);
+    }
+    
+    .text-container-header>h3 {
+        font-size: 18;
+        text-align: center;
+        font-family: var(--ff-header);
+        font-weight: bold;
+        border-bottom: var(--border);
+    }
+
+    .card-main>p{
+        font-family: var(--ff-body);
+        font-size: 17px;
+    }
+
     .card {
         max-width: 100%;
     }
@@ -718,17 +912,17 @@ footer {
     }
 
     .social-links {
-        padding: 10px;
+        padding: 5px;
     }
 
     .social-icon {
         width: 100px;
-        margin-left: 10px;
+        margin-left: 2px;
     }
 
     .copyright {
-        padding: 15px;
-        margin-left: auto;
+        padding: 5px;
+        margin-left: 0;
 
     }
 
