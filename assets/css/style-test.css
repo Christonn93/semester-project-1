@@ -349,18 +349,14 @@ input[type=checkbox] {
     color: var(--orange-engineering);
 }
 
-.dropdown {
-    position: relative;
-}
-
-.dropdown [data-toggle="dropdown"] {
+.menu-link {
     position: relative;
 }
 
 .dropdown-menu {
+    display: none;
     position: absolute;
-    top: 35px;
-    left: -5px;
+    top: 165px;
     padding: 5px;
     min-width: 240px;
     border: 1px solid black;
@@ -825,20 +821,20 @@ input[type=checkbox] {
         height: fit-content;
         position: relative;
     }
-
-    .menu {
-        display: none;
-        position: absolute;
-        top: 0px;
-    }
-
+    
     .dropdown-menu {
+        display: none;
+        position: relative;
+        top: 40px;
+        left: -140px;
+        right: 0;
         padding: 5px;
-        min-width: 220px;
+        width: 80%;
+        margin-bottom: 45px;
         border: 1px solid black;
-        z-index: 10;
-        box-shadow: var(--black-shadow);
-        background-color: var(--sunray);
+        z-index: 100;
+        box-shadow: inset var(--black-shadow);
+        background-color: var(--alice-blue);
     }
 
     .navigation-container:first-child {

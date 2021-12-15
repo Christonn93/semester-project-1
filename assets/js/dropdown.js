@@ -1,26 +1,15 @@
-// Dropdown Menu
-var dropdown = document.querySelectorAll('.dropdown');
-var dropdownArray = Array.prototype.slice.call(dropdown,0);
-dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
-			menu = el.querySelector('.dropdown-menu')
+const dropdownTrigger = document.querySelectorAll('a[data-toggle="dropdown"]');
 
-	button.onclick = function(event) {
-		if(!menu.hasClass('dropdown-menu')) {
-			menu.classList.add('dropdown-menu');
-			menu.classList.remove('hidden');
-			event.preventDefault();
-		}
-		else {
-			menu.classList.remove('dropdown-menu');
-			menu.classList.add('hidden');
-			event.preventDefault();
-		}
-	};
-})
-
-Element.prototype.hasClass = function(className) {
-    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
-};
-
-document.body.onclick = console.log
+dropdownTrigger.forEach(function(trigger){
+	trigger.onclick = function(event){
+		const dropdownOpen = event.target.nextElementSibling;
+			if (dropdownOpen.style.display === "block"){
+				dropdownOpen.style.display = "none";
+				return;			
+			} else {
+				dropdownOpen.style.display = "none";
+			}{
+				event.target.nextElementSibling.style.display = "block";
+			}
+		}	
+	})
