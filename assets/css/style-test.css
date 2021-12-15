@@ -831,12 +831,11 @@ input[type=checkbox] {
     .dropdown-menu {
         display: none;
         position: relative;
-        top: 40px;
-        left: -140px;
-        right: 0;
+        top: 15px;
+        right: 250px;
         padding: 5px;
-        width: 80%;
-        margin-bottom: 45px;
+        margin: 25px;
+        margin-bottom: 20px;
         border: 1px solid black;
         z-index: 100;
         box-shadow: inset var(--black-shadow);
