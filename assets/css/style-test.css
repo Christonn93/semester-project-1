@@ -977,12 +977,7 @@ input[type=checkbox] {
     }
 }
 
-.menu-link{
-    position: relative;
-}
-
-
-.navigation-list > li > #drop1:focus ~ .dropdown-menu{
+/* .navigation-list > li > #drop1:focus ~ .dropdown-menu{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -998,9 +993,17 @@ input[type=checkbox] {
     left: 650px;
 }
 
-@media (max-width: 745px){
+@media (min-width:744px) and (max-width: 1050px){
  
-    .menu-link > .dropdown-menu{
-        position: absolute;
+    .navigation-list > li > .menu-link:focus ~ .dropdown-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
     }
-}
+    
+    .navigation-list > li > .menu-link:focus ~ .dropdown-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+} */
