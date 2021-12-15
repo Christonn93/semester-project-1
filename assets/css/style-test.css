@@ -118,6 +118,8 @@ a {
 
 li {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
     list-style: none;
 }
 
@@ -831,11 +833,11 @@ input[type=checkbox] {
     .dropdown-menu {
         display: none;
         position: relative;
-        top: 15px;
-        right: 250px;
+        top: 0;
         padding: 5px;
-        margin: 25px;
+        margin: 5px;
         margin-bottom: 20px;
+        width: 100%;
         border: 1px solid black;
         z-index: 100;
         box-shadow: inset var(--black-shadow);
