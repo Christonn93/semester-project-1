@@ -4,7 +4,7 @@ var span = document.getElementsByClassName("exit")[0];
 
 
 btn.onclick = function() {
-  modal.style.display = "grid";
+  modal.style.display = "flex";
 }
 
 span.onclick = function() {
