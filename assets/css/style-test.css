@@ -976,3 +976,31 @@ input[type=checkbox] {
         margin-top: 20px;
     }
 }
+
+.menu-link{
+    position: relative;
+}
+
+
+.navigation-list > li > #drop1:focus ~ .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px;
+    left: 450px;
+}
+
+.navigation-list > li > #drop2:focus ~ .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px;
+    left: 650px;
+}
+
+@media (max-width: 745px){
+ 
+    .menu-link > .dropdown-menu{
+        position: absolute;
+    }
+}
