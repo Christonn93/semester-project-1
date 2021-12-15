@@ -1126,7 +1126,7 @@ input[type=checkbox] {
     }
 
     /* 5. - Modal */
-    .modal {
+    .modal-container {
         display: none;
         position: fixed;
         z-index: 1000;
@@ -1137,122 +1137,117 @@ input[type=checkbox] {
         height: 100%;
         align-content: center;
         justify-content: center;
+        padding: 10px;
         background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .close {
-        color: var(--black);
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: var(--orange-engineering);
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .modal-display {
+      }
+      
+      .modal-body {
         position: fixed;
         bottom: 0;
-        width: fit-content;
         margin-bottom: 5px;
-        background-color: var(--alice-blue);
-        border: var(--border);
-        border-radius: var(--border-radius);
-        box-shadow: var(--black-shadow);
+        display: flex;
+        flex-direction: column;
         animation-name: animate-modal;
         animation-duration: 0.4s
-    }
-
-    .modal-header,
-    .modal-footer {
-        padding: 5px 20px;
-        width: 100%;
-        font-family: var(--ff-header);
-        background-color: var(--sunray);
-    }
-
-    .modal-content {
-        padding: 5px 20px;
-        background-color: var(--alice-blue);
-    }
-
-    @keyframes animate-modal {
-        from {
-            bottom: -300px;
-            opacity: 0
-        }
-
-        to {
-            bottom: 0;
-            opacity: 1
-        }
-    }
-
-    /* 5. - Contact form */
-    .contact-form {
-        width: 100%;
-    }
-
-    .form-input {
+      }
+      
+      .modal-header {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #EAB354;
+        padding: 15px;
+      }
+      
+      .exit {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      .exit:hover,
+      .exit:focus {
+        color: red;
+        cursor: pointer;
+      }
+      
+      .modal-main {
+        display: flex;
+        flex: 1 1 100%;
+        background-color: #E3E8EE;
+        padding: 15px;
+      }
+      
+      .modal-footer {
+        background-color: #EAB354;
+        padding: 15px;
+      }
+      
+      .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .contact-info>ul,
+      .contact-info>ul>li{ 
+          margin: 10px 0;
+      }
+      
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        padding: 15px;
+      }
+      
+      .input-container {
+        display: inline-flex;
         margin: 10px auto;
         width: 100%;
-    }
-
-    .form-textarea,
-    .input-field {
-        font-family: var(--ff-body);
+        margin: 15px 0px;
+      }
+      
+      textarea,
+      input {
+        font-family: sans-serif;
+        font-size: 1rem;
         font-weight: bold;
         width: 100%;
-        border: none;
         padding: 10px;
+        border: 0.15rem solid #EAB354;
+        margin-inline-start: 5px;
         outline: none;
-    }
-
-    .form-span {
-        display: inline-flex;
-    }
-
-    .form-button {
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .form-button:hover {
-        color: var(--orange-engineering);
-    }
-
-    .icon-container {
+        color: black;
+        background-color: #E3E8EE;
+      }
+      
+      textarea:focus,
+      input:focus {
+        background-color: white;
+        border: 0.15rem solid #B70000;
+      }
+      
+      .icon-container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding: 10px;
-        background-color: var(--sunray);
-        color: var(--black);
-    }
-
-    .form-icon {
-        width: 33px;
-        aspect-ratio: 1;
-    }
-
-    .contact-li {
-        margin: 10px 0;
-        font-size: var(--body-md);
-    }
-
-    .contact-link {
-        border-bottom: 1px solid blue;
-        color: blue;
-    }
-
-    .contact-link:hover {
-        border-bottom: 1px solid var(--orange-engineering);
-        color: var(--orange-engineering);
-    }
+        color: black;
+      }
+      
+      @keyframes animate-modal {
+        from {
+          bottom: -300px;
+          opacity: 0
+        }
+      
+        to {
+          bottom: 0;
+          opacity: 1
+        }
+      }
 
 
 
