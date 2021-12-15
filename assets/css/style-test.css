@@ -811,6 +811,12 @@ input[type=checkbox] {
         background-color: var(--sunray);
     }
 
+    .menu {
+        display: none;
+        position: absolute;
+        top: 0px;
+    }
+
     .hamburger {
         display: flex;
     }
