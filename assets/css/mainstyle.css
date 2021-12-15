@@ -1136,8 +1136,8 @@ input[type=checkbox] {
     /* 5. - Modal */
     .modal-container {
         display: none;
-        position: absolute;
-        z-index: 10;
+        position: fixed;
+        z-index: 1000;
         left: 0;
         right: 0;
         top: 0;
@@ -1150,7 +1150,7 @@ input[type=checkbox] {
       }
       
       .modal-body {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         margin-bottom: 5px;
         display: flex;
