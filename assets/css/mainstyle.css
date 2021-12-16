@@ -122,6 +122,33 @@ Style list:
     box-sizing: border-box;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100%;
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
 button,
 a {
     font-family: var(--ff-link);
@@ -140,16 +167,7 @@ li {
     list-style: none;
 }
 
-header {
-    display: flex;
-    position: relative;
-    width: 100%;
-    z-index: 100;
-}
 
-.main {
-    height: 100vh;
-}
 
 img {
     max-width: 100%;
