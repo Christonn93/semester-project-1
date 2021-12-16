@@ -794,9 +794,9 @@ input[type=checkbox] {
         --ff-link: 'Poppins', sans-serif;
 
         /* -- Font Size & weight -- */
-        --fs-small: 1rem;
-        --fs-medium: 1.5rem;
-        --fs-large: 2rem;
+        --fs-small: 0.5rem;
+        --fs-medium: 1rem;
+        --fs-large: 1.5rem;
 
         --bold: 900;
         --light: 100;
@@ -940,6 +940,10 @@ input[type=checkbox] {
         width: 100%;
     }
 
+    .grid-col-3 {
+        grid-template-columns: 1fr;
+    }
+   
     .grid-row {
         grid-template-rows: auto;
     }
