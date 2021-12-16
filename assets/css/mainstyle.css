@@ -1,3 +1,5 @@
+@import "./slider.css";
+
 /* =========================
 
 STYLE SHEET FOR CSM 
@@ -37,6 +39,8 @@ Style list:
 /* =================== 
    1. GLOBAL ELEMENTS
    =================== */
+
+
 
 /* 1.1 - ROOT */
 
@@ -142,7 +146,7 @@ header {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .mobile {
@@ -433,7 +437,7 @@ input[type=checkbox] {
     padding: 5px;
     min-width: 240px;
     border: 1px solid black;
-    z-index: 100;
+    z-index: 10000;
     box-shadow: var(--black-shadow);
     background-color: var(--sunray);
 }
@@ -565,14 +569,11 @@ input[type=checkbox] {
 }
 
 .card-image {
-    width: 100%;
     height: 200px;
+    width: 100%;
+    position: relative;
     overflow: hidden;
     /* border: var(--border); */
-}
-
-.card-image>img {
-    justify-content: flex-start;
 }
 
 .large-img {
@@ -1188,7 +1189,7 @@ input[type=checkbox] {
       
       .exit:hover,
       .exit:focus {
-        color: red;
+        color: var(--orange-engineering);
         cursor: pointer;
       }
       
@@ -1268,8 +1269,6 @@ input[type=checkbox] {
           opacity: 1
         }
       }
-
-
 
 }
 
