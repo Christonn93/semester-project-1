@@ -93,6 +93,8 @@ Style list:
 
     /* -- Global Border -- */
     --border: .015em solid var(--charcoal);
+    /* -- Global Border hover -- */
+    --border-hover: .015em solid var(--orange-engineering);
     /* -- Global border-radius -- */
     --border-radius: 0.25em;
     /* -- Global border-radius -- */
@@ -271,7 +273,7 @@ p {
     margin-bottom: 10px;
 }
 
-.margin-remove{
+.margin-remove {
     margin: 0;
 }
 
@@ -296,6 +298,12 @@ p {
 
 .grid-col {
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid-col-1 {
+    margin-top: 25px;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
@@ -450,7 +458,7 @@ input[type=checkbox] {
     margin-inline-end: 10px;
 }
 
-.icon-container{
+.icon-container {
     background-color: var(--sunray);
 }
 
@@ -619,9 +627,13 @@ input[type=checkbox] {
     justify-content: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .modal-body {
+}
+
+.modal-body-1{
+    box-shadow: var(--black-shadow);
+}
+
+.modal-body {
     position: fixed;
     bottom: 0;
     margin-bottom: 5px;
@@ -629,69 +641,70 @@ input[type=checkbox] {
     flex-direction: column;
     animation-name: animate-modal;
     animation-duration: 0.4s
-  }
-  
-  .modal-header {
+}
+
+.modal-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #EAB354;
     padding: 15px;
-  }
-  
-  .exit {
+}
+
+.exit {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-  }
-  
-  .exit:hover,
-  .exit:focus {
+}
+
+.exit:hover,
+.exit:focus {
     color: red;
     cursor: pointer;
-  }
-  
-  .modal-main {
+}
+
+.modal-main {
     display: flex;
     flex: 1 1 100%;
     background-color: #E3E8EE;
     padding: 15px;
-  }
-  
-  .modal-footer {
+}
+
+.modal-footer {
     background-color: #EAB354;
     padding: 15px;
-  }
-  
-  .contact-info {
+}
+
+.contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .contact-info>ul,
-  .contact-info>ul>li{ 
-      margin: 10px 0;
-  }
-  
-  .form-container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+}
+
+.contact-info>ul,
+.contact-info>ul>li {
+    margin: 10px 0;
+}
+
+.form-container {
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;
     flex-wrap: wrap;
     justify-content: stretch;
     padding: 15px;
-  }
-  
-  .input-container {
+}
+
+.input-container {
     display: inline-flex;
     margin: 10px auto;
     width: 100%;
     margin: 15px 0px;
-  }
-  
-  textarea,
-  input {
+}
+
+textarea,
+input {
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -702,32 +715,42 @@ input[type=checkbox] {
     outline: none;
     color: black;
     background-color: #E3E8EE;
-  }
-  
-  textarea:focus,
-  input:focus {
+}
+
+textarea:focus,
+input:focus {
     background-color: white;
     border: 0.15rem solid #B70000;
-  }
-  
-  .icon-container {
+}
+
+.form-link{
+    border-bottom: var(--border);
+    color: var(--black);
+}
+
+.form-link:hover{
+    border-bottom: var(--border-hover);
+    color: var(--orange-engineering);
+}
+
+.icon-container {
     display: flex;
     align-items: flex-start;
     padding: 10px;
     color: black;
-  }
-  
-  @keyframes animate-modal {
+}
+
+@keyframes animate-modal {
     from {
-      bottom: -300px;
-      opacity: 0
+        bottom: -300px;
+        opacity: 0
     }
-  
+
     to {
-      bottom: 0;
-      opacity: 1
+        bottom: 0;
+        opacity: 1
     }
-  }
+}
 
 /* =================== 
    6. FOOTER SECTION
@@ -943,7 +966,7 @@ input[type=checkbox] {
     .grid-col-3 {
         grid-template-columns: 1fr;
     }
-   
+
     .grid-row {
         grid-template-rows: auto;
     }
@@ -1164,9 +1187,9 @@ input[type=checkbox] {
         justify-content: center;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.7);
-      }
-      
-      .modal-body {
+    }
+
+    .modal-body {
         position: fixed;
         bottom: 0;
         margin-bottom: 5px;
@@ -1174,69 +1197,69 @@ input[type=checkbox] {
         flex-direction: column;
         animation-name: animate-modal;
         animation-duration: 0.4s
-      }
-      
-      .modal-header {
+    }
+
+    .modal-header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         background-color: #EAB354;
         padding: 15px;
-      }
-      
-      .exit {
+    }
+
+    .exit {
         font-size: 40px;
         font-weight: bold;
         text-align: center;
-      }
-      
-      .exit:hover,
-      .exit:focus {
+    }
+
+    .exit:hover,
+    .exit:focus {
         color: var(--orange-engineering);
         cursor: pointer;
-      }
-      
-      .modal-main {
+    }
+
+    .modal-main {
         display: flex;
         flex: 1 1 100%;
         background-color: #E3E8EE;
         padding: 15px;
-      }
-      
-      .modal-footer {
+    }
+
+    .modal-footer {
         background-color: #EAB354;
         padding: 15px;
-      }
-      
-      .contact-info {
+    }
+
+    .contact-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
-      }
-      
-      .contact-info>ul,
-      .contact-info>ul>li{ 
-          margin: 10px 0;
-      }
-      
-      .form-container {
+    }
+
+    .contact-info>ul,
+    .contact-info>ul>li {
+        margin: 10px 0;
+    }
+
+    .form-container {
         display: flex;
         flex-direction: column;
         flex: 1 1 100%;
         flex-wrap: wrap;
         justify-content: stretch;
         padding: 15px;
-      }
-      
-      .input-container {
+    }
+
+    .input-container {
         display: inline-flex;
         margin: 10px auto;
         width: 100%;
         margin: 15px 0px;
-      }
-      
-      textarea,
-      input {
+    }
+
+    textarea,
+    input {
         font-family: sans-serif;
         font-size: 1rem;
         font-weight: bold;
@@ -1247,32 +1270,32 @@ input[type=checkbox] {
         outline: none;
         color: black;
         background-color: #E3E8EE;
-      }
-      
-      textarea:focus,
-      input:focus {
+    }
+
+    textarea:focus,
+    input:focus {
         background-color: white;
         border: 0.15rem solid #B70000;
-      }
-      
-      .icon-container {
+    }
+
+    .icon-container {
         display: flex;
         align-items: flex-start;
         padding: 10px;
         color: black;
-      }
-      
-      @keyframes animate-modal {
+    }
+
+    @keyframes animate-modal {
         from {
-          bottom: -300px;
-          opacity: 0
+            bottom: -300px;
+            opacity: 0
         }
-      
+
         to {
-          bottom: 0;
-          opacity: 1
+            bottom: 0;
+            opacity: 1
         }
-      }
+    }
 
 }
 
