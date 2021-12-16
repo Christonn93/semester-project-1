@@ -145,6 +145,10 @@ img {
     width: 100%;
 }
 
+.mobile {
+    display: none;
+}
+
 /* 1.2 - TYPOGRAPHY */
 
 h1 {
@@ -882,6 +886,10 @@ input[type=checkbox] {
 
     img {
         width: 100%;
+    }
+
+    .desktop {
+        display: none;
     }
 
     /* 1.2 - TYPOGRAPHY */
