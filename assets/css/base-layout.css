@@ -1,7 +1,3 @@
-@import "./dropdown.css";
-@import "./slider.css";
-@import "./modal.css";
-
 :root {
 
     /* ==== Typography ==== */
@@ -111,6 +107,7 @@
 
 body{
     display: grid;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     'header'
     'main'
@@ -125,7 +122,7 @@ header {
     position: relative;
     width: 100%;
     z-index: 100;
-    box-shadow: var(--black-shadow);
+    overflow: hidden;
 
     background-color: #BBCFD7;
 }
@@ -133,18 +130,18 @@ header {
 main {
     grid-area: main;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: fit-content;
     width: 100%;
 }
 
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     padding: 20px;
     background-color: #BBCFD7;
-    box-shadow: var(--black-shadow);
 }
 
 img{
@@ -170,20 +167,10 @@ p {
     color: var(--black);
 }
 
-.copyright-p{
-    font-size: var(--fs-xs);
-}
-
-.company-name {
-    font-family: var(--ff-header);
-    font-size: var(--fs-l);
-    font-weight: var(--bold);
-}
-
 button,
 a {
     font-family: var(--ff-link);
-    font-size: var(--fs-s);
+    font-size: var(--fs-m);
     color: var(--black);
     border: 0;
     height: 100%;
@@ -199,26 +186,35 @@ li {
 }
 
 .primary-page-wrapper {
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    margin: 10px 30px;
+    background-color: white;
 }
 
 .primary-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 10px;
-    column-gap: 25px;
-    margin: 0 auto;
-    max-width: 1600px;
-    padding: 5px 10px;
-   
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 35px;
 }
 
 .primary-grid-container {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr;
     padding: 5px;
     max-width: 1600px;
     margin: 0 auto;
+=======
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    border: 1px solid red;
+>>>>>>> parent of 249265a (CSM v.2.0.0)
 }
 
 /* .primary-grid-container > div {
@@ -237,7 +233,7 @@ li {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 7;
-    padding: 20px;
+    grid-row-start: 3;
 }
 
 /* .secondary-grid-container > div {
@@ -315,44 +311,74 @@ li {
     margin-bottom: 10px;
 }
 
-.breadcrumb {
-    padding: 15px 20px;
-    list-style: none;
-    width: max-content;
-}
-
-.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-}
-
-.breadcrumb li+li::before {
-    padding: 5px;
-    color: #262B2B;
-    content: "/\00a0";
-}
-
-.breadcrumb li a {
-    color: var(--sunray);
-    text-decoration: underline;
-    text-decoration-color: #262B2B;
-}
-
-.breadcrumb li a:hover {
-    color: var(--orange-engineering);
-    text-decoration: underline;
-}
-
-.breadcrumb li > .active-link {
-    color: #262B2B;
-    text-decoration: underline;
-}
-
 /* Header & Navigation */
 .primary-navigation {
     background: linear-gradient(-15deg, var(--sunray) 75%, var(--beau-blue) 25%);
     width: 100%;
     height: fit-content;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    width: fit-content;
+    position: absolute;
+    top: -90px;
+    right: 30px;
+    justify-content: flex-end;
+    font-size: 50px;
+    user-select: none;
+}
+
+.navigation-container:first-child {
+    margin-left: 25%;
+}
+
+.navigation-container>ul {
+    display: inline-flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.navigation-container>ul>li:last-child {
+    margin-left: auto;
+}
+
+.dropdown-menu>li,
+.navigation-container>ul>li {
+    margin-inline-end: 0.85em;
+    border-bottom: 0.15em solid black;
+    margin: var(--margin);
+}
+
+.dropdown-menu>li:hover,
+.navigation-container>ul>li:hover {
+    border-bottom: 0.15em solid var(--orange-engineering);
+}
+
+.dropdown>a:hover,
+.dropdown-menu>li>a:hover,
+.navigation-container>ul>li>a:hover {
+    color: var(--orange-engineering);
+}
+
+.menu-link {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 165px;
+    padding: 5px;
+    min-width: 240px;
+    border: 1px solid black;
+    z-index: 10000;
+    box-shadow: var(--black-shadow);
+    background-color: var(--sunray);
 }
 
 .menu-link {
@@ -372,9 +398,12 @@ li {
 }
 
 .menu-icon {
-    position: relative;
     width: 20px;
     margin-right: 5px;
+}
+
+.dropdown-arrow {
+    margin-left: 10px;
 }
 
 /* .dropdown .dropdown-arrow {
@@ -483,13 +512,9 @@ input[type=checkbox] {
 
 /* Content and cards */
 .card-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    'card-head'
-    'card-img'
-    'card-main'
-    'card-footer';
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
     background-color: var(--alice-blue);
     border: var(--border);
     border-radius: var(--border-radius);
@@ -497,7 +522,6 @@ input[type=checkbox] {
 }
 
 .card-header {
-    grid-area: card-head;
     text-align: center;
     width: 100%;
     padding: 10px 5px;
@@ -511,16 +535,14 @@ input[type=checkbox] {
 }
 
 .card-image {
-    grid-area: card-img;
     width: 100%;
-    height: 200px;
     position: relative;
     overflow: hidden;
     /* border: var(--border); */
 }
 
 .card-main {
-    grid-area: card-main;
+    flex: 1 1 0%;
     padding: 20px 15px;
 }
 
@@ -529,7 +551,6 @@ input[type=checkbox] {
 }
 
 .card-footer {
-    grid-area: card-footer;
     align-content: center;
     justify-content: flex-end;
     font-family: var(--ff-link);
@@ -551,10 +572,13 @@ input[type=checkbox] {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .tree-of-life {
     margin: 0 auto;
     max-width: 450px;
 }
+=======
+>>>>>>> parent of 249265a (CSM v.2.0.0)
 
 /* Footer content */
 .social-icon {
@@ -570,12 +594,13 @@ input[type=checkbox] {
     padding: 0;
     display: block;
     border-top: 0;
-    font-size: var(--fs-m);
+    font-size: 15px;
 }
 
 .footer-btn:hover {
     color: var(--orange-engineering);
     text-decoration: underline var(--orange-engineering);
+<<<<<<< HEAD
 }
 
 @media (max-width: 745px) {
@@ -1173,4 +1198,6 @@ input[type=checkbox] {
 
 @media (min-width:744px) and (max-width: 1050px) {
 
+=======
+>>>>>>> parent of 249265a (CSM v.2.0.0)
 }
