@@ -54,9 +54,10 @@ Style list:
     --ff-link: 'Poppins', sans-serif;
 
     /* -- Font Size & weight -- */
-    --fs-small: 1rem;
-    --fs-medium: 1.5rem;
-    --fs-large: 2rem;
+    --fs-xs: 1rem;
+    --fs-s: 1.25rem;
+    --fs-m: 1.5rem;
+    --fs-l: 2rem;
 
     --bold: 900;
     --light: 100;
@@ -152,7 +153,7 @@ footer {
 button,
 a {
     font-family: var(--ff-link);
-    font-size: var(--fs-small);
+    font-size: var(--fs-m);
     color: var(--black);
     border: 0;
     height: 100%;
@@ -168,7 +169,7 @@ li {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .mobile {
@@ -178,27 +179,27 @@ img {
 /* 1.2 - TYPOGRAPHY */
 
 h1 {
-    font-size: var(--fs-large);
+    font-size: var(--fs-l);
     font-weight: var(--bold);
     font-family: var(--ff-header);
 }
 
 h2,
 h3 {
-    font-size: var(--fs-medium);
+    font-size: var(--fs-m);
     font-weight: var(--bold);
     font-family: var(--ff-header);
 }
 
 p {
-    font-size: var(--fs-small);
+    font-size: var(--fs-s);
     font-family: var(--ff-body);
     color: var(--black);
 }
 
 .company-name {
     font-family: var(--ff-header);
-    font-size: var(--fs-large);
+    font-size: var(--fs-l);
     font-weight: var(--bold);
 }
 
@@ -527,8 +528,8 @@ input[type=checkbox] {
    =================== */
 
 .page-wrapper {
-    margin: 10px 25px;
-    height: 100% auto;
+    margin: 0 auto;
+    max-width: 2000px;
 }
 
 /* 5.1 - Container */
@@ -576,7 +577,7 @@ input[type=checkbox] {
     display: flex;
     flex-direction: column;
     height: 100% auto;
-    max-width: 350px;
+    max-width: 550px;
     background-color: var(--alice-blue);
     border: var(--border);
     border-radius: var(--border-radius);
@@ -608,7 +609,8 @@ input[type=checkbox] {
 }
 
 .card-image {
-    height: 200px;
+    min-height: 350px;
+    max-height: 350px;
     width: 100%;
     position: relative;
     overflow: hidden;

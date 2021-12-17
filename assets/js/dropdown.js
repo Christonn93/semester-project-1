@@ -14,9 +14,3 @@ dropdownTrigger.forEach(function(trigger){
         }    
     })
 
-	window.onclick = function(event) {
-		if (event.target == dropdown-menu) {
-		  dropdownOpen.style.display = "none";
-		}
-	  }
-	
