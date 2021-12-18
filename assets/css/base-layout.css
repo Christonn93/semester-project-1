@@ -313,7 +313,7 @@ li {
 .breadcrumb {
     padding: 15px 20px;
     list-style: none;
-    width: max-content;
+    width: 100%;
 }
 
 .breadcrumb li {
