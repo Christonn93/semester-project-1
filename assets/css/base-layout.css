@@ -166,6 +166,10 @@
     display: none;
   }
   
+  .icon {
+    width: 30px;
+}
+
   nav {
     display: flex;
     flex-wrap: wrap;
