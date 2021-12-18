@@ -185,92 +185,94 @@
           </div>
         </div>
       </main>
-    <footer>
-        <div class="social-links">
-            <a href="https://nb-no.facebook.com/" target="_blank" class="btn-social"><img
-                    src="../assets/icons/find-us-on-facebook.svg" class="social-icon" alt="SVG Facebook" /></a>
-            <a href="https://www.instagram.com/" target="_blank" class="btn-social"><img
-                    src="../assets/icons/follow-us-on-instagram.svg" class="social-icon" alt="SVG Instagram" /></a>
-            <a href="https://www.youtube.com/" target="_blank" class="btn-social"><img
-                    src="../assets/icons/follow-us-on-youtube.svg" class="social-icon" alt="SVG Youtube" /></a>
-        </div>
-        <div>
-            <span class="mobile"><button class="btn footer-btn"><img src="../assets/icons/email.svg" class="menu-icon"
-                        alt="Email icon" /><a href="../pages/contact.html">Contact us</a></button></span>
-            <span class="desktop"><button id="btn" class="btn footer-btn"><img src="../assets/icons/email.svg"
-                        class="menu-icon" alt="Email icon" />Contact us</button></span>
-        </div>
-        <div class="copyright">
-            <p>&copy; Copyrights Community Science Museum 2021</p>
-            <p>&copy; Copyrights Christopher Tønnesland 2021</p>
-        </div>
-    
-        <section class="modal-container" id="contactModal">
-            <div class="modal-body">
-          
-              <div class="modal-header">
-                <h2>Contact Us</h2>
-                <span class="exit">&times;</span>
+      <footer>
+        <div class="footer-grid">
+          <div class="social-links">
+                  <a href="https://nb-no.facebook.com/" target="_blank" class="btn-social"><img
+                          src="../assets/icons/find-us-on-facebook.svg" class="social-icon" alt="SVG Facebook" /></a>
+                  <a href="https://www.instagram.com/" target="_blank" class="btn-social"><img
+                          src="../assets/icons/follow-us-on-instagram.svg" class="social-icon" alt="SVG Instagram" /></a>
+                  <a href="https://www.youtube.com/" target="_blank" class="btn-social"><img
+                          src="../assets/icons/follow-us-on-youtube.svg" class="social-icon" alt="SVG Youtube" /></a>
+              </div>
+              <div>
+                  <span class="mobile"><button class="btn footer-btn"><img src="../assets/icons/email.svg" class="menu-icon"
+                              alt="Email icon" /><a href="../pages/contact.html">Contact us</a></button></span>
+                  <span class="desktop"><button id="btn" class="btn footer-btn"><img src="../assets/icons/email.svg"
+                              class="menu-icon" alt="Email icon" />Contact us</button></span>
+              </div>
+              <div class="copyright">
+                  <p>&copy; Copyrights Community Science Museum 2021</p>
+                  <p>&copy; Copyrights Christopher Tønnesland 2021</p>
               </div>
           
-              <div class="modal-main">
-                <div class="form-container">
-                  <form>
-                    <div class="input-container">
-                      <span class="icon-container">
-                        <img src="../assets/icons/scientist.svg" class="icon" alt="Scientist Icon" />
-                      </span>
-                      <input type="text" id="name" name="name" placeholder="First Name" class="input-field" required />
+          <section class="modal-container" id="contactModal">
+                  <div class="modal-body">
+                
+                    <div class="modal-header">
+                      <h2>Contact Us</h2>
+                      <span class="exit">&times;</span>
                     </div>
-                    <div class="input-container">
-                      <span class="icon-container">
-                        <img src="../assets/icons/phone-call.svg" class="icon" alt="Phone Icon" />
-                      </span>
-                      <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="input-field" required />
+                
+                    <div class="modal-main">
+                      <div class="form-container">
+                        <form>
+                          <div class="input-container">
+                            <span class="icon-container">
+                              <img src="../assets/icons/scientist.svg" class="icon" alt="Scientist Icon" />
+                            </span>
+                            <input type="text" id="name" name="name" placeholder="First Name" class="input-field" required />
+                          </div>
+                          <div class="input-container">
+                            <span class="icon-container">
+                              <img src="../assets/icons/phone-call.svg" class="icon" alt="Phone Icon" />
+                            </span>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="input-field" required />
+                          </div>
+                          <div class="input-container">
+                            <span class="icon-container">
+                              <img src="../assets/icons/email.svg" class="icon" alt="Email Icon" />
+                            </span>
+                            <input type="email" id="email" name="email" placeholder="Email adress" class="input-field" required />
+                          </div>
+                          <div class="input-container">
+                            <span class="icon-container">
+                              <img src="../assets/icons/question-mark.svg" class="icon" alt="Question mark Icon" />
+                            </span>
+                            <textarea id="question" name="question" placeholder="Ask us anything here...." class="input-field" required></textarea>
+                          </div>
+                          <div class="input-container">
+                            <button class="cta-btn action-btn"><img src="../assets/icons/send-message.svg" class="icon" alt="Send message Icon" />Send</button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                    <div class="input-container">
-                      <span class="icon-container">
-                        <img src="../assets/icons/email.svg" class="icon" alt="Email Icon" />
-                      </span>
-                      <input type="email" id="email" name="email" placeholder="Email adress" class="input-field" required />
+                
+                    <div class="modal-footer">
+                      <h3>...Other ways to get in contact</h3>
+                      <div class="contact-info">
+                        <ul>
+                          <li><img src="../assets/icons/on-time.svg" class="icon" alt="Clock Icon" /></li>
+                          <li><img src="../assets/icons/phone-call.svg" class="icon" alt="Phone Icon" /></li>
+                          <li><img src="../assets/icons/email.svg" class="icon" alt="Email Icon" /></li>
+                        </ul>
+                        <ul>
+                          <li><p>Monday to friday 08:00-16:00</p></li>
+                          <li>
+                            <a href="tel:558-666-895" class="form-link">
+                              558-666-895</a>
+                          </li>
+                          <li>
+                            <a href="mailto: post@cms.com" class="form-link">
+                              post@cms.com</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="input-container">
-                      <span class="icon-container">
-                        <img src="../assets/icons/question-mark.svg" class="icon" alt="Question mark Icon" />
-                      </span>
-                      <textarea id="question" name="question" placeholder="Ask us anything here...." class="input-field" required></textarea>
-                    </div>
-                    <div class="input-container">
-                      <button class="cta-btn action-btn"><img src="../assets/icons/send-message.svg" class="icon" alt="Send message Icon" />Send</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+                  </div>
+                </section>
           
-              <div class="modal-footer">
-                <h3>...Other ways to get in contact</h3>
-                <div class="contact-info">
-                  <ul>
-                    <li><img src="../assets/icons/on-time.svg" class="icon" alt="Clock Icon" /></li>
-                    <li><img src="../assets/icons/phone-call.svg" class="icon" alt="Phone Icon" /></li>
-                    <li><img src="../assets/icons/email.svg" class="icon" alt="Email Icon" /></li>
-                  </ul>
-                  <ul>
-                    <li><p>Monday to friday 08:00-16:00</p></li>
-                    <li>
-                      <a href="tel:558-666-895" class="form-link">
-                        558-666-895</a>
-                    </li>
-                    <li>
-                      <a href="mailto: post@cms.com" class="form-link">
-                        post@cms.com</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- modal End -->
+          
         </div>
       </footer>
       <script src="../assets/js/dropdown.js"></script>
