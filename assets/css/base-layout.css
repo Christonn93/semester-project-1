@@ -1,3 +1,7 @@
+@import "./dropdown.css";
+@import "./slider.css";
+@import "./modal.css";
+
 :root {
     /* ==== Typography ==== */
   
