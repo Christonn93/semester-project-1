@@ -268,6 +268,27 @@
   .footer-grid > div {
     height: 50px;
   }
+
+  .social-icon {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.social-icon:hover {
+    box-shadow: var(--black-shadow);
+}
+
+.footer-btn {
+    padding: 0;
+    display: block;
+    border-top: 0;
+    font-size: var(--fs-m);
+}
+
+.footer-btn:hover {
+    color: var(--orange-engineering);
+    text-decoration: underline var(--orange-engineering);
+}
   
   .wrapper {
     display: flex;
