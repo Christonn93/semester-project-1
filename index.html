@@ -13,213 +13,178 @@
 
 <body>
     <header>
-        <div class="primary-flex-container">
-            <div class="desktop" id="desktop">
-                <a href="../index.html">
-                    <img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="logo" />
-                </a>
-                <label class="page-title">
-                    <a href="../index.html" class="company-name">Community Science Museum</a>
-                </label>
+        <div class="header-grid">
+      
+          <div class="company-brand">
+            <div class="company-logo">
+              <img src="https://noroff-project-csm.netlify.app/assets/logo/csm_logo_2.png" />
             </div>
-            <div class="mobile" id="mobile">
-                <a href="../index.html">
-                    <img src="../assets/logo/csm_logo_2.png" alt="Company logo" class="logo" />
-                </a>
-                <label class="page-title"><a href="../index.html" class="company-name">C.S.M</a></label>
+            <div class="company-title ">
+              <span class="desktop">Community Science Museum</span>
+              <span class="mobile">C.S.M<span class="mobile-dropdown"></span></span>
             </div>
-
-            <nav class="primary-navigation">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <div class="menu">
-                    <div class="navigation-container">
-                        <ul class="navigation-list">
-                            <li>
-                                <a href="../index.html" class="flex menu-link"><img src="/assets/icons/homepage.svg"
-                                        alt="House" class="menu-icon" />Home</a>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="dropdown" class="flex menu-link">
-                                    <img src="../assets/icons/telescope.svg" alt="Telescope" class="menu-icon" />Explore
-                                    <img src="../assets/icons/triangle-bottom-arrow.svg" alt="Arrow Down"
-                                        class="menu-icon dropdown-arrow" />
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="../pages/kids.html" class="flex menu-link"><img
-                                                src="../assets/icons/children-kids.svg" alt="Kids"
-                                                class="menu-icon" />Kids</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/explore.html" class="flex menu-link"><img
-                                                src="../assets/icons/leaflet.svg" alt="Leaflet"
-                                                class="menu-icon" />Exhibition</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/event.html" class="flex menu-link"><img
-                                                src="../assets/icons/date.svg" alt="Date" class="menu-icon" />Events</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/involment.html" class="flex menu-link"><img
-                                                src="../assets/icons/binoculars.svg" alt="Binoculars"
-                                                class="menu-icon" />Get Involved</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="dropdown" class="flex menu-link">
-                                    <img src="../assets/icons/graduation-cap.svg" alt="Student hat"
-                                        class="menu-icon" />Education
-                                    <img src="../assets/icons/triangle-bottom-arrow.svg" alt="Arrow Down"
-                                        class="menu-icon dropdown-arrow" />
-                                </a>
-                                <ul class="dropdown-menu" id="dropdown-2">
-                                    <li>
-                                        <a href="../pages/404.html" class="flex menu-link"><img
-                                                src="../assets/icons/conference-education.svg"
-                                                alt="Education conference" class="menu-icon" />Teachers</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/404.html" class="flex menu-link"><img
-                                                src="../assets/icons/internship.svg" alt="Internship"
-                                                class="menu-icon" />Internship</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/404.html" class="flex menu-link"><img
-                                                src="../assets/icons/school-building.svg" alt="School"
-                                                class="menu-icon" />School events</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="../pages/about.html" class="flex menu-link"><img
-                                        src="../assets/icons/group.svg" alt="Groupe icon" class="menu-icon" />About
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-            
-        <ul  class="breadcrumb">
-            <li><a href="../index.html" class="active-link">Home</a></li>
-            <li></li>
-        </ul>
-        <div class="primary-page-wrapper">
-            <div class="primary-grid">
-
-                <div class="primary-grid-container" id="box">
-                    <div class="image-container">
-                      <img src="/assets/images/cosmology/star-and-hands-min.jpg" alt="Two hands reaching for a atom" />
-                  </div><!-- Large-image end -->
-                  <div>
-                    <div class="card-header">
-                      <h1>Come down, let's explore together</h1>
-                  </div><!-- Card-header end -->
+          </div>
+      
+          <nav>
+            <div class="primary-navigation">
+              <input type="checkbox" id="checkbox-toggle" />
+              <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+              <div class="menu">
+                <span class="nav-link">
+                  <a href="#" class="link">
+                    <img src="../assets/icons/homepage.svg" alt="House icon " class="icon" aria-hidden="true"/>
+                    Home
+                  </a>
+      
+                </span>
+                <span class="nav-link">
+                  <div class"dropdown">
+                    <a class="link" data-toggle="dropdown">
+                      <img src="../assets/icons/telescope.svg" alt="Telescope icon " class="icon" aria-hidden="true"/>
+                      Explore
+                      <img src="../assets/icons/triangle-bottom-arrow.svg" alt="Arrow down icon " class="icon" aria-hidden="true"/>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <span class="nav-link">
+                        <li><a href="#" class="link"><img src="../assets/icons/children-kids.svg" alt="Groupe icon " class="icon" aria-hidden="true"/>Kids</a></li>
+                      </span>
+                      <span class="nav-link">
+                        <li><a href="#" class="link"><img src="../assets/icons/leaflet.svg" alt="Groupe icon " class="icon" aria-hidden="true"/>Exhibition</a></li>
+                      </span>
+                      <span class="nav-link">
+                        <li><a href="#" class="link"><img src="../assets/icons/date.svg" alt="Groupe icon " class="icon" />Events</a></li>
+                      </span>
+                      <span class="nav-link">
+                        <li><a href="#" class="link"><img src="../assets/icons/binoculars.svg" alt="Groupe icon " class="icon" />Get Involved</a></li>
+                      </span>
+                    </ul>
                   </div>
-                  <div>
-                    <div class="card-main text-center">
-                      <p>Here at your Community Science museum, you can explore <b>life.</b></p>
-                      <p>You can explore the past, the present and even parts of the future.</p>
-                      <p><span class="page-break" aria-hidden="true"></span></p>
-                      <p>Travel to the universe, or see the life of a single seed grow. When the museum got built, we invited down <b>Morgan Freeman</b> to plant our own tree that is located in the center of our museum.</p>
-                  <span class="page-break" aria-hidden="true"></span>
+                </span>
+                <span class="nav-link">
+                  <div class"dropdown">
+                    <a class="link" data-toggle="dropdown">
+                      <img src="../assets/icons/group.svg" alt="Groupe icon " class="icon" />
+                      Education
+                      <img src="../assets/icons/group.svg" alt="Groupe icon " class="icon" />
+                    </a>
+                    <ul class="dropdown-menu" id="dropdown-2">
+                      <span class="nav-link">
+                        <li>
+                          <img src="../assets/icons/group.svg" alt="Groupe icon " class="icon" />
+                          <a href="#" class="link">Teachers</a>
+                        </li>
+                      </span>
+                      <span class="nav-link">
+                        <li>
+                          <img src="../assets/icons/group.svg" alt="Groupe icon " class="icon" />
+                          <a href="#" class="link">Internship</a>
+                        </li>
+                      </span>
+                      <span class="nav-link">
+                        <li>
+                          <img src="../assets/icons/group.svg" alt="Groupe icon " class="icon" />
+                          <a href="#" class="link">School events</a>
+                        </li>
+                      </span>
+                    </ul>
+                  </div>
+                </span>
+                <span class="nav-link last-link">
+                  <a href="#" class="link">
+                    <img src="../assets/icons/group.svg" alt="Groupe icon " class="icon" />About us</a>
+                </span>
               </div>
-                  </div>
-                  <div>
-                    <div class="image-container tree-of-life">
-                      <div class="polaroid">
-                        <span class="polaroid-break" aria-hidden="true">
-                        <img src="/assets/images/tree-garden-inside.jpg" alt="The tree of life" />
-                          </span>
-                        <p><strong>"The tree of life"</strong></p>
-                      </div>
-                  </div>
-                  </div>
-                  <div>
-                    <div class="card-main text-center">      
-                      <span class="page-break" aria-hidden="true"></span>
-                          <p>And it is growing strong. Drop by and see if the tree have enough water, oxygen and light. Have a look at the display by the tree and you can see when the first root came, and how many it is grown.</p>
-                      </div><!-- card-main end -->
-                  </div>
-                  <div id="box-4">
-                    
-                  </div>
-                </div><!-- primary-grid-container -->
-                
-                <div class="secondary-grid-container">
-                    <div class="primary-card-grid">
-
-                        <div class="card-container">
-                            <div class="card-header">
-                                <h2>Kids</h2>
-                            </div><!-- Card-header end -->
-                            <div class="card-image">
-                                <img src="/assets/images/kids/kids.jpg" alt="Kid" />
-                            </div><!-- Card-image end -->
-                            <div class="card-main">
-                                <p>At our museum we have a large rage of activates for kids, ranging from 7 to 15.</p>
-                            </div> <!-- Card-main end -->
-                            <div class="card-footer">
-                                <a href="/pages/kids.html" class="btn"><img src="../assets/icons/binoculars.svg" class="menu-icon" alt="Binoculars" />View more</a>
-                            </div><!-- Card-footer end -->
-                        </div><!-- card-container end -->
-
-                        <div class="card-container">
-                            <div class="card-header">
-                                <h2>Events & shows</h2>
-                            </div><!-- Card-header end -->
-                            <div class="card-image">
-                                <img src="/assets/images/show/show_2-min.jpg" alt="Smoke show image" />
-                            </div><!-- Card-image end -->
-                            <div class="card-main">
-                                <p>We try to create a atmosphere that you and you family will remember for years to come.</p>
-                            </div><!-- Card-main end -->
-                            <div class="card-footer">
-                                <a href="/pages/event.html" class="btn"><img src="../assets/icons/binoculars.svg" class="menu-icon" alt="Binoculars" />View more</a>
-                            </div><!-- Card-footer end -->
-                        </div><!-- card-container end -->
-
-                        <div class="card-container">
-                            <div class="card-header">
-                                <h2>Explore</h2>
-                            </div><!-- Card-header end -->
-                            <div class="card-image">
-                                <img src="/assets/images/evolution/evolution.jpg" alt="Evolution image" />
-                            </div><!-- Card-image end -->
-                            <div class="card-main">
-                                <p>Let us take you back in time, or bring you into the future. Come explore what you can experience in our museum</p>
-                            </div><!-- Card-main end -->
-                            <div class="card-footer">
-                                <a href="/pages/event.html" class="btn"><img src="../assets/icons/binoculars.svg" class="menu-icon" alt="Binoculars" />View more</a>
-                            </div><!-- Card-footer end -->
-                        </div><!-- card-container end -->
-
-                        <div class="card-container">
-                            <div class="card-header">
-                                <h2>About us</h2>
-                            </div><!-- Card-header end -->
-                            <div class="card-image">
-                                <img src="../assets/images/museum/museum-outside-min.jpg" alt="Museum outside image" />
-                            </div><!-- Card-image end -->
-                            <div class="card-main">
-                                <p>We opened the doors the first time when Oslo still was called Christiania. After that we just expanded.</p>
-                            </div><!-- Card-main end -->
-                            <div class="card-footer">
-                                <a href="/pages/event.html" class="btn"><img src="../assets/icons/binoculars.svg" class="menu-icon" alt="Binoculars" />View more</a>
-                            </div><!-- Card-footer end -->
-                        </div><!-- card-container end -->
-
-                    </div><!-- primary-card-grid end -->
-                </div><!-- secondary-grid-container end -->
-
-            </div><!-- primary-grid end -->
-        </div><!-- primary-page-wrapper end -->
-    </main>
+            </div>
+          </nav>
+      
+        </div>
+      </header>
+      
+      <main>
+        <div class="wrapper">
+      
+          <div class="container">
+            <!-- card-1 -->
+            <div class="large-container">
+              <img src="../assets/images/cosmology/star-and-hands-min.jpg" alt="Two hands reaching for a atom" />
+              <span class="header-background">
+                <h1>Come down, let's explore together</h1>
+              </span>
+              <span class="textarea">
+                <p>Here at your Community Science museum, you can explore life. You can explore the past, the present and even parts of the future.</p>
+                <span class="text-breaker"></span>
+                <p>Travel to the universe, or see the life of a single seed grow. When the museum got built, we invited down Morgan Freeman to plant our own tree that is located in the center of our museum.</p>
+                <span class="text-breaker"></span>
+                <span class="text-breaker"></span>
+              </span>
+              <div class="polaroid">
+                <span aria-hidden="true">
+                  <img src="../assets/images/tree-garden-inside.jpg" alt="The tree of life" />
+                </span>
+                <p><strong>"The tree of life"</strong></p>
+              </div>
+              <span class="textarea">
+                <span class="text-breaker"></span>
+                <p>And it is growing strong. Drop by and see if the tree have enough water, oxygen and light. Have a look at the display by the tree and you can see when the first root came, and how many it is grown.</p>
+              </span>
+            </div>
+          </div>
+      
+          <div class="grid-container-4">
+            <!-- card-1 -->
+            <div class="small-card-container">
+              <span class="small-card-header">
+                <h2>Kids</h2>
+              </span>
+              <img src="../assets/images/kids/kids.jpg" alt="Kid" />
+              <span class="textarea">
+                <span class="text-breaker"></span>
+               <p>At our museum we have a large rage of activates for kids, ranging from 7 to 15.</p>
+              </span>
+              <a href="#" class="btn"><img src="../assets/icons/binoculars.svg" alt="Groupe icon " class="icon" />View more</a>
+            </div>
+      
+            <!-- card-2 -->
+            <div class="small-card-container">
+              <span class="small-card-header">
+                <h2>Events & shows</h2>
+              </span>
+              <img src="../assets/images/show/show_2-min.jpg" alt="Smoke show image" />
+              <span class="textarea">
+                <span class="text-breaker"></span>
+                <p>We try to create a atmosphere that you and you family will remember for years to come.</p>
+              </span>
+              <a href="#" class="btn"><img src="../assets/icons/binoculars.svg" alt="Groupe icon " class="icon" />View more</a>
+            </div>
+      
+            <!-- card-3 -->
+            <div class="small-card-container">
+              <span class="small-card-header">
+                <h2>Explore</h2>
+              </span>
+              <img src="../assets/images/evolution/evolution.jpg" alt="Evolution image" />
+              <span class="textarea">
+                <span class="text-breaker"></span>
+                <p>Let us take you back in time, or bring you into the future. Come explore what you can experience in our museum</p>
+              </span>
+              <a href="#" class="btn"><img src="../assets/icons/binoculars.svg" alt="Groupe icon " class="icon" />View more</a>
+            </div>
+      
+            <!-- card-4 -->
+            <div class="small-card-container">
+              <span class="small-card-header">
+                <h2>About us</h2>
+              </span>
+              <img src="../assets/images/museum/museum-outside-min.jpg" alt="Museum outside image" />
+              <span class="textarea">
+                <span class="text-breaker"></span>
+                <p>We opened the doors the first time when Oslo still was called Christiania. After that we just expanded.</p>
+              </span>
+              <a href="#" class="btn"><img src="../assets/icons/binoculars.svg" alt="Groupe icon " class="icon" />View more</a>
+            </div>
+          </div>
+        </div>
+      </main>
     <footer>
         <div class="social-links">
             <a href="https://nb-no.facebook.com/" target="_blank" class="btn-social"><img
