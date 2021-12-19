@@ -122,7 +122,7 @@ body {
         'main'
         'footer';
         grid-template-rows: auto 1fr auto;
-
+        height: 100vh;
 }
 
 header {
@@ -167,13 +167,18 @@ footer > div > p {
 .grid-container {
     display: grid;
     gap: 20px;
-    max-width: 900px;
+    max-width: 700px;
+}
+
+.grid-container-2{
+    display: grid;
+    gap: 20px;
+    max-width: 1400px;
 }
 
 .grid-col-1 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 1fr);
-    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -367,8 +372,77 @@ footer > div > p {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px)  {
+    header {
+        display: grid;
+        grid-area: header;
+        width: 100%;
+        background-color: #bbcfd7;
+        box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    nav{
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    main {
+        display: grid;
+        grid-area: main;
+        padding: 5px;
+    }
+    
+    footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        background-color: #bbcfd7;
+    }
+    
+    footer > div {
+        margin: 10px auto;
+        padding-inline: 1em 2em;
+    }
+    
+    footer > div > p {
+        font-family: "Cabin", sans-serif;
+        font-size: .7rem;
+        margin: 5px;
+    }
 
+    .grid-container {
+        display: grid;
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    .grid-col-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        max-width: 100%;
+    }
+    
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .grid-col-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .grid-col-4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 15px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
