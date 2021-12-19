@@ -1,0 +1,184 @@
+.slide-show-container {
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (9 / 16));
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide-show,
+.slide-show-2,
+.slide-show-3,
+.slide-show-4,
+.slide-show-5,
+.slide-show-6{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.slide-show > label,
+.slide-show-2 > label,
+.slide-show-3 > label,
+.slide-show-4 > label,
+.slide-show-5 > label,
+.slide-show-6 > label {
+    cursor: pointer;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-color: var(--sunray);
+    border-radius: 50px;
+    margin: 0.3rem 0.5rem;
+}
+
+.slide-show > label:hover,
+.slide-show-2 > label:hover,
+.slide-show-3 > label:hover,
+.slide-show-4 > label:hover,
+.slide-show-5 > label:hover,
+.slide-show-6 > label:hover {
+    background-color: var(--orange-engineering);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+    animation: 5s auto-play infinite;
+}
+
+
+@keyframes auto-play {
+    0%{
+        transition: left 0s .75s;
+    }
+
+    100% {
+        transition: left 0s .75s;
+    }
+}
+
+[id^="circle"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+/* -- Kids -- */
+.slide-1{
+    background-image: url("/assets/images/kids/kids.jpg");
+}
+
+.slide-2{
+    background-image: url("/assets/images/kids/kids_1.jpg");
+}
+
+.slide-3{
+    background-image: url("/assets/images/kids/kids_2.jpg");
+}
+
+.slide-4{
+    background-image: url("/assets/images/kids/kids_3.jpg");
+}
+
+/* -- Robotics and AI -- */
+.slide-5{
+    background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-2.jpg");
+}
+
+.slide-6{
+    background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-3.jpg");
+}
+
+.slide-7{
+    background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-4.jpg");
+}
+
+.slide-8{
+    background-image: url("/assets/images/robotics_and_ai/robot-thinking.jpg");
+}
+
+/* -- Evolution -- */
+.slide-9{
+    background-image: url("/assets/images/evolution/evolution.jpg");
+}
+
+.slide-10{
+    background-image: url("/assets/images/evolution/evolution-2.jpg");
+}
+
+.slide-11{
+    background-image: url("/assets/images/evolution/evolution-3.jpg");
+}
+
+.slide-12{
+    background-image: url("/assets/images/evolution/evolution-4.jpg");
+}
+
+/* -- Biology -- */
+.slide-13{
+    background-image: url("/assets/images/biology/biology-1.jpg");
+}
+
+.slide-14{
+    background-image: url("/assets/images/biology/biology-min.jpg");
+}
+
+.slide-15{
+    background-image: url("/assets/images/biology/biology-3.jpg");
+}
+
+.slide-16{
+    background-image: url("/assets/images/biology/biology-2.jpg");
+}
+
+/* -- Ecology -- */
+.slide-17{
+    background-image: url("/assets/images/ecology/ecology-2.jpg");
+}
+
+.slide-18{
+    background-image: url("/assets/images/ecology/ecology-3.jpg");
+}
+
+.slide-19{
+    background-image: url("/assets/images/ecology/ecology.jpg");
+}
+
+.slide-20{
+    background-image: url("/assets/images/ecology/ecology_4.jpg");
+}
+
+/* -- Cosmology -- */
+.slide-21{
+    background-image: url("/assets/images/cosmology/cosmology-min.jpg");
+}
+
+.slide-22{
+    background-image: url("/assets/images/cosmology/cosmology-5.jpg");
+}
+
+.slide-23{
+    background-image: url("/assets/images/cosmology/cosmology-2.jpg");
+}
+
+.slide-24{
+    background-image: url("/assets/images/cosmology/cosmology-4.jpg");
+}

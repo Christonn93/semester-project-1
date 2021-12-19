@@ -1,0 +1,382 @@
+:root {
+     /* -- Steel Teal -- */
+     --steel-teal: #5b828e;
+     /* -- Beau Blue -- */
+     --beau-blue: #bbcfd7;
+     /* -- Alice Blue -- */
+     --alice-blue: #e3e8ee;
+     /* -- Silver Sand -- */
+     --silver-sand: #a5b4b9;
+     /* -- Sunray -- */
+     --sunray: #eab354;
+     /* -- Dim Gray -- */
+     --ding-gray: #625f5e;
+     /* -- Charleston Green -- */
+     --charleston-green: #262b2b;
+     /* -- Orange engineering -- */
+     --orange-engineering: #b70000;
+     /* -- Red pigment -- */
+     --red-pigment: #fc141e;
+     /* -- Charcoal -- */
+     --charcoal: #3b5160;
+     /* -- Sheen Green -- */
+     --sheen-green: #89cd4a;
+     /* -- Sky Blue Crayola -- */
+     --sky-blue: #4bc6db;
+     /* -- Black -- */
+     --black: #000000;
+   
+     /* -- Global Border -- */
+     --border: 0.015em solid var(--charcoal);
+     /* -- Global Border hover -- */
+     --border-hover: 0.015em solid var(--orange-engineering);
+     /* -- Global border-radius -- */
+     --border-radius: 0.25em;
+     /* -- Global border-radius -- */
+     --border-radius-nav: 0.25em 0.25em 0 0;
+     /* -- Global padding -- */
+     --padding: 1rem;
+     /* -- Global padding -- */
+     --margin: 1rem;
+     /* -- Global padding text -- */
+     --text-padding: 0 25px 0 25px;
+     /* -- Global padding buttons -- */
+     --btn-padding: 0.35em 1.2em;
+     /* -- Global sunray-shadow -- */
+     --sunray-shadow: 0px 5px 16px 0px var(--sunray);
+     /* -- Global black-shadow -- */
+     --black-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+     /* -- Global text-shadow -- */
+     --text-shadow: 0px 0px 2px var(--charcoal);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+a,
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: black;
+    border: 0;
+    height: 100%;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    display: inline-flex;
+}
+
+li {
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+span {
+    display: inline-flex;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+        grid-template-rows: auto 1fr auto;
+
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    width: 100%;
+    background-color: #bbcfd7;
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+nav{
+    padding: 15px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+}
+
+footer {
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    background-color: #bbcfd7;
+}
+
+footer > div {
+    margin: 15px auto;
+}
+
+footer > div > p {
+    font-family: "Cabin", sans-serif;
+    font-size: .7rem;
+    margin: 5px;
+}
+
+/* Grid property */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.grid-col-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 15px;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+/* Flex property */
+.flex-container {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* ========== Media Queries ========== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        display: grid;
+        grid-area: header;
+        width: 100%;
+        background-color: #bbcfd7;
+        box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    nav{
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    main {
+        display: grid;
+        grid-area: main;
+        padding: 15px;
+    }
+    
+    footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        background-color: #bbcfd7;
+    }
+    
+    footer > div {
+        margin: 0 auto;
+        padding-inline: 15px;
+    }
+    
+    footer > div > p {
+        font-family: "Cabin", sans-serif;
+        font-size: .7rem;
+        margin: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 20px;
+        max-width: 450px;
+    }
+    
+    .grid-col-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        max-width: 450px;
+    }
+    
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .grid-col-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .grid-col-4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 15px;
+        max-width: 450px;
+        margin-bottom: 25px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        display: grid;
+        grid-area: header;
+        width: 100%;
+        background-color: #bbcfd7;
+        box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    nav{
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    main {
+        display: grid;
+        grid-area: main;
+        padding: 5px;
+    }
+    
+    footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        background-color: #bbcfd7;
+    }
+    
+    footer > div {
+        margin: 10px auto;
+        padding-inline: 1em 2em;
+    }
+    
+    footer > div > p {
+        font-family: "Cabin", sans-serif;
+        font-size: .7rem;
+        margin: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    .grid-col-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        max-width: 100%;
+    }
+    
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .grid-col-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .grid-col-4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 15px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
