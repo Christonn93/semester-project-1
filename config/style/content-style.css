@@ -559,7 +559,112 @@ input[type=checkbox] {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .primary-navigation {
+        width: 100%;
+    }
+
+    .navigation-bg {
+        width: 100%;
+        background: none;
+        position: relative;
+    }
+
+    .display-desktop {
+        display: none;
+    }
+
+    .display-mobile {
+        display: flex;
+    }
+
+    .logo {
+        margin: 5px 5px 0 5px;
+        width: 100px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 1px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 898;
+
+        box-shadow: var(--black-shadow);
+        background-color: var(--sunray);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        padding: 15px;
+        width: 100%;
+        z-index: 899;
+    }
+
+    .navigation-list>li {
+        display: inline-flex;
+        margin-inline-start: .12rem;
+        margin-inline-end: .12rem;
+    }
+
+    .navigation-list>li:first-child {
+        margin-left: 0;
+    }
+
+    .navigation-list>li:last-child {
+        margin-left: 0;
+    }
+
+    .nav-link {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-bottom: 0.1rem solid black;
+    }
+
+    .nav-link:hover {
+        color: var(--orange-engineering);
+        border-bottom: 0.1rem solid var(--orange-engineering);
+    }
+
+    .polaroid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        max-width: 450px;
+        background-color: white;
+        text-align: center;
+        margin: 0 auto;
+        box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+        rotate: 0deg;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        max-width: 850px;
+        margin: 10px auto;
+    }
+
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
