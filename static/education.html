@@ -50,23 +50,24 @@
     <script defer src="../assets/fontawesome/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $("#header").load("../config/page-template/header.html");
-            $("#footer").load("../config/page-template/footer.html");
-        });
-    </script>
-
-</head>
-
-<body>
-    <div id="header"></div>
-
+        <script>
+            $(function () {
+                $("#page-header").load("../config/page-template/header.html");
+                $("#page-footer").load("../config/page-template/footer.html");
+            });
+        </script>
+    
+    </head>
+    
+    <body>
+        <div id="page-header"></div>
     <main>
+        <div class="breadcrumb-container">
         <ul class="breadcrumb">
-            <li><a href="../index.html" class="active-link">Home</a></li>
-            <li></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" class="active-link">Education</a></li>
         </ul>
+    </div>
         <div class="wrapper">
             <div class="grid-container grid-col-1">
                 <div class="top">
@@ -126,7 +127,7 @@
     </main>
 
 
-    <div id="footer"></div>
+    <div id="page-footer"></div>
     <script src="../config/JavaScript/dropdown.js"></script>
     <!-- <script src="/config/JavaScript/modal.js"></script> -->
 </body>

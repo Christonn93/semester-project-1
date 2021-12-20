@@ -50,142 +50,271 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $("#header").load("../config/page-template/header.html");
-            $("#footer").load("../config/page-template/footer.html");
-        });
-    </script>
-
-</head>
-
-<body>
-    <div id="header"></div>
-
+        <script>
+            $(function () {
+                $("#page-header").load("../config/page-template/header.html");
+                $("#page-footer").load("../config/page-template/footer.html");
+            });
+        </script>
+    
+    </head>
+    
+    <body>
+        <div id="page-header"></div>
     <main>
-        <ul class="breadcrumb">
-            <li><a href="../index.html" class="active-link">Home</a></li>
-            <li></li>
-        </ul>
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" class="active-link">Events & shows</a></li>
+            </ul>
+        </div>
+
         <div class="wrapper">
+
             <div class="grid-container grid-col-1">
                 <div class="top">
                     <div class="ratio-box">
-                        <img class="image" src="/assets/images/cosmology/star-and-hands-min.jpg"
-                            alt="Image of Community Science museum logo" width="350" height="250" loading="lazy">
+                        <img class="image" src="/assets/images/show/show_9.jpg"
+                            alt="Image of one of our shows" width="2560" height="1707" loading="lazy">
                     </div>
                     <div class="header-background">
-                        <h1>Come down, let's explore together</h1>
+                        <h1>Come and join the Circus</h1>
+                        <p><em>And enjoy the shows</em></p>
                     </div>
+                
                 </div>
+
                 <div class="middle">
                     <div class="textarea">
-                        <p>Here at your Community Science museum, you can explore life. You can explore the past, the
-                            present and even parts of the future.</p>
-                        <span class="text-breaker"></span>
-                        <p>Travel to the universe, or see the life of a single seed grow. When the museum got built, we
-                            invited down <strong>Morgan Freeman</strong> to plant our own tree that is located in the
-                            center of our museum.</p>
+                        <p>Here at your Community Science museum, we are working hard to give everyone a good experience, create good moments you will never forget. </p>
                         <span class="text-breaker"></span>
                     </div>
-                    <div class="polaroid">
-                        <div>
-                            <div class="ratio-box">
-                                <img class="image" src="/assets/images/tree-garden-inside.jpg"
-                                    alt="Image of tree of life" width="600" height="400" loading="lazy">
-                            </div>
-                        </div>
-                        <p><strong>"The tree of life"</strong></p>
-                    </div>
-                    <div class="textarea">
-                        <span class="text-breaker"></span>
-                        <p>And it is growing strong. Drop by and see if the tree have enough water, oxygen and light.
-                            Have a look at the display by the tree and you can see when the first root came, and how
-                            many it is grown.</p>
-                    </div>
+                
                 </div>
-                <div class="bottom">
 
+                <div class="bottom">
+                    <h3><b><u>Marking explanation</u></b></h3>
+                    <div class="textarea flex-row">
+                    <ul>
+                        <li><i class="fas fa-exclamation"></i>&ensp;= Information</li>
+                        <li><i class="fas fa-vr-cardboard"></i>&ensp;= 3d or 5D</li>
+                        <li><i class="fas fa-film"></i>&ensp;= Virtual show</li>
+                    </ul>
+                    <ul>
+                        <li><i class="fas fa-guitar"></i>&ensp;= Loud sound</li>
+                        <li><i class="fas fa-hand-sparkles"></i>&ensp;= Might get picked to join on stage</li>
+                        <li><i class="fab fa-accessible-icon"></i>&ensp;= Accessible for wheelchair users</li>
+                        <li><i class="fas fa-magic"></i>&ensp;= A hint of magic</li>
+                    </ul>
                 </div>
+                </div>
+
             </div>
             
-            <div class="grid-container grid-col-4">
+            <div class="grid-container grid-col-2">
 
                 <div class="card-container">
-                    <div class="card-header">
-                        <h2>Kids</h2>
+                    <div class="card-header header-bg">
+                        <h2>The Mad Scientist</h2>
                     </div>
                     <div class="card-image">
                         <div class="ratio-box">
-                            <img class="image" src="/assets/images/kids/kids.jpg"
-                                alt="Image of a girl looking at a glowing atom ball" width="960" height="720"
+                            <img class="image" src="/assets/images/show/madscientist_2@2x-min.jpg"
+                                alt="Image of The mad scientist" width="1236" height="696"
                                 loading="lazy">
                         </div>
                     </div>
                     <div class="card-content textarea">
-                        <p>At our museum we have a large range of activates for kids, ranging from 7 to 15.</p>
+                        <p>Phillip Mikalsen aka The mad scientist will take you in to the world of the dark science and bring in the light.</p>
+                        <span class="text-breaker"></span>
+                        <p>The mad scientist creates amazing lazier and lightning shows, powerful wind and pushes the mind of madness to the maximum.</p>
+                        <span class="text-breaker"></span>
+                        <p>His <strong>spectacular</strong> show is not recommended for the youngest.</p>
                     </div>
-                    <div class="card-footer">
-                        <a href="#" class="cta btn-1">
-                            <span class="border-bottom"><i class="fas fa-binoculars"></i>&ensp;View More</span>
-                        </a>
+                    <div class="card-footer flex-row">
+                        <div class="show-list flex-col">
+                            <ul>
+                                <li><i class="fas fa-hand-sparkles"></i></li>
+                                <li><i class="fab fa-accessible-icon"></i></li>
+                                <li><i class="fas fa-guitar"></i></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i>&ensp;<p>24/12-2021</p></li>
+                                <li><i class="far fa-clock"></i>&ensp;<p>Show starts at 19.00</p></li>
+                                <li><i class="fas fa-glasses"></i>&ensp;<p>Age from: 10+</p></li>
+                            </ul>
+                        </div>
+                        <div class="show-list-btn">
+                         <a href="#" class="btn-1 btn-2"><i class="fas fa-ticket-alt"></i>&ensp;Order ticket</a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-container">
-                    <div class="card-header">
-                        <h2>Events & shows</h2>
+                    <div class="card-header header-bg">
+                        <h2>Nanogirl</h2>
                     </div>
                     <div class="card-image">
                         <div class="ratio-box">
-                            <img class="image" src="/assets/images/show/show_2-min.jpg" alt="Image of a smoke show performance" width="1500" height="1000" loading="lazy">
+                            <img class="image" src="/assets/images/show/nanogirl_dina.jpg" alt="Image of a smoke show performance from Nanogirl" width="1000" height="673" loading="lazy">
                         </div>
                     </div>
                     <div class="card-content textarea">
-                        <p>We try to create a atmosphere that you and you family will remember for years to come.</p>
+                        <p>Dina Olufsen aka Nanogirl is preforming experiments with dry ice and boiling water. </p>
+                        <span class="text-breaker"></span>
+                        <p>She will invite children up to the stage during the show, don't be sacred, its all safe.</p>
                     </div>
-                    <div class="card-footer">
-                        <a href="#" class="cta btn-1">
-                            <span class="border-bottom"><i class="fas fa-binoculars"></i>&ensp;View More</span>
-                        </a>
+                    <div class="card-footer flex-row">
+                        <div class="show-list flex-col">
+                            <ul>
+                                <li><i class="fas fa-hand-sparkles"></i></li>
+                                <li><i class="fab fa-accessible-icon"></i></li>
+                                <li><i class="fas fa-guitar"></i></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i>&ensp;<p>24/12-2021</p></li>
+                                <li><i class="far fa-clock"></i>&ensp;<p>Show starts at 19.00</p></li>
+                                <li><i class="fas fa-glasses"></i>&ensp;<p>Age from: All ages</p></li>
+                            </ul>
+                        </div>
+                        <div class="show-list-btn">
+                            <a href="#" class="btn-1 btn-2"><i class="fas fa-ticket-alt"></i>&ensp;Order ticket</a> 
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-container">
-                    <div class="card-header">
-                        <h2>Explore</h2>
+                    <div class="card-header header-bg">
+                        <h2>The Science Circus</h2>
                     </div>
                     <div class="card-image">
                         <div class="ratio-box">
-                            <img class="image" src="/assets/images/evolution/evolution-4.jpg" alt="Graphic design of the human evolution" width="1400" height="787" loading="lazy">
+                            <img class="image" src="/assets/images/show/the-science-circus_1-min.jpg" alt="Graphic design of the human evolution" width="1216" height="893" loading="lazy">
                         </div>
                     </div>
                     <div class="card-content textarea">
-                       <p>Let us take you back in time, or bring you into the future. Come explore what you can experience in our museum</p>
+                       <p>Trying to break the law of physics. Explore Newtons law and push the boundaries</p>
+                       <span class="text-breaker"></span>
+                        <p>Do you dare to go on stage and be one of the test bunnies? Ask for the orange headband when entering, and you might be the lucky one</p>
+                        <span class="text-breaker"></span>
+                        <p><i class="fas fa-exclamation"></i>&ensp;<strong>For the youngest it is recommended to be accompanied by one adult.</strong>&ensp;<i class="fas fa-exclamation"></i></p>
                     </div>
-                    <div class="card-footer">
-                        <a href="#" class="cta btn-1">
-                            <span class="border-bottom"><i class="fas fa-binoculars"></i>&ensp;View More</span>
-                        </a>
+                    <div class="card-footer flex-row">
+                        <div class="show-list flex-col">
+                            <ul>
+                                <li><i class="fas fa-hand-sparkles"></i></li>
+                                <li><i class="fab fa-accessible-icon"></i></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i>&ensp;<p>24/12-2021</p></li>
+                                <li><i class="far fa-clock"></i>&ensp;<p>Show starts at 19.00</p></li>
+                                <li><i class="fas fa-glasses"></i>&ensp;<p>Age from: 7+</p></li>
+                            </ul>
+                        </div>
+                        <div class="show-list-btn">
+                            <a href="#" class="btn-1 btn-2"><i class="fas fa-ticket-alt"></i>&ensp;Order ticket</a> 
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-container">
-                    <div class="card-header">
-                        <h2>About us</h2>
+                    <div class="card-header header-bg">
+                        <h2>Night at the museum</h2>
                     </div>
                     <div class="card-image">
                         <div class="ratio-box">
-                            <img class="image" src="/assets/images/museum/museum-outside_drone-min.jpg" alt="Image of the museum taken with drone" width="1559" height="1039" loading="lazy">
+                            <img class="image" src="/assets/images/show/show_6-min.jpg" alt="Image of last night show at the museum" width="1280" height="720" loading="lazy">
                         </div>
                     </div>
                     <div class="card-content textarea">
-                        <p>We opened the doors the first time when Oslo still was called Christiania. After that we just expanded.</p>
+                        <p>Enjoy a night in the museum. Bring a sleeping bag and sleep with dinosaurs, or maybe sleep in the caves in the same way as the people of the stone age.</p>
+                       <span class="text-breaker"></span>
+                        <p><i class="fas fa-exclamation"></i>&ensp;<strong>For the youngest it is recommended to be accompanied by one adult.</strong>&ensp;<i class="fas fa-exclamation"></i></p>
                     </div>
-                    <div class="card-footer">
-                        <a href="#" class="cta btn-1">
-                            <span class="border-bottom"><i class="fas fa-binoculars"></i>&ensp;View More</span>
-                        </a>
+                    <div class="card-footer flex-row">
+                        <div class="show-list flex-col">
+                            <ul>
+                                <li><i class="fas fa-magic"></i></li>
+                                <li><i class="fab fa-accessible-icon"></i></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i>&ensp;<p>24/12-2021</p></li>
+                                <li><i class="far fa-clock"></i>&ensp;<p>Show starts at 19.00</p></li>
+                                <li><i class="fas fa-glasses"></i>&ensp;<p>Age from: All ages</p></li>
+                            </ul>
+                        </div>
+                        <div class="show-list-btn">
+                            <a href="#" class="btn-1 btn-2"><i class="fas fa-ticket-alt"></i>&ensp;Order ticket</a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card-header header-bg">
+                        <h2>Virtual space Travel</h2>
+                    </div>
+                    <div class="card-image">
+                        <div class="ratio-box">
+                            <img class="image" src="/assets/images/audiotorium/audiotorium_2.jpeg" alt="Image of our virtual space travel in the auditorium" width="720" height="539" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="card-content textarea">
+                        <p>Dreamt about traveling in to space?</p>
+                       <span class="text-breaker"></span>
+                        <p>In our auditorium you can experience space travel in 5D. Feel the wind, feel the rockets power as you enbark on the journey into space</p>
+                        <span class="text-breaker"></span>
+                        <p><i class="fas fa-exclamation"></i>&ensp;<strong>For the youngest it is recommended to be accompanied by one adult.</strong>&ensp;<i class="fas fa-exclamation"></i></p>
+                    </div>
+                    <div class="card-footer flex-row">
+                        <div class="show-list flex-col">
+                            <ul>
+                                <li><i class="fas fa-film"></i></li>
+                                <li><i class="fas fa-vr-cardboard"></i></li>
+                                <li><i class="fab fa-accessible-icon"></i></li>
+                                <li><i class="fas fa-guitar"></i></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i>&ensp;<p>24/12-2021</p></li>
+                                <li><i class="far fa-clock"></i>&ensp;<p>Show starts at 19.00</p></li>
+                                <li><i class="fas fa-glasses"></i>&ensp;<p>Age from: All ages</p></li>
+                            </ul>
+                        </div>
+                        <div class="show-list-btn">
+                            <a href="#" class="btn-1 btn-2"><i class="fas fa-ticket-alt"></i>&ensp;Order ticket</a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card-header header-bg">
+                        <h2>Earth in 3D</h2>
+                    </div>
+                    <div class="card-image">
+                        <div class="ratio-box">
+                            <img class="image" src="/assets/images/show/show_1-min.jpg" alt="Image of a presentation of the universe" width="1024" height="448" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="card-content textarea">
+                        <p>This show is pure magic, enjoyable for all the family. Watch the earth from birth to the life we have today.</p>
+                       <span class="text-breaker"></span>
+                        <p>Not only will you experience the birth of our planet, you will also see how it have changed over the millions of years this great planet have existed.</p>
+                    </div>
+                    <div class="card-footer flex-row">
+                        <div class="show-list flex-col">
+                            <ul>
+                                <li><i class="fas fa-vr-cardboard"></i></li>
+                                <li><i class="fab fa-accessible-icon"></i></li>
+                                <li><i class="fas fa-guitar"></i></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i>&ensp;<p>24/12-2021</p></li>
+                                <li><i class="far fa-clock"></i>&ensp;<p>Show starts at 19.00</p></li>
+                                <li><i class="fas fa-glasses"></i>&ensp;<p>Age from: All ages</p></li>
+                            </ul>
+                        </div>
+                        <div class="show-list-btn">
+                            <a href="#" class="btn-1 btn-2"><i class="fas fa-ticket-alt"></i>&ensp;Order ticket</a> 
+                        </div>
                     </div>
                 </div>
 
@@ -194,7 +323,7 @@
     </main>
 
 
-    <div id="footer"></div>
+    <div id="page-footer"></div>
     <script src="../config/JavaScript/dropdown.js"></script>
     <!-- <script src="/config/JavaScript/modal.js"></script> -->
 </body>

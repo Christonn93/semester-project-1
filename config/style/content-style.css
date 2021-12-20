@@ -63,7 +63,12 @@
     box-shadow: inset 0px 5px 16px 0px rgba(0, 0, 0, 0.788);
 }
 
-.btn-2 {
+.btn-2{
+    border: .015em solid #3B5160;
+    box-shadow: 0px 5px 16px 0px #3B5160;
+}
+
+.btn-3 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +91,32 @@
 
 .border-top{
     border-top: .015em solid #3B5160;
+}
+
+.highlight {
+    display: inline-flex;
+    color: white;
+    width: fit-content;
+    padding: .1rem;
+    background-color: #eab354;
+    border: .02rem solid black;
+    box-shadow: inset 0px 5px 16px 0px rgba(0, 0, 0, 0.788);
+}
+
+.highlight > i {
+    color: white;
+    padding: .25rem;
+    font-size: 1.75rem;
+}
+
+.display-change > a {
+    text-decoration: underline;
+}
+
+
+.display-change > a:hover {
+    text-decoration: underline;
+    color: var(--orange-engineering);
 }
 
 /* .btn-1:hover, .border-bottom:hover{
@@ -187,7 +218,7 @@ input[type=checkbox] {
     display: flex;
     width: fit-content;
     position: absolute;
-    top: -90px;
+    top: -75px;
     right: 30px;
     justify-content: flex-end;
     font-size: 50px;
@@ -246,6 +277,10 @@ input[type=checkbox] {
 }
 
 /* ========== Main ========== */
+.breadcrumb-container {
+    padding-left: 15px;
+}
+
 .breadcrumb {
     margin-top: 15px;
     list-style: none;
@@ -336,8 +371,36 @@ input[type=checkbox] {
     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* ========== Footer ========== */
+/* Show list */
+.show-list {
+    padding: 15px;
+    width: 100%;
+    margin: .5rem;
+}
 
+.show-list > ul > li {
+    margin: .5rem;
+    margin-inline-start: 1.5rem;
+}
+
+.show-list-btn  {
+    padding: 5px;
+    width: 100%;
+}
+
+.textarea > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea > ul > li {
+    margin: .5rem;
+}
+
+/* ========== Footer ========== */
+.content {
+    margin: 10px;
+}
 
 
 

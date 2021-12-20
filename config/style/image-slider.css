@@ -4,6 +4,7 @@
     padding-top: calc(100% * (9 / 16));
     position: relative;
     overflow: hidden;
+    overflow-x: scroll;
     text-align: center;
 }
 
