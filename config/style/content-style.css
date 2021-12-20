@@ -282,12 +282,12 @@ input[type=checkbox] {
 }
 
 .dropdown-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 200px;
     position: absolute;
     top: 40px;
-    left: 0px;
+    left: -5px;
     padding: 5px;
     border: 1px solid black;
     z-index: 10000;
