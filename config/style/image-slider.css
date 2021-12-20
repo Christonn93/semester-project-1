@@ -4,7 +4,6 @@
     padding-top: calc(100% * (9 / 16));
     position: relative;
     overflow: hidden;
-    overflow-x: scroll;
     text-align: center;
 }
 
@@ -83,103 +82,68 @@ input[type=radio] {
 }
 
 /* -- Kids -- */
-.slide-1{
-    background-image: url("/assets/images/kids/kids.jpg");
-}
+.slide-1{background-image: url("/assets/images/kids/kids.jpg");}
 
-.slide-2{
-    background-image: url("/assets/images/kids/kids_1.jpg");
-}
+.slide-2{background-image: url("/assets/images/kids/kids_1.jpg");}
 
-.slide-3{
-    background-image: url("/assets/images/kids/kids_2.jpg");
-}
+.slide-3{background-image: url("/assets/images/kids/kids_2.jpg");}
 
-.slide-4{
-    background-image: url("/assets/images/kids/kids_3.jpg");
-}
+.slide-4{background-image: url("/assets/images/kids/kids_3.jpg");}
 
 /* -- Robotics and AI -- */
-.slide-5{
-    background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-2.jpg");
-}
+.slide-5{background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-2.jpg");}
 
-.slide-6{
-    background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-3.jpg");
-}
+.slide-6{background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-3.jpg");}
 
-.slide-7{
-    background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-4.jpg");
-}
+.slide-7{background-image: url("/assets/images/robotics_and_ai/robotics_and_aI-4.jpg");}
 
-.slide-8{
-    background-image: url("/assets/images/robotics_and_ai/robot-thinking.jpg");
-}
+.slide-8{background-image: url("/assets/images/robotics_and_ai/robot-thinking.jpg");}
 
 /* -- Evolution -- */
-.slide-9{
-    background-image: url("/assets/images/evolution/evolution.jpg");
-}
+.slide-9{background-image: url("/assets/images/evolution/evolution.jpg");}
 
-.slide-10{
-    background-image: url("/assets/images/evolution/evolution-2.jpg");
-}
+.slide-10{background-image: url("/assets/images/evolution/evolution-2.jpg");}
 
-.slide-11{
-    background-image: url("/assets/images/evolution/evolution-3.jpg");
-}
+.slide-11{background-image: url("/assets/images/evolution/evolution-3.jpg");}
 
-.slide-12{
-    background-image: url("/assets/images/evolution/evolution-4.jpg");
-}
+.slide-12{background-image: url("/assets/images/evolution/evolution-4.jpg");}
 
 /* -- Biology -- */
-.slide-13{
-    background-image: url("/assets/images/biology/biology-1.jpg");
-}
+.slide-13{background-image: url("/assets/images/biology/biology-1.jpg");}
 
-.slide-14{
-    background-image: url("/assets/images/biology/biology-min.jpg");
-}
+.slide-14{background-image: url("/assets/images/biology/biology-min.jpg");}
 
-.slide-15{
-    background-image: url("/assets/images/biology/biology-3.jpg");
-}
+.slide-15{background-image: url("/assets/images/biology/biology-3.jpg");}
 
-.slide-16{
-    background-image: url("/assets/images/biology/biology-2.jpg");
-}
+.slide-16{background-image: url("/assets/images/biology/biology-2.jpg");}
 
 /* -- Ecology -- */
-.slide-17{
-    background-image: url("/assets/images/ecology/ecology-2.jpg");
-}
+.slide-17{background-image: url("/assets/images/ecology/ecology-2.jpg");}
 
-.slide-18{
-    background-image: url("/assets/images/ecology/ecology-3.jpg");
-}
+.slide-18{background-image: url("/assets/images/ecology/ecology-3.jpg");}
 
-.slide-19{
-    background-image: url("/assets/images/ecology/ecology.jpg");
-}
+.slide-19{background-image: url("/assets/images/ecology/ecology.jpg");}
 
-.slide-20{
-    background-image: url("/assets/images/ecology/ecology_4.jpg");
-}
+.slide-20{ background-image: url("/assets/images/ecology/ecology_4.jpg");}
 
 /* -- Cosmology -- */
-.slide-21{
-    background-image: url("/assets/images/cosmology/cosmology-min.jpg");
-}
+.slide-21{background-image: url("/assets/images/cosmology/cosmology-min.jpg");}
 
-.slide-22{
-    background-image: url("/assets/images/cosmology/cosmology-5.jpg");
-}
+.slide-22{background-image: url("/assets/images/cosmology/cosmology-5.jpg");}
 
-.slide-23{
-    background-image: url("/assets/images/cosmology/cosmology-2.jpg");
-}
+.slide-23{background-image: url("/assets/images/cosmology/cosmology-2.jpg");}
 
-.slide-24{
-    background-image: url("/assets/images/cosmology/cosmology-4.jpg");
+.slide-24{background-image: url("/assets/images/cosmology/cosmology-4.jpg");}
+
+
+@media only screen and (max-width: 600px) and (min-width: 600px) and (max-width: 768px) {
+    .slide-show-container {
+        width: 100%;
+        height: 0;
+        padding-top: calc(100% * (9 / 16));
+        position: relative;
+        overflow: scroll;
+        overflow-x: scroll;
+        text-align: center;
+    }
 }

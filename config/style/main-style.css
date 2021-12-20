@@ -87,7 +87,7 @@ p {
 a,
 button {
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: black;
     border: 0;
@@ -273,13 +273,26 @@ footer>div>p {
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     p {
         font-family: "Cabin", sans-serif;
-        font-size: .85rem;
+        font-size: 1rem;
         font-weight: 400;
+    }
+
+    a,
+    button {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: black;
+        border: 0;
+        height: 100%;
+        display: inline-flex;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     header {
@@ -356,31 +369,32 @@ footer>div>p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-       /* Typography */
-       h1,
-       h2,
-       h3,
-       h4,
-       h5,
-       h6 {
-           font-family: "Martel Sans", sans-serif;
-           font-weight: 600;
-       }
-   
-       h1 {
-           font-size: 2rem;
-       }
-   
-       h2 {
-           font-size: 1rem;
-       }
-   
-       p {
-           font-family: "Cabin", sans-serif;
-           font-size: .85rem;
-           font-weight: 400;
-       }
-    
+
+    /* Typography */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Martel Sans", sans-serif;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-family: "Cabin", sans-serif;
+        font-size: .85rem;
+        font-weight: 400;
+    }
+
     header {
         display: grid;
         grid-area: header;
