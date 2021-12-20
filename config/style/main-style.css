@@ -189,7 +189,7 @@ footer>div>p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 1fr);
     gap: 30px;
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     margin-bottom: 25px;
 }

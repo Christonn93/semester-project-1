@@ -39,6 +39,13 @@
     background-color: #eab354;
 }
 
+.text-pop {
+    padding: 25px;
+    text-align: start;
+    border: .015em solid #3B5160;
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.788);
+}
+
 /* Buttons */
 
 .cta {
