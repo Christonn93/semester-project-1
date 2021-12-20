@@ -1,5 +1,4 @@
-
-const dropdownTrigger = document.querySelectorAll('[data-toggle="dropdown"]');
+const dropdownTrigger = document.querySelectorAll(".dropdown");
 
 dropdownTrigger.forEach(function(trigger){
     trigger.onclick = function(event){
@@ -10,4 +9,3 @@ dropdownTrigger.forEach(function(trigger){
             }
         }    
     })
-
