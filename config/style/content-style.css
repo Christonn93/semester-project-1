@@ -209,6 +209,17 @@
     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
+
+/* ========== Images ========== */
+ .icon-style-disabled{
+    background-color: var(--sunray);
+    padding: 15px;
+    color: black;
+    outline-color: var(--sunray);
+    outline-style: outset;
+}
+
+
 /* ========== Header ========== */
 
 /* Navigation */
@@ -410,6 +421,81 @@ input[type=checkbox] {
     margin: .5rem;
 }
 
+
+/* Form */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    width: 750px;
+    border: .015em solid #3B5160;
+    background-color: var(--alice-blue);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-header{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-bottom: .015em solid #3B5160;
+}
+
+.form-information {
+    padding: 15px;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.form-input{
+    display: inline-flex;
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.form-input > i {
+    text-align: center;
+    background-color: var(--sunray);
+    padding: 15px;
+    color: black;
+    font-size: 1.2rem;
+    width: 50px;
+    outline-color: var(--sunray);
+    outline-style: outset;
+}
+
+.input-area{
+    display: inline-flex;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.1rem;
+    margin-inline-start: .5rem;
+    outline-color: var(--sunray);
+    outline-style: inset;
+}
+
+.form-input > textarea {
+    min-height: 50px;
+    resize: vertical;
+}
+
+.form-footer{
+    display: inline-flex;
+    width: 100%;
+    border-top: .015em solid #3B5160;
+}
+
+
+
 /* ========== Footer ========== */
 .content {
     margin: 10px;
@@ -524,6 +610,10 @@ input[type=checkbox] {
         max-width: 450px;
         margin: 10px auto;
     }
+
+    .contact-form{
+        width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -631,6 +721,9 @@ input[type=checkbox] {
         margin: 10px auto;
     }
 
+    .contact-form{
+        width: 100%;
+    }
 
 }
 

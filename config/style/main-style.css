@@ -25,6 +25,8 @@
     --sky-blue: #4bc6db;
     /* -- Black -- */
     --black: #000000;
+    /* -- Hover Color -- */
+    --hover: #1000a6;
 
     /* -- Global Border -- */
     --border: 0.015em solid var(--charcoal);
@@ -185,6 +187,15 @@ footer>div>p {
     display: grid;
     gap: 30px;
     max-width: 1400px;
+}
+
+.grid-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .grid-col-1 {

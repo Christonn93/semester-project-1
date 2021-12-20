@@ -50,174 +50,68 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script>
-            $(function () {
-                $("#page-header").load("../config/page-template/header.html");
-                $("#page-footer").load("../config/page-template/footer.html");
-            });
-        </script>
-    
-    </head>
-    
-    <body>
-        <div id="page-header"></div>
+    <script>
+        $(function () {
+            $("#page-header").load("../config/page-template/header.html");
+            $("#page-footer").load("../config/page-template/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="page-header"></div>
 
     <main>
 
         <div class="breadcrumb-container">
             <ul class="breadcrumb">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#" class="active-link">About Us</a></li>
+                <li><a href="#" class="active-link">Contact Us</a></li>
             </ul>
         </div>
 
         <div class="wrapper">
+            <div class="grid-container-2">
+                <div class="grid-col">
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-header header-bg">
+                                <h1>Contact us</h1>
+                            </div>
+                            <div class="form-information">
+                                <p>We are more then glad to help you in anyway we can.</p>
+                            </div>
+                            <div class="form-body">
+                                <div class="form-input">
+                                    <i class="fab fa-optin-monster"></i>
+                                    <input type="text" placeholder="First & Last Name" name="First-Last-name"
+                                        class="input-area">
+                                </div>
 
-            <div class="grid-container grid-col-1">
-                <div class="top">
-                    <div class="ratio-box">
-                        <img class="image" src="/assets/images/museum/museum-outside-min.jpg"
-                            alt="Image of Community Science museum logo" width="1559" height="1039" loading="lazy">
-                    </div>
-                    <div class="header-background">
-                        <h1>About <strike>Our</strike> <b>your</b> Community science museum</h1>
+                                <div class="form-input">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <input type="tel" placeholder="Phone number" name="tel-nr" class="input-area">
+                                </div>
+
+                                <div class="form-input">
+                                    <i class="far fa-envelope"></i>
+                                    <input type="email" placeholder="E-mail adress" name="email" class="input-area">
+                                </div>
+
+                                <div class="form-input">
+                                    <i class="fas fa-scroll"></i>
+                                    <textarea type="text" placeholder="Write your message here......" name="message"
+                                        class="input-area"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="form-footer">
+                                <button class="cta btn-1" type="submit">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
-            
-            <div class="grid-container grid-col-3">
-
-                <div class="card-container">
-                    <div class="card-header header-bg">
-                        <h2>Museum cafe</h2>
-                    </div>
-                    <div class="card-image">
-                        <div class="ratio-box">
-                            <img class="image" src="../assets/images/museum/museum-cafe-min.jpg" alt="Image of the museum cafe area" width="1260" height="600" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="card-content textarea">
-                    <p>If the day is long, or the kids get hungry. Take the trip down top our museum cafe. Enjoy fresh bread from a local baker and som hot coffee</p>
-                    <span class="text-breaker"></span>
-                    <p>We also have a range of food aimed at the children. You will always find something to eat, snack or drink.</p>
-                    <span class="text-breaker"></span>
-                    <p>We also have a bottle warmer for the youngest. It is located next to the soda dispenser</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card-header header-bg">
-                        <h2>Museum gift shop</h2>
-                    </div>
-                    <div class="card-image">
-                        <div class="ratio-box">
-                            <img class="image" src="../assets/images/museum/museum-storefront.jpg" alt="Image of the museum gift shop" width="1920" height="1080" loading="lazy">
-                        </div>
-                    </div>
-
-                    <div class="card-content textarea">
-                        <p>On your way out you can stop by our gift shop and bring some cool and interesting things to remind you about your stay.</p>
-                        <span class="text-breaker"></span>
-                        <p>We have loads of boardgames, experiment sets and some cool science T-shirts.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card-header header-bg">
-                        <h2>Auditorium</h2>
-                    </div>
-                    <div class="card-image">
-                        <div class="ratio-box">
-                            <img class="image" src="../assets/images/audiotorium/audiotorium.jpg" alt="Image of the museum auditorium" width="850" height="567" loading="lazy">
-                        </div>
-                    </div>
-
-                    <div class="card-content textarea">
-                        <p><strong>Want to have a presentation?</strong></p>
-                        <span class="text-breaker"></span>
-                        <p>We will help you set up everything as you want it. It can be a live presentation or a virtual one.</p>
-                        <span class="text-breaker"></span>
-                        <p>Contact us to make arrangements</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card-header header-bg">
-                        <h2>Opening Hours & Contact info</h2>
-                    </div>
-
-                    <div class="card-content textarea">
-                        <p><strong><u>Our doors are open accordingly</u></strong></p>
-                        <span class="text-breaker"></span>
-                        <div class="list-grid">
-                        <ul>
-                            <li>Monday to Thursday:</li>
-                            <li>Friday:</li>
-                            <li>Saturday:</li>
-                            <li>Sunday:</li>
-                        </ul>
-                        <ul>
-                            <li>09:00-17.00</li>
-                            <li>09:00-21.00</li>
-                            <li>09:00-18.00</li>
-                            <li>Closed</li>
-                        </ul>
-                    </div>
-                    <span class="text-breaker"></span>
-                    <p><strong><u>Contact information</u></strong></p>
-                    <span class="text-breaker"></span>
-                    <div class="list-grid">
-                        <ul>
-                            <li><i class="fas fa-phone-alt"></i>&ensp;Phone:</li>
-                            <li><i class="far fa-envelope"></i>&ensp;Email:</li>
-                            <li><i class="far fa-address-book"></i>&ensp;Post adress:</li>
-                        </ul>
-                        <ul>
-                            <li class="display-change"><a href="tel: 555-666-420">555-666-420</a></li>
-                            <li class="display-change"><a href="mailto: post@cms.com" class="contact-link">post@cms.com</a></li>
-                            <li>Postboks 01, 0001 Oslo</li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card-header header-bg">
-                        <h2>Accessibility</h2>
-                    </div>
-                    <div class="card-content textarea">
-                        <p><span class="highlight"><i class="fab fa-accessible-icon"></i></span>&ensp;Our museum have ramps for wheelchair users, all our display cards have sign language print, and the option to listen to the text.</p>
-                        <span class="text-breaker"></span>
-                        <p><span class="highlight"><i class="fas fa-child"></i></span>&ensp;We also have a breastfeeding room so you can be in a quiet environment.</p>
-                        <span class="text-breaker"></span>
-                        <p><span class="highlight"><i class="fas fa-smoking-ban"></i></span>&ensp;We also want to inform you that smoking is not allowed around the museum.</p>
-                        <span class="text-breaker"></span>
-                        <p><span class="highlight"><i class="fas fa-smoking"></i><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-joint"></i><i class="fas fa-arrow-right"></i></span>&ensp;We have designated smoking rooms outside the museum. Juts follow the signs.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card-header header-bg">
-                        <h2>Where we are</h2>
-                    </div>
-                    <div class="card-image">
-                        <div class="ratio-box">
-                            <iframe class="image" src="https://maps.google.com/maps?q=askerhusstranda&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" height="300" width="300"></iframe>
-                        </div>
-                    </div>
-                    <div class="card-content textarea">
-                        <p><strong>Location and Adress</strong></p>
-                        <span class="text-breaker"></span>
-                        <div class="list-grid">
-                        <ul>
-                            <li><i class="fas fa-map-marked"></i>&ensp;Adress: Askerhusstranda</li>
-                            <li><i class="fas fa-flag"></i>&ensp;Zip: 0001</li>
-                            <li><i class="far fa-compass"></i>&ensp;City: Oslo</li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </main>
