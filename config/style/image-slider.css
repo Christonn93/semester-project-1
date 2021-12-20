@@ -142,8 +142,7 @@ input[type=radio] {
         height: 0;
         padding-top: calc(100% * (9 / 16));
         position: relative;
-        overflow: scroll;
-        overflow-x: scroll;
+        overflow: auto;
         text-align: center;
     }
 }
