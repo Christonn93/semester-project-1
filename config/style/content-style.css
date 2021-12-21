@@ -277,11 +277,10 @@ input[type=checkbox] {
 }
 
 /* Dropdown */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
+.navigation-list > li > ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
     display: none;
     flex-direction: column;
     width: 200px;
@@ -295,9 +294,29 @@ input[type=checkbox] {
     background-color: var(--sunray);
 }
 
+.navigation-list > li:focus > ul,
+.navigation-list > li:focus-within > ul,
+ul > li > ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    
+}
+
+.navigation-list > li > ul > li {
+    clear: both;
+    width: 100%;
+}
+
+#dropdown {
+    position: relative;
+}
+
 .dropdown-menu>li {
     padding: 5px 14px;
 }
+
+
 
 /* ========== Main ========== */
 .breadcrumb-container {
