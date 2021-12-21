@@ -181,12 +181,14 @@ footer>div>p {
     display: grid;
     gap: 20px;
     max-width: 700px;
+    margin-bottom: 25px;
 }
 
 .grid-container-2 {
     display: grid;
     gap: 30px;
     max-width: 1400px;
+    margin-bottom: 25px;
 }
 
 .grid-col {
