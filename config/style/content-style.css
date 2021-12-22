@@ -528,7 +528,7 @@ ul > li > ul:focus {
 
 /* ========== Media Queries ========== */
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones) */
 @media only screen and (max-width: 600px) {
 
     .primary-navigation {
@@ -639,7 +639,7 @@ ul > li > ul:focus {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .primary-navigation {
         width: 100%;
@@ -750,7 +750,7 @@ ul > li > ul:focus {
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .primary-navigation {
         width: 100%;
@@ -857,9 +857,3 @@ ul > li > ul:focus {
 
 
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
