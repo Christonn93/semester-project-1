@@ -1,4 +1,4 @@
-# Project Exam 1
+# Semester Project - CSM
 
 ![image](/cms.png)
 
@@ -6,6 +6,7 @@ A simple overview of the use/purpose of this project.
 
 ## Description
 
+In this project you will see the result of my semester project.
 
 ## Built With
 
