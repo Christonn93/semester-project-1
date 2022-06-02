@@ -80,6 +80,7 @@ Link references in content:
     2.1 https://fonts.google.com/specimen/Martel+Sans?query=Martel
     2.2 https://fonts.google.com/specimen/Cabin?query=Cabin
     2.3 https://fonts.google.com/specimen/Poppins?query=Popp
+
 3. https://material.io/design/typography/the-type-system.html#type-scale
 4. https://nekocalc.com/px-to-rem-converter
 5. https://imagecompressor.com/
@@ -90,20 +91,22 @@ Link references in content:
 10. https://css-tricks.com/solved-with-css-dropdown-menus/
 11. https://www.linkedin.com/learning/css-images/custom-shapes-using-svg?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
 12. https://codepen.io/surajbws/pen/zmNdmy?editors=0100
+
 13.
-  13.1 https://uxwing.com/
-  13.2 https://fontawesome.com/
+    13.1 https://uxwing.com/
+    13.2 https://fontawesome.com/
+  
 14. https://css-tricks.com/a-complete-guide-to-css-media-queries/
 15. https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
 16. https://validator.w3.org/
 17. https://wave.webaim.org/report#/https://noroff-project-csm.netlify.app/
 18. https://usability.yale.edu/web-accessibility/articles/wcag2-checklist
 19.
-  a. https://www.youtube.com/watch?v=MYE6T_gd7H0
-  b. https://www.linkedin.com/learning/digital-marketing-foundations/what-is-seo?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
+    19.1 https://www.youtube.com/watch?v=MYE6T_gd7H0    
+    19.2 https://www.linkedin.com/learning/digital-marketing-foundations/what-is-seo?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
 
+### Other links used in the project:
 
-Other links used in the project:
 1. https://codepen.io/souravkaranjai87/pen/RgmMyj
 2. https://css-tricks.com/snippets/css/css-box-shadow/
 3. https://jsfiddle.net/MJPhillip/0a5vqk43/
