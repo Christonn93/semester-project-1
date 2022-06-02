@@ -6,14 +6,13 @@ A simple overview of the use/purpose of this project.
 
 ## Description
 
-This project is part of my time as a student at Noroff School of Technology and Digital Media to become a front end dev.
-I was tasked to use WP as a headless CMS, and use Netlify as the front-end for the project. I decided to create a blog where i collected some posts regarding conspiracy theories.
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
 - [WordPress REST API](https://developer.wordpress.org/rest-api/)
+- [RAWG API]()
 - [Netlify](https://www.netlify.com/)
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
@@ -24,18 +23,14 @@ You can list a the tech stack that you've used over here
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
-
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+Download .zip or open with github desktop
 ```
 
-2. Install the dependencies:
-
 ```bash
-npm install
+if(download .zip === true){ 
+    then you will need to unzip the download to be able to open the page in the browser.
+};
 ```
 
 ### Running
@@ -58,12 +53,85 @@ This project have been made with some help from my fellow students at Noroff, so
 
 ## Acknowledgments
 
-If it would not be for these people and sources some parts of the project would not be possible to accomplish
+I would like to say a big thanks to the following people for assisting me in getting my
+result in the form of feedback, useful insights and interactive videos.
+1. MJ Philips, Thanks for the help in my project. With videos guiding me on how to
+make my dropdown work in js. Even if we are not yet at this part of the learning
+it was really useful.
+2. Bonita Diener. Thank you for giving me feedback on the design aspect of my
+project.
+3. Oliver Dipple. Thank you for giving me an image and describing how to create
+my header design in code. I did not use it in the project, but it helps me
+understand more of the flexbox model.
+4. A massive thanks to my classmates that have been a huge help in solving
+issues. Not by giving me the code, but simply giving me tips, feedback and
+guidance on where to improve, read and find more information relative to my
+issues.
+a. Jonne Martin
+b. Robert But
+c. Dina Olufsen
+d. Robin Lysake
 
-1. [Page loader is collected from codepen](https://codepen.io/raymondyang/pen/RKQNdr?editors=0100)
+## Reference links
 
-2. [For the slider I followed this tutorial, and made some changes to it so it would fit my needs](https://www.youtube.com/watch?v=c5SIG7Ie0dM&t=28876s)
+Link references in content:
+1. https://coolors.co/
+2.
+  a. https://fonts.google.com/specimen/Martel+Sans?query=Martel
+  b. https://fonts.google.com/specimen/Cabin?query=Cabin
+  c. https://fonts.google.com/specimen/Poppins?query=Popp
+3. https://material.io/design/typography/the-type-system.html#type-scale
+4. https://nekocalc.com/px-to-rem-converter
+5. https://imagecompressor.com/
+6. https://css-tricks.com/snippets/css/complete-guide-grid/
+7. https://www.youtube.com/watch?v=v5KzBPUEgGQ&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998
+8. https://www.pakainfo.com/jquery-include-header-and-footer-in-html/
+9. https://www.loom.com/share/71016f14eba34b11bca4acb82b385c80
+10. https://css-tricks.com/solved-with-css-dropdown-menus/
+11. https://www.linkedin.com/learning/css-images/custom-shapes-using-svg?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
+12. https://codepen.io/surajbws/pen/zmNdmy?editors=0100
+13.
+  a. https://uxwing.com/
+  b. https://fontawesome.com/
+14. https://css-tricks.com/a-complete-guide-to-css-media-queries/
+15. https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
+16. https://validator.w3.org/
+17. https://wave.webaim.org/report#/https://noroff-project-csm.netlify.app/
+18. https://usability.yale.edu/web-accessibility/articles/wcag2-checklist
+19.
+  a. https://www.youtube.com/watch?v=MYE6T_gd7H0
+  b. https://www.linkedin.com/learning/digital-marketing-foundations/what-is-seo?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
 
-3. [For the image modal on the post detail page i have used this as a reference, made some changes to it](https://codepen.io/r3dg3cko/pen/ZLryQG?editors=1010)
 
-4. [Form validation is created based on the same concept showed on this page](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation)
+Other links used in the project:
+1. https://codepen.io/souravkaranjai87/pen/RgmMyj
+2. https://css-tricks.com/snippets/css/css-box-shadow/
+3. https://jsfiddle.net/MJPhillip/0a5vqk43/
+4. https://codepen.io/pedronauck/pen/fcaDw?editors=0010
+5. https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()
+6. https://www.freecodecamp.org/news/use-svg-images-in-css-html/
+7. https://www.loom.com/share/f4a45f61958d4c198a9fc59211a355b2
+8. https://codepen.io/mjphillip/pen/PoJqqRG?editors=1100
+9. https://codepen.io/mjphillip/pen/NWaqNPr?editors=1100
+10. https://codepen.io/surajbws/pen/zmNdmy?editors=0100
+11. https://www.w3schools.com/howto/howto_css_modals.asp
+12. https://css-tricks.com/almanac/properties/a/align-items/
+13. https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow()
+14. https://www.figma.com/file/EEaNLTeqSpshMiv0sCizWV/Buttons_Noroff?node-id=0%3A1
+15. https://css-tricks.com/a-complete-guide-to-links-and-buttons/
+16. https://material.io/resources
+17. https://www.audi.com/ci/en/guides/user-interface/components/buttons.html
+18. https://www.sarasoueidan.com/blog/accessible-icon-buttons/
+19. https://www.invisionapp.com/inside-design/comprehensive-guide-designing-ux-buttons/
+20. https://buttonbuddy.dev/#generator
+21. https://www.reddit.com/r/css/comments/2x2xje/i_would_like_to_know_the_best_practice_for/
+22. https://www.w3schools.com/howto/howto_css_form_icon.asp
+23. https://stackoverflow.com/questions/3134862/is-there-any-way-to-make-the-html-underline-thicker
+24. https://jsfiddle.net/MJPhillip/0a5vqk43/
+25. https://codepen.io/pedronauck/pen/fcaDw?editors=0010
+26. https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3
+27. https://www.freecodecamp.org/news/use-svg-images-in-css-html/
+28. https://www.tutorialspoint.com/html/html_email_links.htm
+29. https://google-map-generator.com/
+30. https://codepen.io/souravkaranjai87/pen/RgmMyj
+31. https://css-tricks.com/snippets/css/css-box-shadow/
