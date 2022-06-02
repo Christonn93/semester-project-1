@@ -74,36 +74,29 @@ d. Robin Lysake
 
 ## Reference links
 
-Link references in content:
 1. https://coolors.co/
-2.
-    2.1 https://fonts.google.com/specimen/Martel+Sans?query=Martel
-    2.2 https://fonts.google.com/specimen/Cabin?query=Cabin
-    2.3 https://fonts.google.com/specimen/Poppins?query=Popp
-
-3. https://material.io/design/typography/the-type-system.html#type-scale
-4. https://nekocalc.com/px-to-rem-converter
-5. https://imagecompressor.com/
-6. https://css-tricks.com/snippets/css/complete-guide-grid/
-7. https://www.youtube.com/watch?v=v5KzBPUEgGQ&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998
-8. https://www.pakainfo.com/jquery-include-header-and-footer-in-html/
-9. https://www.loom.com/share/71016f14eba34b11bca4acb82b385c80
-10. https://css-tricks.com/solved-with-css-dropdown-menus/
-11. https://www.linkedin.com/learning/css-images/custom-shapes-using-svg?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
-12. https://codepen.io/surajbws/pen/zmNdmy?editors=0100
-
-13.
-    13.1 https://uxwing.com/
-    13.2 https://fontawesome.com/
-  
-14. https://css-tricks.com/a-complete-guide-to-css-media-queries/
-15. https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
-16. https://validator.w3.org/
-17. https://wave.webaim.org/report#/https://noroff-project-csm.netlify.app/
-18. https://usability.yale.edu/web-accessibility/articles/wcag2-checklist
-19.
-    19.1 https://www.youtube.com/watch?v=MYE6T_gd7H0    
-    19.2 https://www.linkedin.com/learning/digital-marketing-foundations/what-is-seo?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
+2. https://fonts.google.com/specimen/Martel+Sans?query=Martel 
+3. https://fonts.google.com/specimen/Cabin?query=Cabin
+4. https://fonts.google.com/specimen/Poppins?query=Popp
+5. https://material.io/design/typography/the-type-system.html#type-scale
+6. https://nekocalc.com/px-to-rem-converter
+7. https://imagecompressor.com/
+8. https://css-tricks.com/snippets/css/complete-guide-grid/
+9. https://www.youtube.com/watch?v=v5KzBPUEgGQ&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998
+10. https://www.pakainfo.com/jquery-include-header-and-footer-in-html/
+11. https://www.loom.com/share/71016f14eba34b11bca4acb82b385c80
+12. https://css-tricks.com/solved-with-css-dropdown-menus/
+13. https://www.linkedin.com/learning/css-images/custom-shapes-using-svg?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
+14. https://codepen.io/surajbws/pen/zmNdmy?editors=0100
+15. https://uxwing.com/
+16. https://fontawesome.com/
+17. https://css-tricks.com/a-complete-guide-to-css-media-queries/
+18. https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
+19. https://validator.w3.org/
+20. https://wave.webaim.org/report#/https://noroff-project-csm.netlify.app/
+21. https://usability.yale.edu/web-accessibility/articles/wcag2-checklist
+22. https://www.youtube.com/watch?v=MYE6T_gd7H0    
+23. https://www.linkedin.com/learning/digital-marketing-foundations/what-is-seo?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=43268076
 
 ### Other links used in the project:
 
