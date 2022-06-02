@@ -1,6 +1,6 @@
 # Project Exam 1
 
-![image](/app/assets/index-page.png)
+![image](/cms.png)
 
 A simple overview of the use/purpose of this project.
 
@@ -11,8 +11,6 @@ A simple overview of the use/purpose of this project.
 
 You can list a the tech stack that you've used over here
 
-- [WordPress REST API](https://developer.wordpress.org/rest-api/)
-- [RAWG API]()
 - [Netlify](https://www.netlify.com/)
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
@@ -67,10 +65,10 @@ understand more of the flexbox model.
 issues. Not by giving me the code, but simply giving me tips, feedback and
 guidance on where to improve, read and find more information relative to my
 issues.
-a. Jonne Martin
-b. Robert But
-c. Dina Olufsen
-d. Robin Lysake
+a. [Jonne Martin](https://www.linkedin.com/in/jonne-martin-krosby-a689ba1b1/)
+b. [Robert But]()
+c. [Dina Olufsen](https://www.linkedin.com/in/dina-olufsen-42922721a/)
+d. [Robin Lysake]()
 
 ## Reference links
 
